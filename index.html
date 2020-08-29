@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <!-- META -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="Sassy | App Landing Page">
-    <meta name="author" content="droitlab">
+    <meta name="author" content="findcep">
+    <meta name="template" content="droitthemes">
+
+    <meta name="description" content="Localize rapidamente o endereço/CEP de seus clientes, CEP correios mensalmente atualizado">
+    <meta content="img/icone-findcep.png" itemprop="image">
+    <meta name="keywords" content="api cep, busca cep, pesquisa cep, webservice cep, api ibge, webservice ibge, cep para e-commerce, cep para site, cep da rua, cep por bairro, codigo ibge, geocoordenadas, data base correios, tabela cep correios" />
+    <meta name="robots" content="INDEX,FOLLOW" />
+
     <!-- SITE TITLE -->
-    <title>Sassy | App Landing Page</title>
+    <title>CEP API | FindCEP</title>
     <!-- STYLESHEETS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -24,7 +30,20 @@
     <link rel="stylesheet" href="css/theme-style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <!-- FAVICON -->
-    <link rel="shortcut icon" type="image/x-icon" href="images/Favicon_app.png">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon-32x32.ico">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon-152x152.png">
+
+    <link rel="alternate" href="http://www.fincep.com/en" hreflang="en" />
+    <link rel="canonical" href="http://www.findcep.com/" />
+
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="94" id="home">
@@ -39,12 +58,12 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand ex" href="http://droitthemes.com/html/lite/sassy/">
+                        <a class="navbar-brand ex" href="https://www.findcep.com/">
                             <img class="main-logo" style="" src="images/sassy_white.png" alt="Home">
                             <img class="logo-blue" src="images/sassy_black.png" alt="Home">
                         </a>
                         <!--Get-Now-Button-->
-                        <a class="btn-getnow new_btn" href="#">Get Now</a>
+                        <a class="btn-getnow new_btn" href="#">Teste Agora</a>
                     </div>
                     <div class="collapse navbar-collapse multi_page_menu_item" id="myNavbar">
                         <ul id="menu-one-page" class="nav navbar-nav navbar-right multi">
@@ -52,9 +71,9 @@
                             <li class="menu-item"><a title="Services" href="#services">Services</a></li>
                             <li class="menu-item"><a title="Dashboard" href="#dashboard">Dashboard</a></li>
                             <li class="menu-item"><a title="Features" href="#features">Features</a></li>
-                            <li class="menu-item"><a title="Pricing" href="#pricing">Pricing</a></li>
-                            <li class="menu-item"><a title="contact" href="#contact">Contact</a></li>
-                            <li class="menu-item"><a title="blog" href="blog.html">blog</a></li>
+                            <li class="menu-item"><a title="Pricing" href="#pricing">Preços</a></li>
+                            <li class="menu-item"><a title="Contact" href="#contact">Contato</a></li>
+                            <li class="menu-item"><a title="Blog" href="blog.html">blog</a></li>
                         </ul>
                     </div>
                 </div>
@@ -85,15 +104,16 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <h6 class="s_banner_text">Software Solution</h6>
-                        <h1 class="s_banner_title">Give yourself the best chance <br>of success with Sassy</h1>
-                        <a href="#" class="saas_btn">Get Started</a>
+                        <h2 class="s_banner_text">CEP API</h6>
+                        <h1 class="s_banner_title">Localizar o CEP<br>nunca foi tão fácil</h1>
+                        <a href="#" class="saas_btn">Experimente Grátis</a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="saas_home_img">
-            <img src="images/new/saas/mackbook.png" alt="">
+            <img src="" alt="">
+            <br>
         </div>
     </section>
     <section class="n_features_area pt_0 " id="services">
@@ -101,29 +121,29 @@
             <div class="row">
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="n_features_item">
-                        <div class="n_round_icon">
-                            <img src="images/new/icon/pincel.png" alt="">
+                        <div class="QUIERATI_n_round_icon" hidden>
+                            <img src="" alt="">
                         </div>
-                        <h3>Register to get start</h3>
-                        <p>Officiis per torquent placeat tempora blandit, aliquid, iure, quod dignissim reprehenderit turpis placeat unde.</p>
+                        <h3>Fácil</h3>
+                        <p>API de <a target="_blank" href="https://www.correios.com.br/enviar-e-receber/ferramentas/cep/o-que-e-cep">CEP</a> é fácil e simples de usar, sem setup e compatível com qualquer aplicação. Faça um upgrade no seu negocio</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="n_features_item">
-                        <div class="n_round_icon">
-                            <img src="images/new/icon/graph.png" alt="">
+                        <div class="QUIERATI_n_round_icon" hidden>
+                            <img src="" alt="">
                         </div>
-                        <h3>Analysis your data</h3>
-                        <p>Officiis per torquent placeat tempora blandit, aliquid, iure, quod dignissim reprehenderit turpis placeat unde.</p>
+                        <h3>Rápido</h3>
+                        <p>Diminua o tempo de cadastro de seu cliente, com o <a target="_blank" href="https://pt.wikipedia.org/wiki/Web_service">webservice</a> FindCEP o endereço é localizado em apenas 50ms**.</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="n_features_item">
-                        <div class="n_round_icon">
-                            <img src="images/new/icon/Bar.png" alt="">
+                        <div class="QUIERATI_n_round_icon" hidden>
+                            <img src="" alt="">
                         </div>
-                        <h3>Use the results</h3>
-                        <p>Officiis per torquent placeat tempora blandit, aliquid, iure, quod dignissim reprehenderit turpis placeat unde.</p>
+                        <h3>Confiável</h3>
+                        <p>O FindCEP entrega centenas de milhares de CEP's simultaneamente com 99.99% de disponibilidade desde 2016</p>
                     </div>
                 </div>
             </div>
@@ -137,8 +157,8 @@
                 <path fill-rule="evenodd" opacity="0.051" fill="rgb(132, 96, 255)" d="M0.960,145.000 C0.960,145.000 164.420,63.922 409.339,51.356 C694.520,36.723 1011.000,124.999 1011.000,124.999 L881.000,226.999 C881.000,226.999 666.711,195.848 404.006,290.522 C162.591,377.523 0.960,780.999 0.960,780.999 L0.960,145.000 Z" />
             </svg>
             <div class="w_50 side-img text-right pull-left pb_50">
-                <img class="img_one" src="images/new/saas/saas_about_left.jpg" alt="">
-                <img class="img_two" src="images/new/saas/saas_about_left2.jpg" alt="">
+                <img class="img_one" src="" alt="">
+                <img class="img_two" src="" alt="">
             </div>
             <div class="container">
                 <div class="row">
@@ -158,8 +178,8 @@
                 <path fill-rule="evenodd" opacity="0.051" fill="rgb(132, 96, 255)" d="M1040.009,636.000 C1040.009,636.000 876.554,717.076 631.642,729.643 C346.469,744.276 39.999,706.000 39.999,706.000 L179.995,573.999 C179.995,573.999 374.278,585.151 636.975,490.477 C878.382,403.475 1040.009,-0.000 1040.009,-0.000 L1040.009,636.000 Z" />
             </svg>
             <div class="w_50 side-img text-left pull-right pb_140">
-                <img class="img_one" src="images/new/saas/saas_about_right.jpg" alt="">
-                <img class="img_two" src="images/new/saas/saas_about_right1.jpg" alt="">
+                <img class="img_one" src="" alt="">
+                <img class="img_two" src="" alt="">
             </div>
             <div class="container">
                 <div class="row">
@@ -181,7 +201,7 @@
                 <p>Tristique voluptate proident ipsam, officia mus? Nam tempus, conubia nascetur vero hac animi? Sapien<br> cillum class quia illo ipsa nullam ante!</p>
             </div>
             <div class="saas_video">
-                <img src="images/new/saas/video.png" alt="">
+                <img src="" alt="">
                 <a href="#" class="video_btn"><i class="fa fa-play"></i></a>
             </div>
         </div>
