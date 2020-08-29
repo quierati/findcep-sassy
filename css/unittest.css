@@ -1,0 +1,116 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 5, 2017, 1:48:02 PM
+    Author     : DroitLab
+*/
+/*menu dropdown css*/
+.navbar .navbar-collapse .nav li .sub-menu li a{
+    padding: 0px !important;
+}
+.header.stricky-fixed .nav li .sub-menu{
+    background: #fff;
+}
+.navbar .navbar-collapse .nav li .sub-menu{
+    background: #fff;
+    color: #725ce6;
+}
+.navbar .navbar-collapse .nav li .sub-menu{
+    list-style: none;
+}
+.navbar .navbar-collapse .nav li .sub-menu li{
+    margin-right: 0px !important;
+    position: relative;
+    display: block;
+    padding: 0 20px;
+    line-height: 35px;
+    text-align: left;
+}
+.navbar .navbar-collapse .nav li .sub-menu li a{
+    padding: 0px;
+    border: 0px;
+    display:block;
+    border-bottom: 2px solid transparent;
+}
+@media(max-width:767px){
+    .navbar-collapse{
+        overflow-x: hidden;
+    }
+    .navbar .navbar-collapse .nav li .sub-menu li{
+        padding: 0px;
+    }
+    .navbar .navbar-collapse .nav li .sub-menu{
+        display: none;
+    }
+    nav .navbar-collapse .navbar-right li.menu-item-has-children .dropdown-menu li .dropdown-menu{
+        position: relative !important;
+        box-shadow: none;
+        left: 0 !important;
+        padding-left: 10px;
+    }
+}
+@media(min-width: 768px){
+    .navbar .navbar-collapse .nav li .sub-menu{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        transition: all 300ms linear 0s;
+        display: block;
+        min-width: 230px;
+        border-radius: 0px;
+        border: none;
+        padding: 20px 0px 20px 0px;
+        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .175);
+        opacity: 0;
+        visibility: hidden;
+        
+
+    }
+    .navbar .navbar-collapse .nav li .sub-menu li{
+        margin-right: 0px !important;
+        position: relative;
+        display: block;
+        padding: 0 20px;
+        line-height: 35px;
+        text-align: left;
+    }
+    .navbar .navbar-collapse .nav li .sub-menu li a{
+        padding: 0px;
+        border: 0px;
+        display:block;
+        border-bottom: 2px solid transparent;
+    }
+    .navbar .navbar-collapse .nav li .sub-menu li:after{
+        right: 5px;
+        transform: rotate(-90deg);
+        top: 14px;
+    }
+
+    .navbar .navbar-collapse .nav li:hover .sub-menu li a:hover{
+    border-color: #725ce6;
+}
+.navbar .navbar-collapse .nav li .sub-menu li a:hover{
+    border-bottom: 2px solid #725ce6;
+}
+    .navbar .navbar-collapse .nav li:hover .sub-menu{
+        opacity: 1;
+        visibility: visible;
+    }
+    .navbar .navbar-collapse .nav li .sub-menu li .sub-sub-menu{
+        left: 100%;
+        top: 0;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .navbar .navbar-collapse .nav li .sub-menu li:hover .sub-sub-menu{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+
+
+

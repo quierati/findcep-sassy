@@ -1,0 +1,19 @@
+header.blog-list .breadcrumb span + span::before,
+header.blog-detail .breadcrumb span + span::before {
+    left: -11px !important;
+}
+
+header.blog-list h1,
+header.blog-detail h1 {
+    text-align: center;
+}
+
+header.blog-list .breadcrumb,
+header.blog-detail .breadcrumb {
+    text-align: center;
+}
+
+.blog header.blog-list .breadcrumb span + span,
+header.blog-detail .breadcrumb span + span {
+    margin-left: 17px;
+}
