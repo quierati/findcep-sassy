@@ -38,6 +38,11 @@ html(lang='pt-br')
     link(rel='apple-touch-icon', sizes='152x152', href='img/apple-touch-icon-152x152.png')
     link(rel='alternate', href='http://www.fincep.com/en', hreflang='en')
     link(rel='canonical', href='http://www.findcep.com/')
+    // Structured Data Organization  FindCEP
+    script(type='application/ld+json').
+      {"@context": "http:\\/\/schema.org","@type": "Organization","url": "http:\/\/www.findcep.com","logo": "http://www.findcep.com/img/icone-findcep.png", "sameAs": ["https://www.facebook.com/findcep/","https://twitter.com/findcep"],"contactPoint": [{"@type": "ContactPoint","telephone": "+55-11-98059-7677","contactType": "sales","areaServed": "BR","availableLanguage": ["Portuguese","English"]}]}
+    script(type='application/ld+json').
+      {"@context":"http:\\/\/schema.org","@type":"WebSite","url":"http:\/\/www.findcep.com\/","name":"Find CEP"}
   body#home(data-spy='scroll', data-target='.navbar', data-offset='94')
     nav.navbar.navbar-fixed-top.new_header
       .container.custome_container
@@ -56,19 +61,19 @@ html(lang='pt-br')
             #myNavbar.collapse.navbar-collapse.multi_page_menu_item
               ul#menu-one-page.nav.navbar-nav.navbar-right.multi
                 li.menu-item.current_page_item.active
-                  a(title='Home', href='#home') Home
+                  a(title='Home', href='#home') Por que FindCEP?
                 li.menu-item
                   a(title='Services', href='#services') Services
                 li.menu-item
                   a(title='Dashboard', href='#dashboard') Dashboard
                 li.menu-item
-                  a(title='Features', href='#features') Features
+                  a(title='Features', href='#features') Vantagens
                 li.menu-item
                   a(title='Pricing', href='#pricing') Preços
                 li.menu-item
                   a(title='Contact', href='#contact') Contato
                 li.menu-item
-                  a(title='Blog', href='blog.html') blog
+                  a(title='Developer', href='//www.findcep.com/docs/index.html') Desenvolvimento
     section.saas_home_area
       .home_item
         #bubbles
@@ -90,8 +95,8 @@ html(lang='pt-br')
         .container
           .row
             .col-md-12.text-center
-              h2.s_banner_text CEP API
-              h1.s_banner_title
+              h1.s_banner_text CEP API
+              h2.s_banner_title
                 | Localizar o CEP
                 br
                 | nunca foi tão fácil
@@ -108,8 +113,7 @@ html(lang='pt-br')
                 img(src='', alt='')
               h3 Fácil
               p
-                | API de 
-                a(target='_blank', href='https://www.correios.com.br/enviar-e-receber/ferramentas/cep/o-que-e-cep') CEP
+                a(target='_blank', href='https://www.correios.com.br/enviar-e-receber/ferramentas/cep/o-que-e-cep') CEP API 
                 | é fácil e simples de usar, sem setup e compatível com qualquer aplicação. Faça um upgrade no seu negocio
           .col-md-4.col-sm-4.col-xs-12
             .n_features_item
@@ -119,7 +123,7 @@ html(lang='pt-br')
               p
                 | Diminua o tempo de cadastro de seu cliente, com o 
                 a(target='_blank', href='https://pt.wikipedia.org/wiki/Web_service') webservice
-                | FindCEP o endereço é localizado em apenas 50ms**.
+                | CEP o endereço é localizado em apenas 50ms.
           .col-md-4.col-sm-4.col-xs-12
             .n_features_item
               .DISABLE_n_round_icon(hidden='true')
@@ -127,47 +131,17 @@ html(lang='pt-br')
               h3 Confiável
               p
                 | O FindCEP entrega centenas de milhares de CEP's simultaneamente com 99.99% de disponibilidade desde 2016
-    section#dashboard.saas_about_area
-      a.scroll_btn(href='#')
-        i
-      .saas-about-item
-        svg.svg_left(xmlns='http://www.w3.org/2000/svg')
-          path(fill-rule='evenodd', opacity='0.051', fill='rgb(132, 96, 255)', d='M0.991,565.754 C0.991,565.754 104.446,356.774 349.357,369.332 C634.530,383.954 961.000,485.740 961.000,485.740 L1041.000,443.742 C1041.000,443.742 668.745,74.010 402.657,17.699 C165.398,-32.511 0.991,39.999 0.991,39.999 L0.991,565.754 Z')
-          path(fill-rule='evenodd', opacity='0.051', fill='rgb(132, 96, 255)', d='M0.960,145.000 C0.960,145.000 164.420,63.922 409.339,51.356 C694.520,36.723 1011.000,124.999 1011.000,124.999 L881.000,226.999 C881.000,226.999 666.711,195.848 404.006,290.522 C162.591,377.523 0.960,780.999 0.960,780.999 L0.960,145.000 Z')
-        .w_50.side-img.text-right.pull-left.pb_50
-          img.img_one(src='', alt='')
-          img.img_two(src='', alt='')
-        .container
-          .row
-            .col-md-5.col-md-offset-1
-              .saas_about_content.text-left
-                h2.saas_h2.mt_0 Works on all platforms
-                p.n_title_p
-                  | Tristique, praesentium! Aute, distinctio, quo congue esse totam inceptos do deleniti temporibus? Nemo platea conubia aliquet ultricies veniam quasi nulla quisque? Natoque primis habitasse ipsum illo maiores. Quidem dolore proident. Eveniet cupidatat pede. Suspendisse possimus molestie. Conubia necessitatibus earum et! Aut! Leo! Magnam consectetur, odit, natus porro euismod! Accusamus quos.
-                a.saas_btn_two.n_them_btn(href='') Learn More
-      .saas-about-item.sass_a_item_two
-        svg.svg_right(xmlns='http://www.w3.org/2000/svg')
-          path(fill-rule='evenodd', opacity='0.051', fill='rgb(132, 96, 255)', d='M1039.977,215.245 C1039.977,215.245 936.526,424.225 691.622,411.667 C406.458,397.045 119.998,265.259 119.998,265.259 L-0.000,417.257 C-0.000,417.257 372.243,706.989 638.324,763.300 C875.576,813.509 1039.977,741.000 1039.977,741.000 L1039.977,215.245 Z')
-          path(fill-rule='evenodd', opacity='0.051', fill='rgb(132, 96, 255)', d='M1040.009,636.000 C1040.009,636.000 876.554,717.076 631.642,729.643 C346.469,744.276 39.999,706.000 39.999,706.000 L179.995,573.999 C179.995,573.999 374.278,585.151 636.975,490.477 C878.382,403.475 1040.009,-0.000 1040.009,-0.000 L1040.009,636.000 Z')
-        .w_50.side-img.text-left.pull-right.pb_140
-          img.img_one(src='', alt='')
-          img.img_two(src='', alt='')
-        .container
-          .row
-            .col-md-5
-              .saas_about_content.text-left
-                h2.saas_h2.mt_0 Easy and secure access
-                p.n_title_p
-                  | Tristique, praesentium! Aute, distinctio, quo congue esse totam inceptos do deleniti temporibus? Nemo platea conubia aliquet ultricies veniam quasi nulla quisque? Natoque primis habitasse ipsum illo maiores. Quidem dolore proident. Eveniet cupidatat pede. Suspendisse possimus molestie. Conubia necessitatibus earum et! Aut! Leo! Magnam consectetur, odit, natus porro euismod! Accusamus quos.
-                a.saas_btn_two.n_them_btn(href='') Learn More
     section#features.sass_video_area
       .container
         .saas_section_title.mb_70
-          h2 Our Dashboard Features
+          h2 O que FindCEP oferece ao seu negócio?
           p
-            | Tristique voluptate proident ipsam, officia mus? Nam tempus, conubia nascetur vero hac animi? Sapien
+            | A API FindCEP é a mais ágil e completa solução de localizacação de codigo postal e endereços no 
             br
-            |  cillum class quia illo ipsa nullam ante!
+            | BRASIL.
+          h3 Base integrada com os Correios
+          p  
+            | FindCEP Oferece Busca de CEPs (Código Enderecamento Postal) e Endereços para o seu negócio online.
         .saas_video
           img(src='', alt='')
           a.video_btn(href='#')
@@ -175,26 +149,31 @@ html(lang='pt-br')
     section.saas_dashboard_features
       .container
         .saas_section_title.mb_70
-          h2 Our Dashboard Features
+          h2 O que FindCEP oferece ao seu negócio?
           p
-            | Tristique voluptate proident ipsam, officia mus? Nam tempus, conubia 
+            | O FindCEP é a mais ágil e completa solução de localizacação de codigo postal e endereços no 
             br
-            | nascetur vero hac animi? Sapien cillum class quia.
+            | BRASIL.
+          h3 Base integrada com os Correios
+          p  
+            | diretamente integrada com os Correios que oferece Busca de CEPs (Código Enderecamento Postal) e Endereços para o seu negócio online.
         .row.saas_features_info
           .col-md-4.col-sm-6.col-xs-12
             .saas_features_item
               .round_icon
                 img(src='images/new/icon/d-f1.png', alt='')
-              h3 Track Anything
+              h3 Todos os endereços
               p
-                | Officiis per torquent placeat tempora blandit, aliquid, iure, quod dignissim reprehenderit turpis placeat unde.
+                | Com o FindCEP o seu cliente conseguirá completar o cadastro, ou criar a conta em segundos,
+                br
+                | garantindo agilidade na finalização da compra.
           .col-md-4.col-sm-6.col-xs-12
             .saas_features_item
               .round_icon
                 img(src='images/new/icon/d-f2.png', alt='')
-              h3 Secure your Data
+              h3 Base atualizada
               p
-                | Officiis per torquent placeat tempora blandit, aliquid, iure, quod dignissim reprehenderit turpis placeat unde.
+                | Nossa base de CEPs é atualizada mensalmente. Com mais de 1 milhão de CEPs para consulta.
           .col-md-4.col-sm-6.col-xs-12
             .saas_features_item
               .round_icon
@@ -223,9 +202,42 @@ html(lang='pt-br')
               h3 Easy Customizable
               p
                 | Officiis per torquent placeat tempora blandit, aliquid, iure, quod dignissim reprehenderit turpis placeat unde.
+    section#dashboard.saas_about_area
+      a.scroll_btn(href='#')
+        i
+      .saas-about-item
+        svg.svg_left(xmlns='http://www.w3.org/2000/svg')
+          path(fill-rule='evenodd', opacity='0.051', fill='rgb(132, 96, 255)', d='M0.991,565.754 C0.991,565.754 104.446,356.774 349.357,369.332 C634.530,383.954 961.000,485.740 961.000,485.740 L1041.000,443.742 C1041.000,443.742 668.745,74.010 402.657,17.699 C165.398,-32.511 0.991,39.999 0.991,39.999 L0.991,565.754 Z')
+          path(fill-rule='evenodd', opacity='0.051', fill='rgb(132, 96, 255)', d='M0.960,145.000 C0.960,145.000 164.420,63.922 409.339,51.356 C694.520,36.723 1011.000,124.999 1011.000,124.999 L881.000,226.999 C881.000,226.999 666.711,195.848 404.006,290.522 C162.591,377.523 0.960,780.999 0.960,780.999 L0.960,145.000 Z')
+        .w_50.side-img.text-right.pull-left.pb_50
+          img.img_one(src='', alt='')
+          img.img_two(src='', alt='')
+        .container
+          .row
+            .col-md-5.col-md-offset-1
+              .saas_about_content.text-left
+                h2.saas_h2.mt_0 Works on all platforms
+                p.n_title_p
+                  | O FindCEP é a mais ágil e completa solução de localizacação de endereços nacionais diretamente integrada com os Correios que oferece  Busca de CEPs e Endereços para o seu negócio online.
+                a.saas_btn_two.n_them_btn(href='') Veja mais
+      .saas-about-item.sass_a_item_two
+        svg.svg_right(xmlns='http://www.w3.org/2000/svg')
+          path(fill-rule='evenodd', opacity='0.051', fill='rgb(132, 96, 255)', d='M1039.977,215.245 C1039.977,215.245 936.526,424.225 691.622,411.667 C406.458,397.045 119.998,265.259 119.998,265.259 L-0.000,417.257 C-0.000,417.257 372.243,706.989 638.324,763.300 C875.576,813.509 1039.977,741.000 1039.977,741.000 L1039.977,215.245 Z')
+          path(fill-rule='evenodd', opacity='0.051', fill='rgb(132, 96, 255)', d='M1040.009,636.000 C1040.009,636.000 876.554,717.076 631.642,729.643 C346.469,744.276 39.999,706.000 39.999,706.000 L179.995,573.999 C179.995,573.999 374.278,585.151 636.975,490.477 C878.382,403.475 1040.009,-0.000 1040.009,-0.000 L1040.009,636.000 Z')
+        .w_50.side-img.text-left.pull-right.pb_140
+          img.img_one(src='', alt='')
+          img.img_two(src='', alt='')
+        .container
+          .row
+            .col-md-5
+              .saas_about_content.text-left
+                h2.saas_h2.mt_0 Easy and secure access
+                p.n_title_p
+                  | Proporcione ao seu cliente, agilidade e facilidade, na criação de cadastros e contas no seu site, mitigue carrinhos abandonados e aumente a conversão.
+                a.saas_btn_two.n_them_btn(href='') Learn More
     section.saas_gallery_area
       .saas_section_title.mb_70
-        h2 Our Dashboard Features
+        h2 Nossos Clientes
         p
           | Tristique voluptate proident ipsam, officia mus? Nam tempus, conubia 
           br
@@ -250,11 +262,11 @@ html(lang='pt-br')
     section#pricing.saas_priceing_area
       .container
         .saas_section_title.mb_70
-          h2 Pricing plans
+          h2 Preços e Planos
           p
-            | Tristique voluptate proident ipsam, officia mus? Nam tempus, conubia 
+            | Solução que satisfazem desde pequenos negocios a grandes empresas que buscam otimizar custos.
             br
-            | nascetur vero hac animi? Sapien cillum class quia.
+            | Sem bloqueio e R$ 0,00 custo de setup 
         .row.saas_priceing_info
           .col-md-4.col-sm-6.col-xs-12
             .saas_price_item
@@ -262,9 +274,9 @@ html(lang='pt-br')
               h3 Basic
               .br
               ul.list_style
-                li One Website
-                li One User
-                li 50 GB Bandwidth
+                li 1 Website
+                li 
+                li 1000 consultas
                 li
                   i.icon_close
                 li
@@ -311,53 +323,56 @@ html(lang='pt-br')
               .saas-contact_info
                 h3.s_contact_title Get in Touch
                 p
-                  | Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+                  | Quer entender melhor como o FindCEP pode agregar ao seu negócio? Fale com nossos especialistas:
                 .contact-info
                   .icon
                     img(src='images/new/icon/placeholder.png', alt='')
-                  h3 Location
-                  p 591 Goldner Point, New York
+                  h3 Localizacao
+                  p Avenida Professor Gioia Martins, 199 - Sao Paulo - SP
                 .contact-info
                   .icon
                     img(src='images/new/icon/phone.png', alt='')
-                  h3 Phone
+                  h3 Telefone
                   p
-                    a(href='#') (+963) 458 789 325
+                    a(href='#') (+55) 11 2924-5573
+                  h3 Whatsapp
+                  p
+                    a(href='#') (+55) 11 98059-7677
                 .contact-info
                   .icon
                     img(src='images/new/icon/icon.png', alt='')
                   h3 Email
-                  p Sassy.saas@gmail.com
+                  p atendimento@findcep.com
             .col-md-6
               form.saas_contact_form(action='#', method='post')
-                h3.s_contact_title Leave a Comment
+                h3.s_contact_title deixe um comentário:
                 .row
                   .col-md-6
                     .form-group
-                      input.form-control.uName(name='name', type='text', placeholder='Full name')
+                      input.form-control.uName(name='name', type='text', placeholder='Nome')
                   .col-md-6
                     .form-group
                       input.form-control.uEmail(name='email', type='email', placeholder='Email')
                   .col-md-12
                     .form-group
-                      input.form-control.uSubject(name='subject', type='text', placeholder='Subject')
+                      input.form-control.uSubject(name='subject', type='text', placeholder='Assunto')
                   .col-md-12
                     .form-group
-                      textarea.form-control.msg(name='message', placeholder='Message')
-                button.n_them_btn(type='submit') Submit
+                      textarea.form-control.msg(name='message', placeholder='Menssagem')
+                button.n_them_btn(type='submit') Enviar
     section#newsletter.saas_newsletter_area
       .container
         .new_sectitle.br_none.pb_0
-          h2.n_title_color.mb_0 Join our Newletter
+          h2.n_title_color.mb_0 Entre na nossa Newletter
           p.n_title_p.mb_0
-            | Lorem ipsum dolor sit amet consectetur adipiscing elit donec tempus pellentesque dui 
+            | Atualizações e notícias com conteudos relevantes serão enviadas!
             br
-            | vel tristique purus justo vestibulum eget lectus.
+            | Fique a par do que aconteçe com os CEP e Codigo IBGE.
         form.n_subscription.saas_subscribe.mailchimp(method='post', novalidate='true', _lpchecked='1')
           .form-group
-            input.form-control.memail(name='EMAIL', type='email', placeholder='Enter your email')
+            input.form-control.memail(name='EMAIL', type='email', placeholder='digite seu email')
           button(type='submit')
-            | Subscribe 
+            | Inscreva 
             i.fa.fa-paper-plane(aria-hidden='true')
           p.mchimp-errmessage(style='display: none;')
           p.mchimp-sucmessage(style='display: none;')
@@ -366,10 +381,12 @@ html(lang='pt-br')
         .row
           .col-md-5.col-sm-6.col-xs-6
             .f_widget.about_widget
-              a.f_logo(href='http://droitthemes.com/html/lite/sassy/')
+              a.f_logo(href='//www.findcep.com/')
                 img(src='images/sassy_logo.png', alt='')
               p
-                | Repudiandae cubilia. Mus tortor? Accusamus libero ridiculus pellentesque duis aliquid laborum quisque iusto quo omnis tempus!
+                | Camara Quierati Tecnologia e Comunicacao LTDA
+                br
+                | FindCEP
               ul.f_social_icon
                 li
                   a(href='#')
@@ -430,7 +447,7 @@ html(lang='pt-br')
                   a(href='#') Financial Services
         .border_top
         p.copyright_text
-          | Copyright © 2018 Desing by, 
+          | Copyright© FindCEP 2016-2020 - Desing by, 
           a(href='#') Droit Themes
     a.scrollup(href='#')
       i.fa.fa-arrow-up(aria-hidden='true')

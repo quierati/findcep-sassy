@@ -1,0 +1,572 @@
+doctype html
+html(itemscope='', itemtype='http://schema.org/WebPage', lang='pt-br')
+  head
+    meta(content='img/icone-findcep.png', itemprop='image')
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title CEP API - FindCEP
+    meta(name='description', content='Localize rapidamente o endereço/CEP de seus clientes, CEP correios atualizado 2019')
+    meta(name='author', content='findcep')
+    meta(name='keywords', content='api cep, busca cep, pesquisa cep, webservice cep, cep para e-commerce, cep para site, cep da rua, cep por bairro, codigo ibge, geocoordenadas, data base correios, tabela cep correios')
+    meta(name='robots', content='INDEX,FOLLOW')
+    link(rel='shortcut icon', href='img/favicon-32x32.ico')
+    link(rel='apple-touch-icon', sizes='57x57', href='img/apple-touch-icon-57x57.png')
+    link(rel='apple-touch-icon', sizes='60x60', href='img/apple-touch-icon-60x60.png')
+    link(rel='apple-touch-icon', sizes='72x72', href='img/apple-touch-icon-72x72.png')
+    link(rel='apple-touch-icon', sizes='76x76', href='img/apple-touch-icon-76x76.png')
+    link(rel='apple-touch-icon', sizes='114x114', href='img/apple-touch-icon-114x114.png')
+    link(rel='apple-touch-icon', sizes='120x120', href='img/apple-touch-icon-120x120.png')
+    link(rel='apple-touch-icon', sizes='144x144', href='img/apple-touch-icon-144x144.png')
+    link(rel='apple-touch-icon', sizes='152x152', href='img/apple-touch-icon-152x152.png')
+    link(rel='alternate', href='http://www.fincep.com/', hreflang='pt-br')
+    link(rel='canonical', href='http://www.findcep.com/')
+    meta(property='og:locale', content='pt_BR')
+    meta(property='og:type', content='website')
+    meta(property='og:title', content='CEP API - FindCEP')
+    meta(property='og:description', content='Localize rapidamente o endereço/CEP de seus clientes. Ideal para ecommerces, diminua o abandono do carrinho e aumente suas vendas.')
+    meta(property='og:url', content='http://www.findcep.com/')
+    meta(property='og:site_name', content='FindCEP')
+    meta(name='twitter:card', content='summary')
+    meta(name='twitter:description', content='Localize rapidamente o endereço/CEP de seus clientes. Ideal para ecommerces, diminua o abandono do carrinho e aumente suas vendas.')
+    meta(name='twitter:title', content='FindCEP - CEP API')
+    meta(name='twitter:domain', content='FindCEP')
+    // force chromium resolve dns
+    meta(http-equiv='x-dns-prefetch-control', content='on')
+    // Speed dns for api
+    link(rel='dns-prefetch', href='//api.findcep.com')
+    link(rel='dns-prefetch', href='//s3-sa-east-1.amazonaws.com')
+    link(rel='preconnect', href='//api.findcep.com')
+    link(rel='stylesheet', type='text/css', href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600/Roboto+Slab:400,700')
+    link(href='https://fonts.googleapis.com/css?family=Lato', rel='stylesheet')
+    // Bootstrap core CSS
+    link(href='dist/css/bootstrap.min.css', rel='stylesheet')
+    // IE10 viewport hack for Surface/desktop Windows 8 bug
+    link(href='assets/css/ie10-viewport-bug-workaround.css', rel='stylesheet')
+    link(href='assets/css/owl.carousel.css', rel='stylesheet')
+    script(type='text/javascript').
+      function guid(){function s4(){return Math.floor((1+Math.random())*0x10000).toString(16)
+      .substring(1);}return s4()+s4()+'-'+s4()+'-'+s4()+'-'+s4()+'-'+s4()+s4()+s4();}
+      var uuid = localStorage.getItem('uuid');
+      if(uuid == null){ var uuid = localStorage.setItem('uuid', guid())}
+    script.
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-79586828-1', 'auto');
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('require', 'outboundFormTracker');
+      ga('require', 'pageVisibilityTracker');
+      ga('require', 'impressionTracker');
+      ga('set', 'userId', uuid)
+      ga('send', 'pageview');
+    script(async='', src='https://www.google-analytics.com/analytics.js')
+    script(async='', src='assets/js/autotrack.js')
+    // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+    // Custom styles for this template
+    link(href='assets/css/carousel.css', rel='stylesheet')
+    link(href='assets/css/svg.css', rel='stylesheet')
+    link(href='assets/css/styles.css', rel='stylesheet')
+    // Structured Data Organization  FindCEP
+    script(type='application/ld+json').
+      {"@context": "http:\\/\/schema.org","@type": "Organization","url": "http:\/\/www.findcep.com","logo": "http://www.findcep.com/img/icone-findcep.png", "sameAs": ["https://www.facebook.com/findcep/","https://twitter.com/findcep"],"contactPoint": [{"@type": "ContactPoint","telephone": "+55-11-98059-7677","contactType": "sales","areaServed": "BR","availableLanguage": ["Portuguese","English"]}]}
+    script(type='application/ld+json').
+      {"@context":"http:\\/\/schema.org","@type":"WebSite","url":"http:\/\/www.findcep.com\/","name":"Find CEP"}
+  body(itemscope='', itemtype='http://schema.org/Organization')
+    .navbar-wrapper
+      .container
+        nav.navbar.navbar-inverse.navbar-static-top
+          .container
+            .navbar-header
+              button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+            #navbar.navbar-collapse.collapse
+              ul.nav.navbar-nav
+                li
+                  a.scroll(href='/#produtos', ga-on='click', ga-hit-type='pageview', ga-page='#produtos') Teste Agora
+                li
+                  a.scroll(href='/#planos-precos', ga-on='click', ga-hit-type='pageview', ga-page='#planos-precos') Planos & Preços
+                li
+                  a.scroll(href='/#quem-somos', ga-on='click', ga-hit-type='pageview', ga-page='#quem-somos') Quem somos
+                li
+                  a.scroll(href='/faleconosco.html', ga-on='click', ga-hit-type='pageview', ga-page='#contato') Contato
+                li.dropdown
+                  a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                    | Mais
+                    span.caret
+                  ul.dropdown-menu
+                    li
+                      a.scroll(href='https://gist.github.com/findcep', ga-on='click', ga-hit-type='pageview', ga-page='/exemplos') Exemplos
+                    li
+                      a.scroll(href='//www.findcep.com/docs/index.html', ga-on='click', ga-hit-type='pageview', ga-page='/docs/index.html') Documentação
+                    //
+                      <li role="separator" class="divider"></li>
+                      <li class="dropdown-header">Links complementares</li>
+                      <li><a href="/noticias/pesquisa-cep-E-commerce-2015.pdf">Pesquisa cep sobre e-commerce 2015</a></li>
+                      <li><a href="/noticias/pesquisa-cep-E-commerce-2014.pdf">Pesquisa cep sobre e-commerce 2014</a></li>
+    //
+      Carousel
+      ==================================================
+    #myCarousel.carousel.slide(data-ride='carousel')
+      // Indicators
+      ol.carousel-indicators
+        li.active(data-target='#myCarousel', data-slide-to='0')
+        li(data-target='#myCarousel', data-slide-to='1')
+        // <li data-target="#myCarousel" data-slide-to="2"></li>
+      .carousel-inner(role='listbox')
+        .item.active
+          img.first-slide(src='img/banners/banner-blue1.jpg', alt='Maximize suas vendas')
+          .container
+            .carousel-caption
+              i.icon-logo
+              h1 Maximize suas vendas
+              p
+                | Pare de perder vendas e clientes; aumente sua conversão. A API do FindCEP encontra todos os endereços do Brasil, em um piscar de olhos.
+              p
+                a.btn.btn-lg.btn-primary.scroll(href='#busca-cep', role='button', ga-on='click', ga-hit-type='pageview', ga-page='#busca-cep') Saiba mais
+        .item
+          img.second-slide(src='img/banners/banner-blue2.jpg', alt='Compatibilidade Velocidade Disponibilidade')
+          .container
+            .carousel-caption
+              i.icon-logo
+              h1 Compatibilidade • Velocidade • Disponibilidade
+              p
+                | API de CEP compatível com qualquer plataforma. Encontramos o endereço em apenas 
+                code 50 milissegundos
+                |  com SLA de 
+                code 99.9%
+              p
+                a.btn.btn-lg.btn-primary.scroll(href='#busca-cep', role='button', ga-on='click', ga-hit-type='pageview', ga-page='#busca-cep') Veja Agora
+        //
+          <div class="item">
+          <img class="third-slide" src="img/banners/big_3.jpg" alt="Redução de Custos">
+          <div class="container">
+          <div class="carousel-caption">
+          <h1>Redução de Custos</h1>
+          <p>Economize recursos com infraestrutura, tempo e desenvolvimento;
+          O FindCEP disponibiliza acesso a base completa de endereços postais</p>
+          <p><a class="btn btn-lg btn-primary" href="#planos-precos" role="button">Economia</a></p>
+          </div>
+          </div>
+          </div>
+      a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+        span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+        span.sr-only Previous
+      a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+        span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+        span.sr-only Next
+    // /.carousel
+    //
+      Marketing messaging and featurettes
+      ==================================================
+    // Wrap the rest of the page in another container to center all the content.
+    .marketing
+      #brands
+        ul.owl-carousel
+          li
+            img(src='img/brands/clubegreens.png', alt='Clube Greens')
+          li
+            img(src='img/brands/emanage.png', alt='eManage Development')
+          li
+            img(src='img/brands/magenteiro.png', alt='Magenteiro')
+      // Three columns of text below the carousel
+      .container
+        .col-lg-4
+          .img-circle
+            i.icon-mini-banner-1
+          h2 Compatibilidade
+          p
+            | API de CEP é fácil e simples de usar. Compatível com qualquer aplicação, site ou linguagem. Faça um upgrade no seu negocio e aumente suas vendas
+        // /.col-lg-4
+        .col-lg-4
+          .img-circle
+            i.icon-mini-banner-2
+          h2 Velocidade
+          p
+            | Diminua o tempo de cadastro de seu cliente e evite o abandono do carrinho. Com o FindCEP o endereço é localizado em apenas 50ms.
+        // /.col-lg-4
+        .col-lg-4
+          .img-circle
+            i.icon-mini-banner-3
+          h2 Disponibilidade
+          p
+            | O FindCEP entrega centenas de milhares de CEP's simultaneamente, com 99.9% de disponibilidade, desde o inicio do funcionamento em 2016 sem nenhum problema
+        // /.col-lg-4
+        // /.row
+        // START THE FEATURETTES
+        .container.featurette
+          .col-md-7.col-md-push-5
+            h2.featurette-heading
+              | Rápido. 
+              span.text-muted Menor abandono do carrinho.
+            p.lead
+              | Seu cliente não fica esperando, diminua o abandono do carrinho com nossa API de CEP e melhore suas métricas.
+          .col-md-5.col-md-pull-7
+            img.featurette-image.img-responsive.center-block(src='img/sell-01.png', alt='Menor Abandono de Carrinho')
+        .container.featurette
+          .col-md-7
+            h2.featurette-heading
+              | Fácil. 
+              span.text-muted Economia garantida.
+            p.lead
+              | Incorpore a API de CEP no seu e-commerce via AJAX. Veja nossos 
+              a(href='https://github.com/findcep/') exemplos.
+              code
+                a(href='https://gist.github.com/findcep/67dc17b66c54610a4cb9130cafdd2a4a') Javascript
+                |  jQuery PHP 
+                a(href='https://gist.github.com/findcep/acc0229b594a97c02d0d29c0e1cfaf08') Python
+                |  Ruby Java C++ Js GO Node 
+                a(href='https://github.com/findcep/FindCep-M1') Magento
+                |  Wordpress iOS Android
+          .col-md-5
+            img.featurette-image.img-responsive.center-block(src='img/api-cep.png', alt='Economia Garantida')
+        .test-now.featurette.base-row--light-blue
+          h4 Teste agora
+          .down-arrow
+        #produtos.featurette.light-grey
+          .container
+            .col-md-5
+              img.featurette-image.img-responsive.center-block(src='img/sell-03.png', alt='Consulta CEP')
+            .col-md-7
+              h2.featurette-heading Busca por CEP
+              p#busca-cep.lead
+                | Seu ecommerce não encontra os endereços de seus clientes? 
+                br
+                | O 
+                strong FindCEP
+                |  encontra. São 1.101.455 CEP para consulta, 
+                br
+                |  CEP atualizado 2019. Teste agora!
+              form.form-horizontal(method='get', action='.')
+                .form-group
+                  label.col-sm-1.control-label CEP
+                  #cep-field.col-sm-3
+                    input#cep.form-control(name='cep', autocomplete='off', type='tel', value='', size='10', maxlength='9', placeholder='00000-000', onkeydown="if(event.keyCode == 13 || event.keyCode == 9) document.getElementById('search-cep').click()")
+                    button#search-cep(type='button', name='search-cep')
+                      span.icon-search
+                #cep-incorrect.error-msg.icon-failed cep inválido
+                .form-group.cep-result.hide
+                  label.col-sm-1.control-label Rua
+                  .col-sm-7
+                    input#logradouro.form-control(name='logradouro', type='text', size='40', disabled='disabled')
+                .form-group.cep-result.hide
+                  label.col-sm-1.control-label Bairro
+                  .col-sm-4
+                    input#bairro.form-control(name='bairro', type='text', size='30', disabled='disabled')
+                .form-group.cep-result.hide
+                  label.col-sm-1.control-label Cidade
+                  .col-sm-4
+                    input#cidade.form-control(name='cidade', type='text', size='20', disabled='disabled')
+                .form-group.cep-result.hide
+                  label.col-sm-1.control-label Estado
+                  .col-sm-2
+                    input#estado.form-control(name='estado', type='text', size='2', disabled='disabled')
+                #cep-time.error-msg
+        // Busca Endereco
+        #busca-endereco.featurette.light-grey
+          .container
+            .col-md-5
+              img.featurette-image.img-responsive.center-block(src='img/sell-04-07.png', alt='Busca por endereço')
+            .col-md-7
+              h2.featurette-heading Busca por Endereço
+              p.lead
+                | Seu cliente não sabe o CEP? 
+                br
+                | O 
+                strong FindCEP
+                |  encontra para você. Sem link externo de pesquisa, seu cliente não vai embora!
+              form.form-horizontal(method='get', action='.')
+                .form-group
+                  label.col-sm-1.control-label Estado
+                  .col-sm-2
+                    select#busca-estado.form-control(name='busca-estado')
+                      option(value='AC') AC
+                      option(value='AL') AL
+                      option(value='AM') AM
+                      option(value='AP') AP
+                      option(value='BA') BA
+                      option(value='CE') CE
+                      option(value='DF') DF
+                      option(value='ES') ES
+                      option(value='GO') GO
+                      option(value='MA') MA
+                      option(value='MG') MG
+                      option(value='MS') MS
+                      option(value='MT') MT
+                      option(value='PA') PA
+                      option(value='PB') PB
+                      option(value='PE') PE
+                      option(value='PI') PI
+                      option(value='PR') PR
+                      option(value='RJ') RJ
+                      option(value='RN') RN
+                      option(value='RO') RO
+                      option(value='RR') RR
+                      option(value='RS') RS
+                      option(value='SC') SC
+                      option(value='SE') SE
+                      option(selected='', value='SP') SP
+                      option(value='TO') TO
+                .form-group
+                  label.col-sm-1.control-label Cidade
+                  .col-sm-4
+                    input#busca-cidade.form-control(name='busca-cidade', type='text', size='40', maxlength='40')
+                .form-group
+                  label.col-sm-1.control-label Rua
+                  #endereco-field.col-sm-4
+                    input#busca-logradouro.form-control(name='busca-logradouro', autocomplete='off', value='', size='200', maxlength='200', onkeydown="if(event.keyCode == 13 || event.keyCode == 9) document.getElementById('search-endereco').click()")
+                    button#search-endereco(type='button', name='search-endereco')
+                      span.icon-search
+            div
+              #main.hidden
+                ul#busca-table.table.table-hover.holder.hidden
+        #planos-precos.featurette.base-row--light-green
+          .base-row
+            .col-md-8.col-md-offset-2.col-sm-10.col-sm-offset-1.col-xs-12
+              h1.text-center Planos e Preços
+              p.lead.text-center
+                | Solução que satisfazem desde pequenos negocios a grandes empresas que buscam otimizar custos.
+              ul.rounded-boxes.rr-large-margin-top.clearfix
+                li#findcep_LI_7.cards
+                  #findcep_DIV_8
+                    i.icon-card_1
+                  h3#findcep_H3_10
+                    | LIGHT
+                  #findcep_DIV_11
+                    span#findcep_SPAN_12 R$
+                    strong#findcep_STRONG_13 30
+                  span#findcep_SPAN_14 5.000 consultas/mês
+                li#findcep_LI_15.cards
+                  #findcep_DIV_16
+                    i.icon-card_2
+                  h3#findcep_H3_18
+                    | CORPORATE
+                  #findcep_DIV_19
+                    span#findcep_SPAN_20 R$
+                    strong#findcep_STRONG_21 149
+                  span#findcep_SPAN_22 30.000 consultas/mês
+                  br
+                  span#findcep_SPAN_22 + Busca por Endereço
+                  p
+                li#findcep_LI_23.cards
+                  #findcep_DIV_24
+                    i.icon-card_3
+                  h3#findcep_H3_26
+                    | ENTERPRISE
+                  #findcep_DIV_27
+                    span#findcep_SPAN_28 R$
+                    strong#findcep_STRONG_29 279
+                  span#findcep_SPAN_30 100.000 consultas/mês
+                  br
+                  span#findcep_SPAN_30 + Busca por Endereço
+                  br
+        #quem-somos.container.featurette.col-md-push-5
+          .col-md-7
+            i.icon-logo
+            p.lead
+              | O FindCEP é a mais ágil e completa plataforma de localização de endereço em território nacional. Com alta disponibilidade, a ferramenta mostra o resultado da consulta em 50 milissegundos, em média:  na prática é bem mais rápido do que um piscar de olhos.
+              | Assim, o usuário continua focado na compra e não abandona o carrinho. O resultado? Maior conversão das suas vendas.
+              | Deixe que seu cliente tenha a melhor experiência de compra online – 
+              a.scroll(href='#produtos', ga-on='click', ga-hit-type='pageview', ga-page='#produtos', ga-event-category='Teste-Agora') Teste agora  o FindCEP.
+        #contato.featurette.base-row-grey
+          .container
+            h2.featurette-heading Contato
+            p.lead
+              | Quer entender melhor como o FindCEP pode agregar ao seu negócio? Fale com nossos especialistas:
+            .contacts
+              span.icon-whatsapp +55 (11) 98059-7677
+              span.icon-email
+                a(href='mailto:contato@findcep.com', ga-event-category='Email', ga-dimension-1='true') contato@findcep.com
+        // /END THE FEATURETTES
+        // FOOTER
+        footer.container
+          .social
+            h3 Siga-nos nas redes sociais
+            ul
+              li(itemscope='', itemtype='http://schema.org/Organization')
+                a.icon-facebook(itemprop='sameAs', href='https://www.facebook.com/findcep/', target='_blank', ga-event-category='Facebook', ga-dimension-1='true')
+              li(itemscope='', itemtype='http://schema.org/Organization')
+                a.icon-twitter(itemprop='sameAs', href='https://twitter.com/FindCEP', target='_blank', ga-event-category='Twitter', ga-dimension-1='true')
+              li(itemscope='', itemtype='http://schema.org/Organization')
+                a.icon-google-plus(itemprop='sameAs', href='https://plus.google.com/107231308943563462086', target='_blank', ga-event-category='Google-Plus', ga-dimension-1='true')
+          p.pull-right
+            a.scroll(href='#myCarousel') Voltar ao Inicio
+          p
+            | © 2016-2019 FindCEP, Inc. · 
+            a(href='#') Politica de Privacidade
+            |  · 
+            a(href='#') Termos
+          .address(itemscope='', itemtype='http://schema.org/LocalBusiness')
+            div(itemprop='address', itemscope='', itemtype='http://schema.org/PostalAddress')
+              p.address
+                span(itemprop='streetAddress') Avenida Professor Gióia Martins, 199 - Sala 52 Bloco C
+                span(itemprop='addressLocality') São Paulo
+                |  - 
+                span(itemprop='addressRegion') SP
+                |  - 
+                span(itemprop='postalCode') 05632-020
+            // Postal Address
+            // /.container
+            //
+              Bootstrap core JavaScript
+              ==================================================
+            // Placed at the end of the document so the pages load faster
+            script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+            script.
+              window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\\/script>')
+            script(src='dist/js/bootstrap.min.js')
+            // Just to make our placeholder images work. Don't actually copy the next line!
+            script(src='assets/js/vendor/holder.min.js')
+            // IE10 viewport hack for Surface/desktop Windows 8 bug
+            script(src='assets/js/ie10-viewport-bug-workaround.js')
+            script(src='assets/js/owl.carousel.min.js')
+            script(src='assets/js/jquery.mask.min.js')
+            script(src='assets/js/pagination.js')
+            script(type='text/javascript').
+              $(document).ready(function () {
+              function limpa_formulário_cep() {
+              $("#logradouro").val("");
+              $("#bairro").val("");
+              $("#cidade").val("");
+              $("#estado").val("");
+              }
+              $("#search-cep").click(function () {
+              var cep = $("#cep").val().replace(/\\D/g, '');
+              var validacep = /^[0-9]{8}$/;
+              if (cep != "") {
+              if (!validacep.test(cep)) {
+              $('#cep-incorrect').addClass("show");
+              } else {
+              var schema = (("https:" == document.location.protocol) ? "https://" : "http://");
+              var url = schema + 'api.findcep.com/v1/cep/' + cep + '.json';
+              var request_time = 0;
+              var start_time = 0;
+              $.ajax({
+              url: url,
+              method: "GET",
+              dataType: 'json',
+              beforeSend: function (request, settings) {
+              start_time = new Date().getTime();
+              },
+              })
+              .done(function (response) {
+              request_time = new Date().getTime() - start_time;
+              console.log(request_time);
+              $('#cep-incorrect').stop(true, true).fadeOut();
+              $('.form-group').removeClass("hide");
+              $('.col-sm-3').addClass("success");
+              $('.col-sm-3').removeClass("failed");
+              $("#logradouro").val(response.logradouro);
+              $("#bairro").val(response.bairro);
+              $("#cidade").val(response.cidade);
+              $("#estado").val(response.uf);
+              })
+              .fail(function (response) {
+              request_time = new Date().getTime() - start_time;
+              $('.cep-result').addClass("hide");
+              $('#cep-incorrect').stop(true, true).fadeOut();
+              $('#cep-incorrect').fadeIn(100).fadeOut(10000);
+              $('.col-sm-3').addClass("failed");
+              $('.col-sm-3').removeClass("success");
+              limpa_formulário_cep();
+              })
+              .always(function (response) {
+              ga('send', 'event', 'FindCEP API', cep, request_time+"ms");
+              });
+              }
+              }
+              });
+              });
+            // JS Busca Endereco TESTE
+            script(type='text/javascript').
+              $("#search-endereco").click(function () {
+              $(".swControls").remove();
+              $("#busca-table").empty();
+              console.log('botao search-endereco');
+              var uf =  $("#busca-estado").val().toUpperCase();
+              var cidade = $("#busca-cidade").val().trim().replace(/\\s/g,'+');
+              var rua = $("#busca-logradouro").val().trim().replace(/\\s/g,'+');
+              var txt = "";
+              var schema = (("https:" == document.location.protocol) ? "https://" : "http://");
+              $.ajax({
+              url: schema + "api.findcep.com/v1/endereco/" + uf +"/"+ cidade +"/"+ rua,
+              method: "GET",
+              dataType: "json",
+              })
+              .done(function (response) {
+              if (response.hits.total > 0) {
+              for (i=0; i < response.hits.hits.length; i++) {
+              txt += "<li id=\\"result-table\">" +
+              "<span><b>Logradouro:</b> "+response.hits.hits[i]._source.logradouro +" "+response.hits.hits[i]._source.complemento+"</span>" +
+              "<span><b>Bairro:</b> "+response.hits.hits[i]._source.bairro+"</span>" +
+              "<span><b>Cidade/UF:</b> "+response.hits.hits[i]._source.cidade+"/"+response.hits.hits[i]._source.uf+"</span>" +
+              "<span><b>CEP:</b> "+response.hits.hits[i]._source.cep+"</span>" +
+              "</li>";
+              }
+              if(txt != ""){
+              $("#main").removeClass("hidden");
+              $("#busca-table").append(txt).removeClass("hidden");
+              $('.holder').sweetPages({perPage:10});
+              var controls = $('.swControls').detach();
+              controls.appendTo('#main');
+              }
+              } else {
+              console.log("Endereço não foi localizado. Não use abreviações");
+              }
+              })
+              .fail(function (response) {
+              console.log(response);
+              })
+              .always(function (response) {
+              ga('send', 'event', 'FindCEP API Endereço', rua + '|' + cidade + '|' + uf, response.hits.total);
+              console.log("Busca Endereço: " +response.hits.total+ " endereços");
+              });
+              });
+            script.
+              $(document).ready(function(){
+              $(".owl-carousel").owlCarousel({
+              loop: true,
+              responsiveClass: true,
+              responsive:{
+              0:{
+              items:1,
+              nav:false
+              },
+              600:{
+              items:3,
+              nav:false
+              },
+              1000:{
+              items:3,
+              nav:false
+              }
+              }
+              });
+              });
+            script.
+              $(document).ready(function(){
+              $('#cep').mask('00000-000');
+              });
+            script.
+              $(function() {
+              $('.scroll').click(function() {
+              if (location.pathname.replace(/^\\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+              $('html, body').animate({
+              scrollTop: target.offset().top
+              }, 1000);
+              return false;
+              }
+              }
+              });
+              });
+            img(src='//api.findcep.com/hit-api-findcep.gif')
+
