@@ -122,7 +122,7 @@ html(lang='pt-br')
               h3 Rápido
               p
                 | Diminua o tempo de cadastro de seu cliente, com o 
-                a(target='_blank', href='https://pt.wikipedia.org/wiki/Web_service') webservice
+                a(target='_blank', href='https://pt.wikipedia.org/wiki/Web_service') webservice 
                 | CEP o endereço é localizado em apenas 50ms.
           .col-md-4.col-sm-4.col-xs-12
             .n_features_item
@@ -130,7 +130,7 @@ html(lang='pt-br')
                 img(src='', alt='')
               h3 Confiável
               p
-                | O FindCEP entrega centenas de milhares de CEP's simultaneamente com 99.99% de disponibilidade desde 2016
+                | O FindCEP entrega centenas de milhares de CEP's simultaneamente com 99.99% de disponibilidade.
     section#features.sass_video_area
       .container
         .saas_section_title.mb_70
@@ -138,10 +138,10 @@ html(lang='pt-br')
           p
             | A API FindCEP é a mais ágil e completa solução 
             br
-            | de localizacação de codigo postal e endereços no BRASIL.
+            | de localização de codigo postal e endereços no BRASIL.
           h3 Base integrada com os Correios
           p  
-            | FindCEP oferece busca e tratamento de CEPs (Código Enderecamento Postal) e Endereços para o seu negócio online.
+            | FindCEP oferece busca e tratamento de CEPs (Código Endereçamento Postal) e Endereços para o seu negócio online.
         //.saas_video
         //  img(src='', alt='')
         //  a.video_btn(href='#')
@@ -152,17 +152,17 @@ html(lang='pt-br')
           .col-md-4.col-sm-6.col-xs-12
             .saas_features_item
               .round_icon
-                img(src='images/new/icon/d-f1.png', alt='')
-              h3 Classificação de Localidades
-              p
-                | Só o FindCEP inclui a estrutura do cep contendo localidades não codificadas (CEP Unico) e localidades codificadas como caixa postal comunitaria.
-          .col-md-4.col-sm-6.col-xs-12
-            .saas_features_item
-              .round_icon
                 img(src='images/new/icon/d-f2.png', alt='')
               h3 Base de CEP atualizada
               p
                 | Nossa base de CEPs é atualizada mensalmente e integrada automaticamente com os correios.
+          .col-md-4.col-sm-6.col-xs-12
+            .saas_features_item
+              .round_icon
+                img(src='images/new/icon/d-f4.png', alt='')
+              h3 Taxa de Atualização
+              p
+                | A cada mês em media são atualizados cerca de 10 mil cep's. A maioria são novas inclusões, mas atualização e remoção de ceps também é comum.
           .col-md-4.col-sm-6.col-xs-12
             .saas_features_item
               .round_icon
@@ -172,13 +172,6 @@ html(lang='pt-br')
                 | Nossa base é sincronizada com a última versão da base disponibilizada pelo 
                 a(taget="_blank" href="https://www.ibge.gov.br/explica/codigos-dos-municipios.php") IBGE 
                 | , Incluindo corretamente os códigos dos distritos e sub-distritos.
-          .col-md-4.col-sm-6.col-xs-12
-            .saas_features_item
-              .round_icon
-                img(src='images/new/icon/d-f4.png', alt='')
-              h3 Taxa de Atualização
-              p
-                | Em media são disponibilizados pelos correios atualizacoes com cerca de 10 mil endereços/cep por mês.
           .col-md-4.col-sm-6.col-xs-12
             .saas_features_item
               .round_icon
@@ -194,7 +187,16 @@ html(lang='pt-br')
               p
                 | Desde 2016, o SLA Anual do FindCEP tem sido maior que 
                 a(target="_blank" href="https://uptime.is/99.99") 99.99%.
-                | Não dependa mais de apis grátis que não garantem a disponibilidade do serviço. Se o CEP parar seu negocio tambem para.
+                | Não dependa mais de api's grátis que não garantem a disponibilidade do serviço. Se o CEP parar seu negocio também para.
+          .col-md-4.col-sm-6.col-xs-12
+            .saas_features_item
+              .round_icon
+                img(src='images/new/icon/d-f1.png', alt='')
+              h3 Classificação de Localidades
+              p
+                | Só o FindCEP inclui a classificacao conforme a 
+                a(target="_blank" href="https://www.correios.com.br/enviar-e-receber/ferramentas/cep/estrutura-do-cep") estrutura do cep 
+                | contendo localidades não codificadas (cep único) e localidades codificadas por logradouros como caixa postal comunitária, grande úsuario, ceps especiais entre outros.
     section#dashboard.saas_about_area
       a.scroll_btn(href='#')
         i
@@ -211,7 +213,9 @@ html(lang='pt-br')
               .saas_about_content.text-left
                 h2.saas_h2.mt_0 Works on all platforms
                 p.n_title_p
-                  | O FindCEP é a mais ágil e completa solução de localizacação de endereços nacionais diretamente integrada com os Correios que oferece  Busca de CEPs e Endereços para o seu negócio online.
+                  | O FindCEP é a mais ágil e completa solução de localizacação de endereços nacionais diretamente integrada com os Correios que oferece 
+                  br
+                  | Busca de CEPs e Endereços para o seu negócio online.
                 a.saas_btn_two.n_them_btn(href='') Veja mais
       .saas-about-item.sass_a_item_two
         svg.svg_right(xmlns='http://www.w3.org/2000/svg')
@@ -234,7 +238,7 @@ html(lang='pt-br')
         p
           | Até o momento mais de 50 milhões consultas
           br
-          | foram realizadas pelos nossos clientes no FindCEP.
+          | foram realizadas com sucesso no FindCEP.
       .saas_screen_gallery.owl-carousel
         .item
           img(src='images/new/saas/screen1.jpg', alt='')
@@ -257,85 +261,93 @@ html(lang='pt-br')
         .saas_section_title.mb_70
           h2 Preços e Planos
           p
-            | Solução que satisfazem desde pequenos negocios a grandes empresas que buscam otimizar custos.
+            | Solução que satisfazem desde pequenos negócios a grandes empresas.
             br
-            | Sem bloqueio e R$ 0,00 custo de setup 
+            | Temos planos especiais para qualquer consumo, solicite uma avaliação.
         .row.saas_priceing_info
           .col-md-4.col-sm-6.col-xs-12
             .saas_price_item
               img(src='images/new/icon/rocket-icon.png', alt='')
-              h3 Basic
+              h3 Starter
               .br
               ul.list_style
-                li 1 Website
+                li 1000 consultas grátis
+                li 1 Site
                 li 
-                li 1000 consultas
+                  i.icon_close
                 li
                   i.icon_close
                 li
                   i.icon_close
               .price
-                | Free
-                span per month
-              a.saas_btn_two(href='#') Purchase
+                | R$0
+                span por mes 
+                span + consultas extras: R$ 0.0059 
+              a.saas_btn_two(href='#') Comece Já
           .col-md-4.col-sm-6.col-xs-12
             .saas_price_item
               img(src='images/new/icon/award-icon.png', alt='')
-              h3 Basic
+              h3 Corporate
               .br
               ul.list_style
-                li One Website
-                li One User
-                li 50 GB Bandwidth
-                li 1 GB Storage
-                li 24x7 Not Support
+                li 100.000 consultas
+                li 3 Sites
+                li CDN
+                li Suporte 24x7
+                li
+                  i.icon_close
               .price
-                | $49
-                span per month
-              a.saas_btn_two(href='#') Purchase
+                | R$249
+                span por mes 
+                span + consultas extras: R$ 0.0025 
+              a.saas_btn_two(href='#') Teste Gratuitamente
           .col-md-4.col-sm-6.col-xs-12
             .saas_price_item
               img(src='images/new/icon/handshake.png', alt='')
-              h3 Basic
+              h3 Enterprise
               .br
               ul.list_style
-                li One Website
-                li One User
-                li 50 GB Bandwidth
-                li 6 GB Storage
-                li 24x7 Not Support
+                li 500.000 consultas
+                li Sites: ilimitado
+                li CDN
+                li Suporte 24x7
+                li SLA 99.9%
               .price
-                | $69
-                span per month
-              a.saas_btn_two(href='#') Purchase
+                | R$900
+                span por mes 
+                span + consultas extras por R$ 0.0015 
+               
+              a.saas_btn_two(href='#') Assine
     section#contact.saas_contact_area
       .container
         .saas_contact_info
           .row
             .col-md-6
               .saas-contact_info
-                h3.s_contact_title Get in Touch
+                h3.s_contact_title Fale conosco!
                 p
                   | Quer entender melhor como o FindCEP pode agregar ao seu negócio? Fale com nossos especialistas:
                 .contact-info
                   .icon
                     img(src='images/new/icon/placeholder.png', alt='')
-                  h3 Localizacao
-                  p Avenida Professor Gioia Martins, 199 - Sao Paulo - SP
+                  h3 Localização
+                  p Avenida Professor Gioia Martins, 199 - São Paulo/SP
                 .contact-info
                   .icon
                     img(src='images/new/icon/phone.png', alt='')
-                  h3 Telefone
+                  h3 Suporte Telefone 
                   p
-                    a(href='#') (+55) 11 2924-5573
-                  h3 Whatsapp
+                    a(href='tel:+551129245573') (+55) 11 2924-5573
+                    br
+                  h3 Whatsapp 
                   p
-                    a(href='#') (+55) 11 98059-7677
+                    a(href='https://wa.me/5511980597677?lang=pt_br&*source=findcep' style="cursor: pointer;text-decoration: underline") iniciar uma conversa
                 .contact-info
                   .icon
                     img(src='images/new/icon/icon.png', alt='')
-                  h3 Email
-                  p atendimento@findcep.com
+                  h3 Suporte Email
+                  p
+                    a(href="mailto:atendimento@findcep.com?subject=[SUPORTE]") atendimento@findcep.com
             .col-md-6
               form.saas_contact_form(action='#', method='post')
                 h3.s_contact_title deixe um comentário:
