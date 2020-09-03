@@ -83,38 +83,7 @@ html(lang='pt-br')
                   a(title='Contact', href='#contact') Contato
                 li.menu-item
                   a(title='Developer', href='//www.findcep.com/docs/index.html') Desenvolvimento
-    section.saas_home_area
-      .home_item
-        #bubbles
-          .bubble.x1
-          .bubble.x2
-          .bubble.x3
-          //.bubble.x4
-          .bubble.x5
-          .bubble.x6
-          //.bubble.x7
-          .bubble.x8
-          //.bubble.x9
-          .bubble.x10
-          .bubble.x11
-          //.bubble.x12
-          .bubble.x13
-        svg(xmlns='http://www.w3.org/2000/svg')
-          path.cls-1(fill='#fff', d='M0,0S480.2,100,960.3,100C1440.2,100,1920,0,1920,0V120H0V0Z')
-        .container
-          .row
-            //.col-md-12.text-center
-            //  h1.s_banner_text CEP API
-            //  h2.s_banner_title
-            //    | Localizar o CEP
-            //    br
-            //    | nunca foi tão fácil
-            //a.saas_btn(href='#') Experimente Grátis
-            //.saas_home_img
-              //  img(src='', alt='')
-              //  br
-            // FINDCEP TESTE AGORA BOTTON
-            section#newsletter.saas_newsletter_area
+    section#newsletter.saas_newsletter_area
               .container
                 .new_sectitle.br_none.pb_0
                   h1.s_banner_title CEP API
@@ -122,7 +91,7 @@ html(lang='pt-br')
                     | Localizar o CEP
                     br
                     | nunca foi tão fácil
-                form.n_subscription.saas_subscribe.findcep(method='post', novalidate='true', _lpchecked='1')
+                form.n_subscription.saas_subscribe.findcep(method='get', novalidate='true', _lpchecked='1')
                   .form-group
                     input.form-control.mecep(name='CEP', type='number', placeholder='01001-000')
                   button(type='submit')
@@ -130,8 +99,6 @@ html(lang='pt-br')
                     i.fa.fa-paper-plane(aria-hidden='true')
                   p.fcep-errmessage(style='display: none;')
                   p.fcep-sucmessage(style='display: none;')
-
-
     section#services.n_features_area.pt_0
       .container
         .row

@@ -1,2 +1,444 @@
-<!DOCTYPE html><html lang="pt-br"><head><!-- META--><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="author" content="findcep"><meta name="template" content="droitthemes"><meta name="description" content="Localize rapidamente o endereço/CEP de seus clientes, CEP correios mensalmente atualizado"><meta content="img/icone-findcep.png" itemprop="image"><meta name="keywords" content="api cep, busca cep, pesquisa cep, webservice cep, api ibge, webservice ibge, cep para e-commerce, cep para site, cep da rua, cep por bairro, codigo ibge, geocoordenadas, data base correios, tabela cep correios"><meta name="robots" content="INDEX,FOLLOW"><!-- SITE TITLE--><title>CEP API | FindCEP</title><!-- SAAS TEMPLATE CSS--><link rel="stylesheet" href="_saas/vendors/bootstrap-selector/css/bootstrap-select.min.css"><link rel="stylesheet" href="_saas/vendors/themify-icon/themify-icons.css"><link rel="stylesheet" href="_saas/vendors/flaticon/flaticon.css"><link rel="stylesheet" href="_saas/vendors/animation/animate.css"><link rel="stylesheet" href="_saas/vendors/owl-carousel/assets/owl.carousel.min.css"><link rel="stylesheet" href="_saas/vendors/nice-select/nice-select.css"><link rel="stylesheet" href="_saas/vendors/magnify-pop/magnific-popup.css"><link rel="stylesheet" href="_saas/vendors/scroll/jquery.mCustomScrollbar.min.css"><link rel="stylesheet" href="_saas/vendors/elagent/style.css"><link rel="stylesheet" href="_saas/css/style.css"><link rel="stylesheet" href="_saas/css/responsive.css"><!-- SASSY TEMPLATE CSS--><link rel="stylesheet" href="css/bootstrap.min.css"><link rel="stylesheet" href="css/font-awesome.min.css"><link rel="stylesheet" href="elegant-icon/style.css"><link rel="stylesheet" href="simpleline-icon/css/simple-line-icons.css"><link rel="stylesheet" href="css/magnific-popup.css"><link rel="stylesheet" href="css/owl.carousel.min.css"><link rel="stylesheet" href="css/preset.css"><link rel="stylesheet" href="css/scroll-animation.css"><link rel="stylesheet" href="css/custom.css"><link rel="stylesheet" href="css/theme-style.css"><link rel="stylesheet" href="css/responsive.css"><!-- FAVICON - **WAIT** DESIGN--><!-- link(rel='shortcut icon', type='image/x-icon', href='img/favicon-32x32.ico')--><link rel="canonical" href="https://findcep.labunix.dev/"><!-- **WAIT*** TRADUCAO--><!--link(rel='alternate', href='https://findcep.labunix.dev/en', hreflang='en')--><!-- Structured Data Organization  FindCEP--><script type="application/ld+json">{"@context": "http:\\/\/schema.org","@type": "Organization","url": "http:\/\/www.findcep.com","logo": "http://www.findcep.com/img/icone-findcep.png", "sameAs": ["https://www.facebook.com/findcep/","https://twitter.com/findcep"],"contactPoint": [{"@type": "ContactPoint","telephone": "+55-11-98059-7677","contactType": "sales","areaServed": "BR","availableLanguage": ["Portuguese","English"]}]}</script><script type="application/ld+json">{"@context":"http:\\/\/schema.org","@type":"WebSite","url":"http:\/\/www.findcep.com\/","name":"Find CEP"}</script></head><body id="home" data-spy="scroll" data-target=".navbar" data-offset="94"><nav class="navbar navbar-fixed-top new_header"><div class="container custome_container"><div class="row br"><div class="col-md-12"><div class="navbar-header"><button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#myNavbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand ex" href="https://www.findcep.com/"><img class="main-logo" src="images/sassy_white.png" alt="Home"><img class="logo-blue" src="images/sassy_black.png" alt="Home"></a><!-- Get-Now-Button--><a class="btn-getnow new_btn" href="#">Teste Agora</a></div><div class="collapse navbar-collapse multi_page_menu_item" id="myNavbar"><ul class="nav navbar-nav navbar-right multi" id="menu-one-page"><li class="menu-item current_page_item active"><a title="Home" href="#home">Por que FindCEP?</a></li><li class="menu-item"><a title="Services" href="#services">Services</a></li><li class="menu-item"><a title="Dashboard" href="#dashboard">Dashboard</a></li><li class="menu-item"><a title="Features" href="#features">Vantagens</a></li><li class="menu-item"><a title="Pricing" href="#pricing">Preços</a></li><li class="menu-item"><a title="Contact" href="#contact">Contato</a></li><li class="menu-item"><a title="Developer" href="//www.findcep.com/docs/index.html">Desenvolvimento</a></li></ul></div></div></div></div></nav><section class="saas_home_area"><div class="home_item"><div id="bubbles"><div class="bubble x1"></div><div class="bubble x2"></div><div class="bubble x3"></div><!--.bubble.x4--><div class="bubble x5"></div><div class="bubble x6"></div><!--.bubble.x7--><div class="bubble x8"></div><!--.bubble.x9--><div class="bubble x10"></div><div class="bubble x11"></div><!--.bubble.x12--><div class="bubble x13"></div></div><svg xmlns="http://www.w3.org/2000/svg"><path class="cls-1" fill="#fff" d="M0,0S480.2,100,960.3,100C1440.2,100,1920,0,1920,0V120H0V0Z"></path></svg><div class="container"><div class="row"><!--.col-md-12.text-center--><!--  h1.s_banner_text CEP API--><!--  h2.s_banner_title--><!--    | Localizar o CEP--><!--    br--><!--    | nunca foi tão fácil--><!--a.saas_btn(href='#') Experimente Grátis--><!--.saas_home_img//  img(src='', alt='')
-//  br--><!-- FINDCEP TESTE AGORA BOTTON--><section class="saas_newsletter_area" id="newsletter"><div class="container"><div class="new_sectitle br_none pb_0"><h1 class="s_banner_title">CEP API</h1><h2 class="s_banner_title">Localizar o CEP<br>nunca foi tão fácil</h2></div><form class="n_subscription saas_subscribe findcep" method="post" novalidate="true" _lpchecked="1"><div class="form-group"><input class="form-control mecep" name="CEP" type="number" placeholder="01001-000"></div><button type="submit">FindCEP<i class="fa fa-paper-plane" aria-hidden="true"></i></button><p class="fcep-errmessage" style="display: none;"></p><p class="fcep-sucmessage" style="display: none;"></p></form></div></section></div></div></div></section><section class="n_features_area pt_0" id="services"><div class="container"><div class="row"><div class="col-md-4 col-sm-4 col-xs-12"><div class="n_features_item"><div class="DISABLE_n_round_icon" hidden="true"><img src="" alt=""></div><h3>Fácil</h3><p><a target="_blank" href="https://www.correios.com.br/enviar-e-receber/ferramentas/cep/o-que-e-cep">CEP API</a>é fácil e simples de usar, sem setup e compatível com qualquer aplicação. Faça um upgrade no seu negocio</p></div></div><div class="col-md-4 col-sm-4 col-xs-12"><div class="n_features_item"><div class="DISABLE_n_round_icon" hidden="true"><img src="" alt=""></div><h3>Rápido</h3><p>Diminua o tempo de cadastro de seu cliente, com o<a target="_blank" href="https://pt.wikipedia.org/wiki/Web_service">webservice</a>CEP o endereço é localizado em apenas 50ms.</p></div></div><div class="col-md-4 col-sm-4 col-xs-12"><div class="n_features_item"><div class="DISABLE_n_round_icon" hidden="true"><img src="" alt=""></div><h3>Confiável</h3><p>O FindCEP entrega centenas de milhares de CEP's simultaneamente com 99.99% de disponibilidade.</p></div></div></div></div></section><section class="sass_video_area" id="features"><div class="container"><div class="saas_section_title mb_70"><h2>O que FindCEP oferece ao seu negócio?</h2><p>A API FindCEP é a mais ágil e completa solução<br>de localização de codigo postal e endereços no BRASIL.</p><h3>Base integrada com os Correios</h3><p>FindCEP oferece busca e tratamento de CEPs (Código Endereçamento Postal) e Endereços para o seu negócio online.</p></div><!--.saas_video--><!--  img(src='', alt='')--><!--  a.video_btn(href='#')--><!--    i.fa.fa-play--></div></section><section class="saas_dashboard_features"><div class="container"><div class="row saas_features_info"><div class="col-md-4 col-sm-6 col-xs-12"><div class="saas_features_item"><div class="round_icon"><img src="images/new/icon/d-f2.png" alt=""></div><h3>Base de CEP atualizada</h3><p>Nossa base de CEPs é atualizada mensalmente e integrada automaticamente com os correios.</p></div></div><div class="col-md-4 col-sm-6 col-xs-12"><div class="saas_features_item"><div class="round_icon"><img src="images/new/icon/d-f4.png" alt=""></div><h3>Taxa de Atualização</h3><p>A cada mês em media são atualizados cerca de 10 mil cep's. A maioria são novas inclusões, mas atualização e remoção de ceps também é comum.</p></div></div><div class="col-md-4 col-sm-6 col-xs-12"><div class="saas_features_item"><div class="round_icon"><img src="images/new/icon/d-f3.png" alt=""></div><h3>Códigos dos Municípios - IBGE</h3><p>Nossa base é sincronizada com a última versão da base disponibilizada pelo<a taget="_blank" href="https://www.ibge.gov.br/explica/codigos-dos-municipios.php">IBGE</a>, Incluindo corretamente os códigos dos distritos e sub-distritos.</p></div></div><div class="col-md-4 col-sm-6 col-xs-12"><div class="saas_features_item"><div class="round_icon"><img src="images/new/icon/d-f5.png" alt=""></div><h3>Arquitetura</h3><p>O FindCEP fica hospedado na Cloud AWS, utilizando as melhores praticas do mercado. O produto foi desenvolvido para performar durante as Black-friday's</p></div></div><div class="col-md-4 col-sm-6 col-xs-12"><div class="saas_features_item"><div class="round_icon"><img src="images/new/icon/d-f6.png" alt=""></div><h3>Sempre Online</h3><p>Desde 2016, o SLA Anual do FindCEP tem sido maior que<a target="_blank" href="https://uptime.is/99.99">99.99%.</a>Não dependa mais de api's grátis que não garantem a disponibilidade do serviço. Se o CEP parar seu negocio também para.</p></div></div><div class="col-md-4 col-sm-6 col-xs-12"><div class="saas_features_item"><div class="round_icon"><img src="images/new/icon/d-f1.png" alt=""></div><h3>Classificação de Localidades</h3><p>Só o FindCEP inclui a classificacao conforme a<a target="_blank" href="https://www.correios.com.br/enviar-e-receber/ferramentas/cep/estrutura-do-cep">estrutura do cep</a>contendo localidades não codificadas (cep único) e localidades codificadas por logradouros como caixa postal comunitária, grande úsuario, ceps especiais entre outros.</p></div></div></div></div></section><section class="saas_about_area" id="dashboard"><a class="scroll_btn" href="#"><i></i></a><div class="saas-about-item"><svg class="svg_left" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" opacity="0.051" fill="rgb(132, 96, 255)" d="M0.991,565.754 C0.991,565.754 104.446,356.774 349.357,369.332 C634.530,383.954 961.000,485.740 961.000,485.740 L1041.000,443.742 C1041.000,443.742 668.745,74.010 402.657,17.699 C165.398,-32.511 0.991,39.999 0.991,39.999 L0.991,565.754 Z"></path><path fill-rule="evenodd" opacity="0.051" fill="rgb(132, 96, 255)" d="M0.960,145.000 C0.960,145.000 164.420,63.922 409.339,51.356 C694.520,36.723 1011.000,124.999 1011.000,124.999 L881.000,226.999 C881.000,226.999 666.711,195.848 404.006,290.522 C162.591,377.523 0.960,780.999 0.960,780.999 L0.960,145.000 Z"></path></svg><div class="w_50 side-img text-right pull-left pb_50"><img class="img_one" src="" alt=""><img class="img_two" src="" alt=""></div><div class="container"><div class="row"><div class="col-md-5 col-md-offset-1"><div class="saas_about_content text-left"><h2 class="saas_h2 mt_0">Works on all platforms</h2><p class="n_title_p">O FindCEP é a mais ágil e completa solução de localizacação de endereços nacionais diretamente integrada com os Correios que oferece<br>Busca de CEPs e Endereços para o seu negócio online.</p><a class="saas_btn_two n_them_btn" href="">Veja mais</a></div></div></div></div></div><div class="saas-about-item sass_a_item_two"><svg class="svg_right" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" opacity="0.051" fill="rgb(132, 96, 255)" d="M1039.977,215.245 C1039.977,215.245 936.526,424.225 691.622,411.667 C406.458,397.045 119.998,265.259 119.998,265.259 L-0.000,417.257 C-0.000,417.257 372.243,706.989 638.324,763.300 C875.576,813.509 1039.977,741.000 1039.977,741.000 L1039.977,215.245 Z"></path><path fill-rule="evenodd" opacity="0.051" fill="rgb(132, 96, 255)" d="M1040.009,636.000 C1040.009,636.000 876.554,717.076 631.642,729.643 C346.469,744.276 39.999,706.000 39.999,706.000 L179.995,573.999 C179.995,573.999 374.278,585.151 636.975,490.477 C878.382,403.475 1040.009,-0.000 1040.009,-0.000 L1040.009,636.000 Z"></path></svg><div class="w_50 side-img text-left pull-right pb_140"><img class="img_one" src="" alt=""><img class="img_two" src="" alt=""></div><div class="container"><div class="row"><div class="col-md-5"><div class="saas_about_content text-left"><h2 class="saas_h2 mt_0">Agilidade</h2><p class="n_title_p">Proporcione ao seu cliente, agilidade e facilidade, na criação de cadastros e contas no seu site, mitigue carrinhos abandonados e aumente a conversão.</p><a class="saas_btn_two n_them_btn" href="">Saiba Mais</a></div></div></div></div></div></section><section class="saas_gallery_area"><div class="saas_section_title mb_70"><h2>Nossos Clientes</h2><p>Até o momento mais de 50 milhões consultas<br>foram realizadas com sucesso no FindCEP.</p></div><div class="saas_screen_gallery owl-carousel"><div class="item"><img src="images/new/saas/screen1.jpg" alt=""></div><div class="item"><img src="images/new/saas/screen3.jpg" alt=""></div><div class="item"><img src="images/new/saas/screen2.jpg" alt=""></div><div class="item"><img src="images/new/saas/screen1.jpg" alt=""></div><div class="item"><img src="images/new/saas/screen3.jpg" alt=""></div><div class="item"><img src="images/new/saas/screen2.jpg" alt=""></div><div class="item"><img src="images/new/saas/screen1.jpg" alt=""></div><div class="item"><img src="images/new/saas/screen2.jpg" alt=""></div></div></section><section class="saas_priceing_area" id="pricing"><div class="container"><div class="saas_section_title mb_70"><h2>Preços e Planos</h2><p>Solução que satisfazem desde pequenos negócios a grandes empresas.<br>Temos planos especiais para qualquer consumo, solicite uma avaliação.</p></div><div class="row saas_priceing_info"><div class="col-md-4 col-sm-6 col-xs-12"><div class="saas_price_item"><img src="images/new/icon/rocket-icon.png" alt=""><h3>Starter</h3><div class="br"></div><ul class="list_style"><li>1000 consultas grátis</li><li>1 Site</li><li><i class="icon_close"></i></li><li><i class="icon_close"></i></li><li><i class="icon_close"></i></li></ul><div class="price">R$0<span>por mes</span><span>+ consultas extras: R$ 0.0059</span></div><a class="saas_btn_two" href="#">Comece Já</a></div></div><div class="col-md-4 col-sm-6 col-xs-12"><div class="saas_price_item"><img src="images/new/icon/award-icon.png" alt=""><h3>Corporate</h3><div class="br"></div><ul class="list_style"><li>100.000 consultas</li><li>3 Sites</li><li>CDN</li><li>Suporte 24x7</li><li><i class="icon_close"></i></li></ul><div class="price">R$249<span>por mes</span><span>+ consultas extras: R$ 0.0025</span></div><a class="saas_btn_two" href="#">Teste Gratuitamente</a></div></div><div class="col-md-4 col-sm-6 col-xs-12"><div class="saas_price_item"><img src="images/new/icon/handshake.png" alt=""><h3>Enterprise</h3><div class="br"></div><ul class="list_style"><li>500.000 consultas</li><li>Sites: ilimitado</li><li>CDN</li><li>Suporte 24x7</li><li>SLA 99.9%</li></ul><div class="price">R$900<span>por mes</span><span>+ consultas extras por R$ 0.0015</span></div><a class="saas_btn_two" href="#">Assine</a></div></div></div></div></section><section class="saas_contact_area" id="contact"><div class="container"><div class="saas_contact_info"><div class="row"><div class="col-md-6"><div class="saas-contact_info"><h3 class="s_contact_title">Fale conosco!</h3><p>Quer entender melhor como o FindCEP pode agregar ao seu negócio? Fale com nossos especialistas:</p><div class="contact-info"><div class="icon"><img src="images/new/icon/placeholder.png" alt=""></div><h3>Localização</h3><p>Avenida Professor Gioia Martins, 199 - São Paulo/SP</p></div><div class="contact-info"><div class="icon"><img src="images/new/icon/phone.png" alt=""></div><h3>Suporte Telefone</h3><p><a href="tel:+551129245573">(+55) 11 2924-5573</a><br></p><h3>Whatsapp</h3><p><a href="https://wa.me/5511980597677?lang=pt_br&amp;*source=findcep" style="cursor: pointer;text-decoration: underline">iniciar uma conversa</a></p></div><div class="contact-info"><div class="icon"><img src="images/new/icon/icon.png" alt=""></div><h3>Suporte Email</h3><p><a href="mailto:atendimento@findcep.com?subject=[SUPORTE]">atendimento@findcep.com</a></p></div></div></div><div class="col-md-6"><form class="saas_contact_form" action="#" method="post"><h3 class="s_contact_title">deixe um comentário:</h3><div class="row"><div class="col-md-6"><div class="form-group"><input class="form-control uName" name="name" type="text" placeholder="Nome"></div></div><div class="col-md-6"><div class="form-group"><input class="form-control uEmail" name="email" type="email" placeholder="Email"></div></div><div class="col-md-12"><div class="form-group"><input class="form-control uSubject" name="subject" type="text" placeholder="Assunto"></div></div><div class="col-md-12"><div class="form-group"><textarea class="form-control msg" name="message" placeholder="Menssagem"></textarea></div></div></div><button class="n_them_btn" type="submit">Enviar</button></form></div></div></div></div></section><section class="saas_newsletter_area" id="newsletter"><div class="container"><div class="new_sectitle br_none pb_0"><h2 class="n_title_color mb_0">Entre na nossa Newletter</h2><p class="n_title_p mb_0">Atualizações e notícias com conteudos relevantes serão enviadas!<br>Fique a par do que aconteçe com os CEP e Codigo IBGE.</p></div><form class="n_subscription saas_subscribe mailchimp" method="post" novalidate="true" _lpchecked="1"><div class="form-group"><input class="form-control memail" name="EMAIL" type="email" placeholder="digite seu email"></div><button type="submit">Inscreva<i class="fa fa-paper-plane" aria-hidden="true"></i></button><p class="mchimp-errmessage" style="display: none;"></p><p class="mchimp-sucmessage" style="display: none;"></p></form></div></section><footer class="saas_footer_area"><div class="container"><div class="row"><div class="col-md-5 col-sm-6 col-xs-6"><div class="f_widget about_widget"><a class="f_logo" href="//www.findcep.com/"><img src="images/sassy_logo.png" alt=""></a><p>Camara Quierati Tecnologia e Comunicacao LTDA<br>FindCEP</p><ul class="f_social_icon"><li><a href="#"><i class="icon-social-facebook"></i></a></li><li><a href="#"><i class="icon-social-twitter"></i></a></li><li><a href="#"><i class="icon-social-instagram"></i></a></li><li><a href="#"><i class="icon-social-linkedin"></i></a></li><li><a href="#"><i class="icon-social-google"></i></a></li></ul></div></div><div class="col-md-2 col-sm-6 col-xs-6"><div class="f_widget link_widget"><h3 class="widget_title">Company</h3><ul><li><a href="#">Home</a></li><li><a href="#">Features</a></li><li><a href="#">Screenshots</a></li><li><a href="#">Pricing</a></li><li><a href="#">Team</a></li></ul></div></div><div class="col-md-2 col-sm-6 col-xs-6"><div class="f_widget link_widget"><h3 class="widget_title">Help</h3><ul><li><a href="#">Help Center</a></li><li><a href="#">FAQ's</a></li><li><a href="#">Terms & Conditions</a></li><li><a href="#">Privacy</a></li><li><a href="#">Contacts</a></li></ul></div></div><div class="col-md-3 col-sm-6 col-xs-6"><div class="f_widget link_widget pd_l"><h3 class="widget_title">Solutions</h3><ul><li><a href="#">Consumer</a></li><li><a href="#">Saas</a></li><li><a href="#">Infrastructure</a></li><li><a href="#">Privacy</a></li><li><a href="#">Financial Services</a></li></ul></div></div></div><div class="border_top"></div><p class="copyright_text">Copyright© FindCEP 2016-2020 - Desing by,<a href="#">Droit Themes</a></p></div></footer><a class="scrollup" href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i></a><!-- SAAS JS TEMPLATE--><script src="_saas/js/jquery-3.2.1.min.js"></script><script src="_saas/js/propper.js"></script><script src="_saas/js/bootstrap.min.js"></script><script src="_saas/vendors/bootstrap-selector/js/bootstrap-select.min.js"></script><script src="_saas/vendors/wow/wow.min.js"></script><script src="_saas/vendors/sckroller/jquery.parallax-scroll.js"></script><script src="_saas/vendors/owl-carousel/owl.carousel.min.js"></script><script src="_saas/vendors/nice-select/jquery.nice-select.min.js"></script><script src="_saas/vendors/imagesloaded/imagesloaded.pkgd.min.js"></script><script src="_saas/vendors/isotope/isotope-min.js"></script><script src="_saas/vendors/magnify-pop/jquery.magnific-popup.min.js"></script><script src="_saas/js/plugins.js"></script><script src="_saas/vendors/scroll/jquery.mCustomScrollbar.concat.min.js"></script><script src="_saas/js/main.js"></script><!-- SASSY JS TEMPLATE--><script src="js/jquery.min.js"></script><script src="js/bootstrap.min.js"></script><!--script(src='http://maps.googleapis.com/maps/api/js?key=AIzaSyBumN1FxU0vF8HVI_qy9yFlwcZ4Wop_RtY')--><!--script(src='js/jquery.waypoints.min.js')--><!--script(src='js/jquery.magnific-popup.min.js')--><!--script(src='js/custom-animations.js')--><!--script(src='js/jquery.mixitup.js')--><script src="js/owl.carousel.min.js"></script><script src="js/plugins.js"></script><script src="js/gmap.js"></script><script src="js/parallax.js"></script><script src="js/theme.js"></script><!-- FINDCEP JS--><script src="js/plugin-findcep.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- META-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="findcep">
+    <meta name="template" content="droitthemes">
+    <meta name="description" content="Localize rapidamente o endereço/CEP de seus clientes, CEP correios mensalmente atualizado">
+    <meta content="img/icone-findcep.png" itemprop="image">
+    <meta name="keywords" content="api cep, busca cep, pesquisa cep, webservice cep, api ibge, webservice ibge, cep para e-commerce, cep para site, cep da rua, cep por bairro, codigo ibge, geocoordenadas, data base correios, tabela cep correios">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <!-- SITE TITLE-->
+    <title>CEP API | FindCEP</title>
+    <!-- SAAS TEMPLATE CSS-->
+    <link rel="stylesheet" href="_saas/vendors/bootstrap-selector/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="_saas/vendors/themify-icon/themify-icons.css">
+    <link rel="stylesheet" href="_saas/vendors/flaticon/flaticon.css">
+    <link rel="stylesheet" href="_saas/vendors/animation/animate.css">
+    <link rel="stylesheet" href="_saas/vendors/owl-carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="_saas/vendors/nice-select/nice-select.css">
+    <link rel="stylesheet" href="_saas/vendors/magnify-pop/magnific-popup.css">
+    <link rel="stylesheet" href="_saas/vendors/scroll/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="_saas/vendors/elagent/style.css">
+    <link rel="stylesheet" href="_saas/css/style.css">
+    <link rel="stylesheet" href="_saas/css/responsive.css">
+    <!-- SASSY TEMPLATE CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="elegant-icon/style.css">
+    <link rel="stylesheet" href="simpleline-icon/css/simple-line-icons.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/preset.css">
+    <link rel="stylesheet" href="css/scroll-animation.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/theme-style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- FAVICON - **WAIT** DESIGN-->
+    <!-- link(rel='shortcut icon', type='image/x-icon', href='img/favicon-32x32.ico')-->
+    <link rel="canonical" href="https://findcep.labunix.dev/">
+    <!-- **WAIT*** TRADUCAO-->
+    <!--link(rel='alternate', href='https://findcep.labunix.dev/en', hreflang='en')-->
+    <!-- Structured Data Organization  FindCEP-->
+    <script type="application/ld+json">{"@context": "http:\\/\/schema.org","@type": "Organization","url": "http:\/\/www.findcep.com","logo": "http://www.findcep.com/img/icone-findcep.png", "sameAs": ["https://www.facebook.com/findcep/","https://twitter.com/findcep"],"contactPoint": [{"@type": "ContactPoint","telephone": "+55-11-98059-7677","contactType": "sales","areaServed": "BR","availableLanguage": ["Portuguese","English"]}]}</script>
+    <script type="application/ld+json">{"@context":"http:\\/\/schema.org","@type":"WebSite","url":"http:\/\/www.findcep.com\/","name":"Find CEP"}</script>
+  </head>
+  <body id="home" data-spy="scroll" data-target=".navbar" data-offset="94">
+    <nav class="navbar navbar-fixed-top new_header">
+      <div class="container custome_container">
+        <div class="row br">
+          <div class="col-md-12">
+            <div class="navbar-header">
+              <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#myNavbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand ex" href="https://www.findcep.com/"><img class="main-logo" src="images/sassy_white.png" alt="Home"><img class="logo-blue" src="images/sassy_black.png" alt="Home"></a>
+              <!-- Get-Now-Button--><a class="btn-getnow new_btn" href="#">Teste Agora</a>
+            </div>
+            <div class="collapse navbar-collapse multi_page_menu_item" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right multi" id="menu-one-page">
+                <li class="menu-item current_page_item active"><a title="Home" href="#home">Por que FindCEP?</a></li>
+                <li class="menu-item"><a title="Services" href="#services">Services</a></li>
+                <li class="menu-item"><a title="Dashboard" href="#dashboard">Dashboard</a></li>
+                <li class="menu-item"><a title="Features" href="#features">Vantagens</a></li>
+                <li class="menu-item"><a title="Pricing" href="#pricing">Preços</a></li>
+                <li class="menu-item"><a title="Contact" href="#contact">Contato</a></li>
+                <li class="menu-item"><a title="Developer" href="//www.findcep.com/docs/index.html">Desenvolvimento</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="saas_newsletter_area" id="newsletter">
+      <div class="container">
+        <div class="new_sectitle br_none pb_0">
+          <h1 class="s_banner_title">CEP API</h1>
+          <h2 class="s_banner_title">Localizar o CEP<br>nunca foi tão fácil</h2>
+        </div>
+        <form class="n_subscription saas_subscribe findcep" method="get" novalidate="true" _lpchecked="1">
+          <div class="form-group">
+            <input class="form-control mecep" name="CEP" type="number" placeholder="01001-000">
+          </div>
+          <button type="submit">FindCEP<i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+          <p class="fcep-errmessage" style="display: none;"></p>
+          <p class="fcep-sucmessage" style="display: none;"></p>
+        </form>
+      </div>
+    </section>
+    <section class="n_features_area pt_0" id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="n_features_item">
+              <div class="DISABLE_n_round_icon" hidden="true"><img src="" alt=""></div>
+              <h3>Fácil</h3>
+              <p><a target="_blank" href="https://www.correios.com.br/enviar-e-receber/ferramentas/cep/o-que-e-cep">CEP API</a>é fácil e simples de usar, sem setup e compatível com qualquer aplicação. Faça um upgrade no seu negocio</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="n_features_item">
+              <div class="DISABLE_n_round_icon" hidden="true"><img src="" alt=""></div>
+              <h3>Rápido</h3>
+              <p>Diminua o tempo de cadastro de seu cliente, com o<a target="_blank" href="https://pt.wikipedia.org/wiki/Web_service">webservice</a>CEP o endereço é localizado em apenas 50ms.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="n_features_item">
+              <div class="DISABLE_n_round_icon" hidden="true"><img src="" alt=""></div>
+              <h3>Confiável</h3>
+              <p>O FindCEP entrega centenas de milhares de CEP's simultaneamente com 99.99% de disponibilidade.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sass_video_area" id="features">
+      <div class="container">
+        <div class="saas_section_title mb_70">
+          <h2>O que FindCEP oferece ao seu negócio?</h2>
+          <p>A API FindCEP é a mais ágil e completa solução<br>de localização de codigo postal e endereços no BRASIL.</p>
+          <h3>Base integrada com os Correios</h3>
+          <p>FindCEP oferece busca e tratamento de CEPs (Código Endereçamento Postal) e Endereços para o seu negócio online.</p>
+        </div>
+        <!--.saas_video-->
+        <!--  img(src='', alt='')-->
+        <!--  a.video_btn(href='#')-->
+        <!--    i.fa.fa-play-->
+      </div>
+    </section>
+    <section class="saas_dashboard_features">
+      <div class="container">
+        <div class="row saas_features_info">
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="saas_features_item">
+              <div class="round_icon"><img src="images/new/icon/d-f2.png" alt=""></div>
+              <h3>Base de CEP atualizada</h3>
+              <p>Nossa base de CEPs é atualizada mensalmente e integrada automaticamente com os correios.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="saas_features_item">
+              <div class="round_icon"><img src="images/new/icon/d-f4.png" alt=""></div>
+              <h3>Taxa de Atualização</h3>
+              <p>A cada mês em media são atualizados cerca de 10 mil cep's. A maioria são novas inclusões, mas atualização e remoção de ceps também é comum.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="saas_features_item">
+              <div class="round_icon"><img src="images/new/icon/d-f3.png" alt=""></div>
+              <h3>Códigos dos Municípios - IBGE</h3>
+              <p>Nossa base é sincronizada com a última versão da base disponibilizada pelo<a taget="_blank" href="https://www.ibge.gov.br/explica/codigos-dos-municipios.php">IBGE</a>, Incluindo corretamente os códigos dos distritos e sub-distritos.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="saas_features_item">
+              <div class="round_icon"><img src="images/new/icon/d-f5.png" alt=""></div>
+              <h3>Arquitetura</h3>
+              <p>O FindCEP fica hospedado na Cloud AWS, utilizando as melhores praticas do mercado. O produto foi desenvolvido para performar durante as Black-friday's</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="saas_features_item">
+              <div class="round_icon"><img src="images/new/icon/d-f6.png" alt=""></div>
+              <h3>Sempre Online</h3>
+              <p>Desde 2016, o SLA Anual do FindCEP tem sido maior que<a target="_blank" href="https://uptime.is/99.99">99.99%.</a>Não dependa mais de api's grátis que não garantem a disponibilidade do serviço. Se o CEP parar seu negocio também para.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="saas_features_item">
+              <div class="round_icon"><img src="images/new/icon/d-f1.png" alt=""></div>
+              <h3>Classificação de Localidades</h3>
+              <p>Só o FindCEP inclui a classificacao conforme a<a target="_blank" href="https://www.correios.com.br/enviar-e-receber/ferramentas/cep/estrutura-do-cep">estrutura do cep</a>contendo localidades não codificadas (cep único) e localidades codificadas por logradouros como caixa postal comunitária, grande úsuario, ceps especiais entre outros.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="saas_about_area" id="dashboard"><a class="scroll_btn" href="#"><i></i></a>
+      <div class="saas-about-item">
+        <svg class="svg_left" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" opacity="0.051" fill="rgb(132, 96, 255)" d="M0.991,565.754 C0.991,565.754 104.446,356.774 349.357,369.332 C634.530,383.954 961.000,485.740 961.000,485.740 L1041.000,443.742 C1041.000,443.742 668.745,74.010 402.657,17.699 C165.398,-32.511 0.991,39.999 0.991,39.999 L0.991,565.754 Z"></path>
+          <path fill-rule="evenodd" opacity="0.051" fill="rgb(132, 96, 255)" d="M0.960,145.000 C0.960,145.000 164.420,63.922 409.339,51.356 C694.520,36.723 1011.000,124.999 1011.000,124.999 L881.000,226.999 C881.000,226.999 666.711,195.848 404.006,290.522 C162.591,377.523 0.960,780.999 0.960,780.999 L0.960,145.000 Z"></path>
+        </svg>
+        <div class="w_50 side-img text-right pull-left pb_50"><img class="img_one" src="" alt=""><img class="img_two" src="" alt=""></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 col-md-offset-1">
+              <div class="saas_about_content text-left">
+                <h2 class="saas_h2 mt_0">Works on all platforms</h2>
+                <p class="n_title_p">O FindCEP é a mais ágil e completa solução de localizacação de endereços nacionais diretamente integrada com os Correios que oferece<br>Busca de CEPs e Endereços para o seu negócio online.</p><a class="saas_btn_two n_them_btn" href="">Veja mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="saas-about-item sass_a_item_two">
+        <svg class="svg_right" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" opacity="0.051" fill="rgb(132, 96, 255)" d="M1039.977,215.245 C1039.977,215.245 936.526,424.225 691.622,411.667 C406.458,397.045 119.998,265.259 119.998,265.259 L-0.000,417.257 C-0.000,417.257 372.243,706.989 638.324,763.300 C875.576,813.509 1039.977,741.000 1039.977,741.000 L1039.977,215.245 Z"></path>
+          <path fill-rule="evenodd" opacity="0.051" fill="rgb(132, 96, 255)" d="M1040.009,636.000 C1040.009,636.000 876.554,717.076 631.642,729.643 C346.469,744.276 39.999,706.000 39.999,706.000 L179.995,573.999 C179.995,573.999 374.278,585.151 636.975,490.477 C878.382,403.475 1040.009,-0.000 1040.009,-0.000 L1040.009,636.000 Z"></path>
+        </svg>
+        <div class="w_50 side-img text-left pull-right pb_140"><img class="img_one" src="" alt=""><img class="img_two" src="" alt=""></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <div class="saas_about_content text-left">
+                <h2 class="saas_h2 mt_0">Agilidade</h2>
+                <p class="n_title_p">Proporcione ao seu cliente, agilidade e facilidade, na criação de cadastros e contas no seu site, mitigue carrinhos abandonados e aumente a conversão.</p><a class="saas_btn_two n_them_btn" href="">Saiba Mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="saas_gallery_area">
+      <div class="saas_section_title mb_70">
+        <h2>Nossos Clientes</h2>
+        <p>Até o momento mais de 50 milhões consultas<br>foram realizadas com sucesso no FindCEP.</p>
+      </div>
+      <div class="saas_screen_gallery owl-carousel">
+        <div class="item"><img src="images/new/saas/screen1.jpg" alt=""></div>
+        <div class="item"><img src="images/new/saas/screen3.jpg" alt=""></div>
+        <div class="item"><img src="images/new/saas/screen2.jpg" alt=""></div>
+        <div class="item"><img src="images/new/saas/screen1.jpg" alt=""></div>
+        <div class="item"><img src="images/new/saas/screen3.jpg" alt=""></div>
+        <div class="item"><img src="images/new/saas/screen2.jpg" alt=""></div>
+        <div class="item"><img src="images/new/saas/screen1.jpg" alt=""></div>
+        <div class="item"><img src="images/new/saas/screen2.jpg" alt=""></div>
+      </div>
+    </section>
+    <section class="saas_priceing_area" id="pricing">
+      <div class="container">
+        <div class="saas_section_title mb_70">
+          <h2>Preços e Planos</h2>
+          <p>Solução que satisfazem desde pequenos negócios a grandes empresas.<br>Temos planos especiais para qualquer consumo, solicite uma avaliação.</p>
+        </div>
+        <div class="row saas_priceing_info">
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="saas_price_item"><img src="images/new/icon/rocket-icon.png" alt="">
+              <h3>Starter</h3>
+              <div class="br"></div>
+              <ul class="list_style">
+                <li>1000 consultas grátis</li>
+                <li>1 Site</li>
+                <li><i class="icon_close"></i></li>
+                <li><i class="icon_close"></i></li>
+                <li><i class="icon_close"></i></li>
+              </ul>
+              <div class="price">R$0<span>por mes</span><span>+ consultas extras: R$ 0.0059</span></div><a class="saas_btn_two" href="#">Comece Já</a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="saas_price_item"><img src="images/new/icon/award-icon.png" alt="">
+              <h3>Corporate</h3>
+              <div class="br"></div>
+              <ul class="list_style">
+                <li>100.000 consultas</li>
+                <li>3 Sites</li>
+                <li>CDN</li>
+                <li>Suporte 24x7</li>
+                <li><i class="icon_close"></i></li>
+              </ul>
+              <div class="price">R$249<span>por mes</span><span>+ consultas extras: R$ 0.0025</span></div><a class="saas_btn_two" href="#">Teste Gratuitamente</a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="saas_price_item"><img src="images/new/icon/handshake.png" alt="">
+              <h3>Enterprise</h3>
+              <div class="br"></div>
+              <ul class="list_style">
+                <li>500.000 consultas</li>
+                <li>Sites: ilimitado</li>
+                <li>CDN</li>
+                <li>Suporte 24x7</li>
+                <li>SLA 99.9%</li>
+              </ul>
+              <div class="price">R$900<span>por mes</span><span>+ consultas extras por R$ 0.0015</span></div><a class="saas_btn_two" href="#">Assine</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="saas_contact_area" id="contact">
+      <div class="container">
+        <div class="saas_contact_info">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="saas-contact_info">
+                <h3 class="s_contact_title">Fale conosco!</h3>
+                <p>Quer entender melhor como o FindCEP pode agregar ao seu negócio? Fale com nossos especialistas:</p>
+                <div class="contact-info">
+                  <div class="icon"><img src="images/new/icon/placeholder.png" alt=""></div>
+                  <h3>Localização</h3>
+                  <p>Avenida Professor Gioia Martins, 199 - São Paulo/SP</p>
+                </div>
+                <div class="contact-info">
+                  <div class="icon"><img src="images/new/icon/phone.png" alt=""></div>
+                  <h3>Suporte Telefone</h3>
+                  <p><a href="tel:+551129245573">(+55) 11 2924-5573</a><br></p>
+                  <h3>Whatsapp</h3>
+                  <p><a href="https://wa.me/5511980597677?lang=pt_br&amp;*source=findcep" style="cursor: pointer;text-decoration: underline">iniciar uma conversa</a></p>
+                </div>
+                <div class="contact-info">
+                  <div class="icon"><img src="images/new/icon/icon.png" alt=""></div>
+                  <h3>Suporte Email</h3>
+                  <p><a href="mailto:atendimento@findcep.com?subject=[SUPORTE]">atendimento@findcep.com</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <form class="saas_contact_form" action="#" method="post">
+                <h3 class="s_contact_title">deixe um comentário:</h3>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input class="form-control uName" name="name" type="text" placeholder="Nome">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input class="form-control uEmail" name="email" type="email" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input class="form-control uSubject" name="subject" type="text" placeholder="Assunto">
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <textarea class="form-control msg" name="message" placeholder="Menssagem"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <button class="n_them_btn" type="submit">Enviar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="saas_newsletter_area" id="newsletter">
+      <div class="container">
+        <div class="new_sectitle br_none pb_0">
+          <h2 class="n_title_color mb_0">Entre na nossa Newletter</h2>
+          <p class="n_title_p mb_0">Atualizações e notícias com conteudos relevantes serão enviadas!<br>Fique a par do que aconteçe com os CEP e Codigo IBGE.</p>
+        </div>
+        <form class="n_subscription saas_subscribe mailchimp" method="post" novalidate="true" _lpchecked="1">
+          <div class="form-group">
+            <input class="form-control memail" name="EMAIL" type="email" placeholder="digite seu email">
+          </div>
+          <button type="submit">Inscreva<i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+          <p class="mchimp-errmessage" style="display: none;"></p>
+          <p class="mchimp-sucmessage" style="display: none;"></p>
+        </form>
+      </div>
+    </section>
+    <footer class="saas_footer_area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 col-sm-6 col-xs-6">
+            <div class="f_widget about_widget"><a class="f_logo" href="//www.findcep.com/"><img src="images/sassy_logo.png" alt=""></a>
+              <p>Camara Quierati Tecnologia e Comunicacao LTDA<br>FindCEP</p>
+              <ul class="f_social_icon">
+                <li><a href="#"><i class="icon-social-facebook"></i></a></li>
+                <li><a href="#"><i class="icon-social-twitter"></i></a></li>
+                <li><a href="#"><i class="icon-social-instagram"></i></a></li>
+                <li><a href="#"><i class="icon-social-linkedin"></i></a></li>
+                <li><a href="#"><i class="icon-social-google"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6 col-xs-6">
+            <div class="f_widget link_widget">
+              <h3 class="widget_title">Company</h3>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Screenshots</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Team</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6 col-xs-6">
+            <div class="f_widget link_widget">
+              <h3 class="widget_title">Help</h3>
+              <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">FAQ's</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Contacts</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="f_widget link_widget pd_l">
+              <h3 class="widget_title">Solutions</h3>
+              <ul>
+                <li><a href="#">Consumer</a></li>
+                <li><a href="#">Saas</a></li>
+                <li><a href="#">Infrastructure</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Financial Services</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="border_top"></div>
+        <p class="copyright_text">Copyright© FindCEP 2016-2020 - Desing by,<a href="#">Droit Themes</a></p>
+      </div>
+    </footer><a class="scrollup" href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+    <!-- SAAS JS TEMPLATE-->
+    <script src="_saas/js/jquery-3.2.1.min.js"></script>
+    <script src="_saas/js/propper.js"></script>
+    <script src="_saas/js/bootstrap.min.js"></script>
+    <script src="_saas/vendors/bootstrap-selector/js/bootstrap-select.min.js"></script>
+    <script src="_saas/vendors/wow/wow.min.js"></script>
+    <script src="_saas/vendors/sckroller/jquery.parallax-scroll.js"></script>
+    <script src="_saas/vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="_saas/vendors/nice-select/jquery.nice-select.min.js"></script>
+    <script src="_saas/vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="_saas/vendors/isotope/isotope-min.js"></script>
+    <script src="_saas/vendors/magnify-pop/jquery.magnific-popup.min.js"></script>
+    <script src="_saas/js/plugins.js"></script>
+    <script src="_saas/vendors/scroll/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="_saas/js/main.js"></script>
+    <!-- SASSY JS TEMPLATE-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--script(src='http://maps.googleapis.com/maps/api/js?key=AIzaSyBumN1FxU0vF8HVI_qy9yFlwcZ4Wop_RtY')-->
+    <!--script(src='js/jquery.waypoints.min.js')-->
+    <!--script(src='js/jquery.magnific-popup.min.js')-->
+    <!--script(src='js/custom-animations.js')-->
+    <!--script(src='js/jquery.mixitup.js')-->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/gmap.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/theme.js"></script>
+    <!-- FINDCEP JS-->
+    <script src="js/plugin-findcep.js"></script>
+  </body>
+</html>
