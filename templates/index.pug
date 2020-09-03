@@ -13,10 +13,23 @@ html(lang='pt-br')
     meta(name='robots', content='INDEX,FOLLOW')
     // SITE TITLE
     title CEP API | FindCEP
-    // STYLESHEETS
+
+    // SAAS TEMPLATE CSS
+    link(rel='stylesheet', href='_saas/vendors/bootstrap-selector/css/bootstrap-select.min.css')
+    link(rel='stylesheet', href='_saas/vendors/themify-icon/themify-icons.css')
+    link(rel='stylesheet', href='_saas/vendors/flaticon/flaticon.css')
+    link(rel='stylesheet', href='_saas/vendors/animation/animate.css')
+    link(rel='stylesheet', href='_saas/vendors/owl-carousel/assets/owl.carousel.min.css')
+    link(rel='stylesheet', href='_saas/vendors/nice-select/nice-select.css')
+    link(rel='stylesheet', href='_saas/vendors/magnify-pop/magnific-popup.css')
+    link(rel='stylesheet', href='_saas/vendors/scroll/jquery.mCustomScrollbar.min.css')
+    link(rel='stylesheet', href='_saas/vendors/elagent/style.css')
+    link(rel='stylesheet', href='_saas/css/style.css')
+    link(rel='stylesheet', href='_saas/css/responsive.css')
+
+    // SASSY TEMPLATE CSS
     link(rel='stylesheet', href='css/bootstrap.min.css')
     link(rel='stylesheet', href='css/font-awesome.min.css')
-    // <link rel="stylesheet" href="css/css/linearicons.css">
     link(rel='stylesheet', href='elegant-icon/style.css')
     link(rel='stylesheet', href='simpleline-icon/css/simple-line-icons.css')
     link(rel='stylesheet', href='css/magnific-popup.css')
@@ -26,18 +39,14 @@ html(lang='pt-br')
     link(rel='stylesheet', href='css/custom.css')
     link(rel='stylesheet', href='css/theme-style.css')
     link(rel='stylesheet', href='css/responsive.css')
-    // FAVICON
-    link(rel='shortcut icon', type='image/x-icon', href='img/favicon-32x32.ico')
-    link(rel='apple-touch-icon', sizes='57x57', href='img/apple-touch-icon-57x57.png')
-    link(rel='apple-touch-icon', sizes='60x60', href='img/apple-touch-icon-60x60.png')
-    link(rel='apple-touch-icon', sizes='72x72', href='img/apple-touch-icon-72x72.png')
-    link(rel='apple-touch-icon', sizes='76x76', href='img/apple-touch-icon-76x76.png')
-    link(rel='apple-touch-icon', sizes='114x114', href='img/apple-touch-icon-114x114.png')
-    link(rel='apple-touch-icon', sizes='120x120', href='img/apple-touch-icon-120x120.png')
-    link(rel='apple-touch-icon', sizes='144x144', href='img/apple-touch-icon-144x144.png')
-    link(rel='apple-touch-icon', sizes='152x152', href='img/apple-touch-icon-152x152.png')
-    link(rel='alternate', href='http://www.fincep.com/en', hreflang='en')
-    link(rel='canonical', href='http://www.findcep.com/')
+
+    // FAVICON - **WAIT** DESIGN
+    // link(rel='shortcut icon', type='image/x-icon', href='img/favicon-32x32.ico')
+
+    link(rel='canonical', href='https://findcep.labunix.dev/')
+    // **WAIT*** TRADUCAO
+    //link(rel='alternate', href='https://findcep.labunix.dev/en', hreflang='en')
+
     // Structured Data Organization  FindCEP
     script(type='application/ld+json').
       {"@context": "http:\\/\/schema.org","@type": "Organization","url": "http:\/\/www.findcep.com","logo": "http://www.findcep.com/img/icone-findcep.png", "sameAs": ["https://www.facebook.com/findcep/","https://twitter.com/findcep"],"contactPoint": [{"@type": "ContactPoint","telephone": "+55-11-98059-7677","contactType": "sales","areaServed": "BR","availableLanguage": ["Portuguese","English"]}]}
@@ -80,30 +89,49 @@ html(lang='pt-br')
           .bubble.x1
           .bubble.x2
           .bubble.x3
-          .bubble.x4
+          //.bubble.x4
           .bubble.x5
           .bubble.x6
-          .bubble.x7
+          //.bubble.x7
           .bubble.x8
-          .bubble.x9
+          //.bubble.x9
           .bubble.x10
           .bubble.x11
-          .bubble.x12
+          //.bubble.x12
           .bubble.x13
         svg(xmlns='http://www.w3.org/2000/svg')
           path.cls-1(fill='#fff', d='M0,0S480.2,100,960.3,100C1440.2,100,1920,0,1920,0V120H0V0Z')
         .container
           .row
-            .col-md-12.text-center
-              h1.s_banner_text CEP API
-              h2.s_banner_title
-                | Localizar o CEP
-                br
-                | nunca foi tão fácil
-              a.saas_btn(href='#') Experimente Grátis
-      .saas_home_img
-        img(src='', alt='')
-        br
+            //.col-md-12.text-center
+            //  h1.s_banner_text CEP API
+            //  h2.s_banner_title
+            //    | Localizar o CEP
+            //    br
+            //    | nunca foi tão fácil
+            //a.saas_btn(href='#') Experimente Grátis
+            //.saas_home_img
+              //  img(src='', alt='')
+              //  br
+            // FINDCEP TESTE AGORA BOTTON
+            section#newsletter.saas_newsletter_area
+              .container
+                .new_sectitle.br_none.pb_0
+                  h1.s_banner_title CEP API
+                  h2.s_banner_title
+                    | Localizar o CEP
+                    br
+                    | nunca foi tão fácil
+                form.n_subscription.saas_subscribe.findcep(method='post', novalidate='true', _lpchecked='1')
+                  .form-group
+                    input.form-control.mecep(name='CEP', type='number', placeholder='01001-000')
+                  button(type='submit')
+                    | FindCEP
+                    i.fa.fa-paper-plane(aria-hidden='true')
+                  p.fcep-errmessage(style='display: none;')
+                  p.fcep-sucmessage(style='display: none;')
+
+
     section#services.n_features_area.pt_0
       .container
         .row
@@ -113,7 +141,7 @@ html(lang='pt-br')
                 img(src='', alt='')
               h3 Fácil
               p
-                a(target='_blank', href='https://www.correios.com.br/enviar-e-receber/ferramentas/cep/o-que-e-cep') CEP API 
+                a(target='_blank', href='https://www.correios.com.br/enviar-e-receber/ferramentas/cep/o-que-e-cep') CEP API
                 | é fácil e simples de usar, sem setup e compatível com qualquer aplicação. Faça um upgrade no seu negocio
           .col-md-4.col-sm-4.col-xs-12
             .n_features_item
@@ -121,8 +149,8 @@ html(lang='pt-br')
                 img(src='', alt='')
               h3 Rápido
               p
-                | Diminua o tempo de cadastro de seu cliente, com o 
-                a(target='_blank', href='https://pt.wikipedia.org/wiki/Web_service') webservice 
+                | Diminua o tempo de cadastro de seu cliente, com o
+                a(target='_blank', href='https://pt.wikipedia.org/wiki/Web_service') webservice
                 | CEP o endereço é localizado em apenas 50ms.
           .col-md-4.col-sm-4.col-xs-12
             .n_features_item
@@ -136,11 +164,11 @@ html(lang='pt-br')
         .saas_section_title.mb_70
           h2 O que FindCEP oferece ao seu negócio?
           p
-            | A API FindCEP é a mais ágil e completa solução 
+            | A API FindCEP é a mais ágil e completa solução
             br
             | de localização de codigo postal e endereços no BRASIL.
           h3 Base integrada com os Correios
-          p  
+          p
             | FindCEP oferece busca e tratamento de CEPs (Código Endereçamento Postal) e Endereços para o seu negócio online.
         //.saas_video
         //  img(src='', alt='')
@@ -169,8 +197,8 @@ html(lang='pt-br')
                 img(src='images/new/icon/d-f3.png', alt='')
               h3 Códigos dos Municípios - IBGE
               p
-                | Nossa base é sincronizada com a última versão da base disponibilizada pelo 
-                a(taget="_blank" href="https://www.ibge.gov.br/explica/codigos-dos-municipios.php") IBGE 
+                | Nossa base é sincronizada com a última versão da base disponibilizada pelo
+                a(taget="_blank" href="https://www.ibge.gov.br/explica/codigos-dos-municipios.php") IBGE
                 | , Incluindo corretamente os códigos dos distritos e sub-distritos.
           .col-md-4.col-sm-6.col-xs-12
             .saas_features_item
@@ -185,7 +213,7 @@ html(lang='pt-br')
                 img(src='images/new/icon/d-f6.png', alt='')
               h3 Sempre Online
               p
-                | Desde 2016, o SLA Anual do FindCEP tem sido maior que 
+                | Desde 2016, o SLA Anual do FindCEP tem sido maior que
                 a(target="_blank" href="https://uptime.is/99.99") 99.99%.
                 | Não dependa mais de api's grátis que não garantem a disponibilidade do serviço. Se o CEP parar seu negocio também para.
           .col-md-4.col-sm-6.col-xs-12
@@ -194,8 +222,8 @@ html(lang='pt-br')
                 img(src='images/new/icon/d-f1.png', alt='')
               h3 Classificação de Localidades
               p
-                | Só o FindCEP inclui a classificacao conforme a 
-                a(target="_blank" href="https://www.correios.com.br/enviar-e-receber/ferramentas/cep/estrutura-do-cep") estrutura do cep 
+                | Só o FindCEP inclui a classificacao conforme a
+                a(target="_blank" href="https://www.correios.com.br/enviar-e-receber/ferramentas/cep/estrutura-do-cep") estrutura do cep
                 | contendo localidades não codificadas (cep único) e localidades codificadas por logradouros como caixa postal comunitária, grande úsuario, ceps especiais entre outros.
     section#dashboard.saas_about_area
       a.scroll_btn(href='#')
@@ -213,7 +241,7 @@ html(lang='pt-br')
               .saas_about_content.text-left
                 h2.saas_h2.mt_0 Works on all platforms
                 p.n_title_p
-                  | O FindCEP é a mais ágil e completa solução de localizacação de endereços nacionais diretamente integrada com os Correios que oferece 
+                  | O FindCEP é a mais ágil e completa solução de localizacação de endereços nacionais diretamente integrada com os Correios que oferece
                   br
                   | Busca de CEPs e Endereços para o seu negócio online.
                 a.saas_btn_two.n_them_btn(href='') Veja mais
@@ -273,7 +301,7 @@ html(lang='pt-br')
               ul.list_style
                 li 1000 consultas grátis
                 li 1 Site
-                li 
+                li
                   i.icon_close
                 li
                   i.icon_close
@@ -281,8 +309,8 @@ html(lang='pt-br')
                   i.icon_close
               .price
                 | R$0
-                span por mes 
-                span + consultas extras: R$ 0.0059 
+                span por mes
+                span + consultas extras: R$ 0.0059
               a.saas_btn_two(href='#') Comece Já
           .col-md-4.col-sm-6.col-xs-12
             .saas_price_item
@@ -298,8 +326,8 @@ html(lang='pt-br')
                   i.icon_close
               .price
                 | R$249
-                span por mes 
-                span + consultas extras: R$ 0.0025 
+                span por mes
+                span + consultas extras: R$ 0.0025
               a.saas_btn_two(href='#') Teste Gratuitamente
           .col-md-4.col-sm-6.col-xs-12
             .saas_price_item
@@ -314,9 +342,9 @@ html(lang='pt-br')
                 li SLA 99.9%
               .price
                 | R$900
-                span por mes 
-                span + consultas extras por R$ 0.0015 
-               
+                span por mes
+                span + consultas extras por R$ 0.0015
+
               a.saas_btn_two(href='#') Assine
     section#contact.saas_contact_area
       .container
@@ -335,11 +363,11 @@ html(lang='pt-br')
                 .contact-info
                   .icon
                     img(src='images/new/icon/phone.png', alt='')
-                  h3 Suporte Telefone 
+                  h3 Suporte Telefone
                   p
                     a(href='tel:+551129245573') (+55) 11 2924-5573
                     br
-                  h3 Whatsapp 
+                  h3 Whatsapp
                   p
                     a(href='https://wa.me/5511980597677?lang=pt_br&*source=findcep' style="cursor: pointer;text-decoration: underline") iniciar uma conversa
                 .contact-info
@@ -377,7 +405,7 @@ html(lang='pt-br')
           .form-group
             input.form-control.memail(name='EMAIL', type='email', placeholder='digite seu email')
           button(type='submit')
-            | Inscreva 
+            | Inscreva
             i.fa.fa-paper-plane(aria-hidden='true')
           p.mchimp-errmessage(style='display: none;')
           p.mchimp-sucmessage(style='display: none;')
@@ -452,20 +480,39 @@ html(lang='pt-br')
                   a(href='#') Financial Services
         .border_top
         p.copyright_text
-          | Copyright© FindCEP 2016-2020 - Desing by, 
+          | Copyright© FindCEP 2016-2020 - Desing by,
           a(href='#') Droit Themes
     a.scrollup(href='#')
       i.fa.fa-arrow-up(aria-hidden='true')
-    // Scripts
-    script(type='text/javascript', src='js/jquery.min.js')
-    script(src='http://maps.googleapis.com/maps/api/js?key=AIzaSyBumN1FxU0vF8HVI_qy9yFlwcZ4Wop_RtY')
-    script(type='text/javascript', src='js/bootstrap.min.js')
-    script(type='text/javascript', src='js/jquery.waypoints.min.js')
-    script(type='text/javascript', src='js/jquery.magnific-popup.min.js')
-    script(type='text/javascript', src='js/owl.carousel.min.js')
-    script(type='text/javascript', src='js/plugins.js')
-    script(type='text/javascript', src='js/jquery.mixitup.js')
-    script(type='text/javascript', src='js/gmap.js')
-    script(type='text/javascript', src='js/parallax.js')
-    script(type='text/javascript', src='js/custom-animations.js')
-    script(type='text/javascript', src='js/theme.js')
+
+    // SAAS JS TEMPLATE
+    script(src='_saas/js/jquery-3.2.1.min.js')
+    script(src='_saas/js/propper.js')
+    script(src='_saas/js/bootstrap.min.js')
+    script(src='_saas/vendors/bootstrap-selector/js/bootstrap-select.min.js')
+    script(src='_saas/vendors/wow/wow.min.js')
+    script(src='_saas/vendors/sckroller/jquery.parallax-scroll.js')
+    script(src='_saas/vendors/owl-carousel/owl.carousel.min.js')
+    script(src='_saas/vendors/nice-select/jquery.nice-select.min.js')
+    script(src='_saas/vendors/imagesloaded/imagesloaded.pkgd.min.js')
+    script(src='_saas/vendors/isotope/isotope-min.js')
+    script(src='_saas/vendors/magnify-pop/jquery.magnific-popup.min.js')
+    script(src='_saas/js/plugins.js')
+    script(src='_saas/vendors/scroll/jquery.mCustomScrollbar.concat.min.js')
+    script(src='_saas/js/main.js')
+    // SASSY JS TEMPLATE
+    script(src='js/jquery.min.js')
+    script(src='js/bootstrap.min.js')
+    //script(src='http://maps.googleapis.com/maps/api/js?key=AIzaSyBumN1FxU0vF8HVI_qy9yFlwcZ4Wop_RtY')
+    //script(src='js/jquery.waypoints.min.js')
+    //script(src='js/jquery.magnific-popup.min.js')
+    //script(src='js/custom-animations.js')
+    //script(src='js/jquery.mixitup.js')
+    script(src='js/owl.carousel.min.js')
+    script(src='js/plugins.js')
+    script(src='js/gmap.js')
+    script(src='js/parallax.js')
+    script(src='js/theme.js')
+
+    // FINDCEP JS
+    script(src='js/plugin-findcep.js')
