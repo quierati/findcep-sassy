@@ -86,12 +86,12 @@ html(lang='pt-br')
     section#newsletter.saas_newsletter_area
               .container
                 .new_sectitle.br_none.pb_0
-                  br
-                  h1.s_banner_title CEP API
+                  p.s_banner_title A
+                  h1.s_banner_title API CEP
                   h2.s_banner_title
-                    | Localizar o CEP&nbsp;
+                    | sempre atualizada para seu negócio.&nbsp;
                     br
-                    | nunca foi tão fácil
+                    | Completa solução de localização de código postal  e endereços do BRASIL.
                 form.n_subscription.saas_subscribe.findcep(method='get', novalidate='true', _lpchecked='1')
                   .form-group
                     input.form-control.mecep(name='CEP', type='number', placeholder='01001-000')
@@ -100,48 +100,17 @@ html(lang='pt-br')
                     i.fa.fa-paper-plane(aria-hidden='true')
                   p.fcep-errmessage(style='display: none;')
                   p.fcep-sucmessage(style='display: none;')
-    section#services.n_features_area.pt_0
+    section
       .container
         .row
-          .col-md-4.col-sm-4.col-xs-12
-            .n_features_item
-              .DISABLE_n_round_icon(hidden='true')
-                img(src='', alt='')
-              h3 Fácil
-              p
-                a(target='noreferrer', href='https://www.correios.com.br/enviar-e-receber/ferramentas/cep/o-que-e-cep') CEP API
-                | é fácil e simples de usar, sem setup e compatível com qualquer aplicação. Faça um upgrade no seu negocio
-          .col-md-4.col-sm-4.col-xs-12
-            .n_features_item
-              .DISABLE_n_round_icon(hidden='true')
-                img(src='', alt='')
-              h3 Rápido
-              p
-                | Diminua o tempo de cadastro de seu cliente, com o
-                a(target='noreferrer', href='https://pt.wikipedia.org/wiki/Web_service') webservice
-                | CEP o endereço é localizado em apenas 50ms.
-          .col-md-4.col-sm-4.col-xs-12
-            .n_features_item
-              .DISABLE_n_round_icon(hidden='true')
-                img(src='', alt='')
-              h3 Confiável
-              p
-                | O FindCEP entrega centenas de milhares de CEP's simultaneamente com 99.99% de disponibilidade.
-    section#features.sass_video_area
-      .container
-        .saas_section_title.mb_70
-          h2 O que FindCEP oferece ao seu negócio?
-          p
-            | A API FindCEP é a mais ágil e completa solução
-            br
-            | de localização de codigo postal e endereços no BRASIL.
-          h3 Base integrada com os Correios
-          p
-            | FindCEP oferece busca e tratamento de CEPs (Código Endereçamento Postal) e Endereços para o seu negócio online.
-        //.saas_video
-        //  img(src='', alt='')
-        //  a.video_btn(href='#')
-        //    i.fa.fa-play
+          .saas_section_title.mb_70
+            h2 O que o FindCEP oferece para seu negócio?
+            p
+              | Oferece&nbsp;
+              h2 busca e tratamento de CEPs
+            p
+              | (Código Endereçamento Postal) e&nbsp;
+              h2 Endereços para o seu negócio online.
     section.saas_dashboard_features
       .container
         .row.saas_features_info
@@ -158,41 +127,38 @@ html(lang='pt-br')
                 img(src='images/new/icon/d-f4.png', alt='')
               h3 Taxa de Atualização
               p
-                | A cada mês em media são atualizados cerca de 10 mil cep's. A maioria são novas inclusões, mas atualização e remoção de ceps também é comum.
+                | A cada mês em media são atualizados cerca de 10 mil cep's para novas inclusões, atualização e remoções.
           .col-md-4.col-sm-6.col-xs-12
             .saas_features_item
               .round_icon
                 img(src='images/new/icon/d-f3.png', alt='')
               h3 Códigos dos Municípios - IBGE
               p
-                | Nossa base é sincronizada com a última versão da base disponibilizada pelo
+                | Nossa base é sincronizada com a última versão da base disponibilizada pelo&nbsp;
                 a(taget="noreferrer" href="https://www.ibge.gov.br/explica/codigos-dos-municipios.php") IBGE
                 | , Incluindo corretamente os códigos dos distritos e sub-distritos.
           .col-md-4.col-sm-6.col-xs-12
             .saas_features_item
               .round_icon
-                img(src='images/new/icon/d-f5.png', alt='')
-              h3 Arquitetura
+                img(src='images/new/icon/d-f5.png', alt='Facilidade')
+              h3 Integração Rápida
               p
-                | O FindCEP fica hospedado na Cloud AWS, utilizando as melhores praticas do mercado. O produto foi desenvolvido para performar durante as Black-friday's
+                | A nossa API CEP é simples de usar, com fácil integracão, sem custo de setup e compatível com seu negócio.
           .col-md-4.col-sm-6.col-xs-12
             .saas_features_item
               .round_icon
-                img(src='images/new/icon/d-f6.png', alt='')
-              h3 Sempre Online
+                img(src='images/new/icon/d-f6.png', alt='Agilidade')
+              h3 Experiência do Cliente
               p
-                | Desde 2016, o SLA Anual do FindCEP tem sido maior que
-                a(target="noreferrer" href="https://uptime.is/99.99") 99.99%.
-                | Não dependa mais de api's grátis que não garantem a disponibilidade do serviço. Se o CEP parar seu negocio também para.
+                | Diminua o tempo de cadastro de seu cliente, com a API CEP o endereço é localizado em apenas 50ms.
           .col-md-4.col-sm-6.col-xs-12
             .saas_features_item
               .round_icon
-                img(src='images/new/icon/d-f1.png', alt='')
-              h3 Classificação de Localidades
+                img(src='images/new/icon/d-f1.png', alt='Confiabilidade')
+              h3 Taxa de Sucesso
               p
-                | Só o FindCEP inclui a classificacao conforme a
-                a(target="noreferrer" href="https://www.correios.com.br/enviar-e-receber/ferramentas/cep/estrutura-do-cep") estrutura do cep
-                | contendo localidades não codificadas (cep único) e localidades codificadas por logradouros como caixa postal comunitária, grande úsuario, ceps especiais entre outros.
+                | O FindCEP entrega milhares de CEP's simultaneamente com&nbsp;
+                a(target="noreferrer" href="https://uptime.is/99.99") 99.99% de disponibilidade.
     section#dashboard.saas_about_area
       a.scroll_btn(href='#')
         i
@@ -209,7 +175,7 @@ html(lang='pt-br')
               .saas_about_content.text-left
                 h2.saas_h2.mt_0 Works on all platforms
                 p.n_title_p
-                  | O FindCEP é a mais ágil e completa solução de localizacação de endereços nacionais diretamente integrada com os Correios que oferece
+                  | O FindCEP é a mais ágil e completa solução de localização de endereços nacionais diretamente integrada com os Correios que oferece
                   br
                   | Busca de CEPs e Endereços para o seu negócio online.
                 a.saas_btn_two.n_them_btn(href='') Veja mais
