@@ -4,31 +4,39 @@ html(lang='pt-br')
     // META
     meta(charset='UTF-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
-    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
     meta(name='author', content='findcep')
     meta(name='template', content='droitthemes')
     meta(name='description', content='Localize rapidamente o endereço/CEP de seus clientes, CEP correios mensalmente atualizado')
-    meta(content='img/icone-findcep.png', itemprop='image')
     meta(name='keywords', content='api cep, busca cep, pesquisa cep, webservice cep, api ibge, webservice ibge, cep para e-commerce, cep para site, cep da rua, cep por bairro, codigo ibge, geocoordenadas, data base correios, tabela cep correios')
     meta(name='robots', content='INDEX,FOLLOW')
     // SITE TITLE
     title CEP API | FindCEP
 
-    // SAAS TEMPLATE CSS
+    // FAVICON - **WAIT** DESIGN
+    link(rel='shortcut icon', type='image/x-icon', href='images/Favicon_app.png')
+    //meta(content='img/icone-findcep.png', itemprop='image')
+    //link(rel='shortcut icon', href='img/favicon.png', type='image/x-icon')
+
+    // Bootstrap CSS
+    link(rel='stylesheet', href='_saas/css/bootstrap.min.css')
     link(rel='stylesheet', href='_saas/vendors/bootstrap-selector/css/bootstrap-select.min.css')
+    // icon font css
     link(rel='stylesheet', href='_saas/vendors/themify-icon/themify-icons.css')
+    link(rel='stylesheet', href='_saas/vendors/font-awesome/css/all.css')
     link(rel='stylesheet', href='_saas/vendors/flaticon/flaticon.css')
     link(rel='stylesheet', href='_saas/vendors/animation/animate.css')
     link(rel='stylesheet', href='_saas/vendors/owl-carousel/assets/owl.carousel.min.css')
     link(rel='stylesheet', href='_saas/vendors/nice-select/nice-select.css')
+    link(rel='stylesheet', href='_saas/vendors/animation/animate.css')
     link(rel='stylesheet', href='_saas/vendors/magnify-pop/magnific-popup.css')
-    link(rel='stylesheet', href='_saas/vendors/scroll/jquery.mCustomScrollbar.min.css')
     link(rel='stylesheet', href='_saas/vendors/elagent/style.css')
+    link(rel='stylesheet', href='_saas/vendors/scroll/jquery.mCustomScrollbar.min.css')
     link(rel='stylesheet', href='_saas/css/style.css')
     link(rel='stylesheet', href='_saas/css/responsive.css')
 
-    // SASSY TEMPLATE CSS
-    link(rel='stylesheet', href='css/bootstrap.min.css')
+    //- SASSY TEMPLATE CSS
+    //link(rel='stylesheet', href='css/bootstrap.min.css')
     link(rel='stylesheet', href='css/font-awesome.min.css')
     link(rel='stylesheet', href='elegant-icon/style.css')
     link(rel='stylesheet', href='simpleline-icon/css/simple-line-icons.css')
@@ -40,8 +48,7 @@ html(lang='pt-br')
     link(rel='stylesheet', href='css/theme-style.css')
     link(rel='stylesheet', href='css/responsive.css')
 
-    // FAVICON - **WAIT** DESIGN
-    link(rel='shortcut icon', type='image/x-icon', href='images/Favicon_app.png')
+
 
     link(rel='canonical', href='https://findcep.labunix.dev/index.html')
     // **WAIT*** TRADUCAO
@@ -454,6 +461,8 @@ html(lang='pt-br')
       i.fa.fa-arrow-up(aria-hidden='true')
 
     // SAAS JS TEMPLATE
+    // Optional JavaScript
+    // jQuery first, then Popper.js, then Bootstrap JS
     script(src='_saas/js/jquery-3.2.1.min.js')
     script(src='_saas/js/propper.js')
     script(src='_saas/js/bootstrap.min.js')
@@ -469,19 +478,27 @@ html(lang='pt-br')
     script(src='_saas/vendors/slick/slick.min.js')
     script(src='_saas/js/plugins.js')
     script(src='_saas/js/main.js')
+
+
+
     // SASSY JS TEMPLATE
     script(src='js/jquery.min.js')
     script(src='js/bootstrap.min.js')
+
+    //disable
     //script(src='http://maps.googleapis.com/maps/api/js?key=AIzaSyBumN1FxU0vF8HVI_qy9yFlwcZ4Wop_RtY')
     //script(src='js/jquery.waypoints.min.js')
     //script(src='js/jquery.magnific-popup.min.js')
     //script(src='js/custom-animations.js')
     //script(src='js/jquery.mixitup.js')
-    script(src='js/owl.carousel.min.js')
+
+    //script(src='js/owl.carousel.min.js')
     script(src='js/plugins.js')
     script(src='js/gmap.js')
     script(src='js/parallax.js')
     script(src='js/theme.js')
+
+
 
     // FINDCEP JS
     script(src='js/plugin-findcep.js')
