@@ -41,9 +41,9 @@ html(lang='pt-br')
     link(rel='stylesheet', href='css/responsive.css')
 
     // FAVICON - **WAIT** DESIGN
-    // link(rel='shortcut icon', type='image/x-icon', href='img/favicon-32x32.ico')
+    link(rel='shortcut icon', type='image/x-icon', href='img/images/Favicon_app.png')
 
-    link(rel='canonical', href='https://findcep.labunix.dev/')
+    link(rel='canonical', href='https://findcep.labunix.dev/index.html')
     // **WAIT*** TRADUCAO
     //link(rel='alternate', href='https://findcep.labunix.dev/en', hreflang='en')
 
@@ -66,7 +66,7 @@ html(lang='pt-br')
                 img.main-logo(style='', src='images/sassy_white.png', alt='Home')
                 img.logo-blue(src='images/sassy_black.png', alt='Home')
               // Get-Now-Button
-              a.btn-getnow.new_btn(href='#') Teste Agora
+              a.btn-getnow.new_btn(href='#') Try for free
             #myNavbar.collapse.navbar-collapse.multi_page_menu_item
               ul#menu-one-page.nav.navbar-nav.navbar-right.multi
                 li.menu-item.current_page_item.active
@@ -86,9 +86,10 @@ html(lang='pt-br')
     section#newsletter.saas_newsletter_area
               .container
                 .new_sectitle.br_none.pb_0
+                  br
                   h1.s_banner_title CEP API
                   h2.s_banner_title
-                    | Localizar o CEP
+                    | Localizar o CEP&nbsp;
                     br
                     | nunca foi tão fácil
                 form.n_subscription.saas_subscribe.findcep(method='get', novalidate='true', _lpchecked='1')
@@ -108,7 +109,7 @@ html(lang='pt-br')
                 img(src='', alt='')
               h3 Fácil
               p
-                a(target='_blank', href='https://www.correios.com.br/enviar-e-receber/ferramentas/cep/o-que-e-cep') CEP API
+                a(target='noreferrer', href='https://www.correios.com.br/enviar-e-receber/ferramentas/cep/o-que-e-cep') CEP API
                 | é fácil e simples de usar, sem setup e compatível com qualquer aplicação. Faça um upgrade no seu negocio
           .col-md-4.col-sm-4.col-xs-12
             .n_features_item
@@ -117,7 +118,7 @@ html(lang='pt-br')
               h3 Rápido
               p
                 | Diminua o tempo de cadastro de seu cliente, com o
-                a(target='_blank', href='https://pt.wikipedia.org/wiki/Web_service') webservice
+                a(target='noreferrer', href='https://pt.wikipedia.org/wiki/Web_service') webservice
                 | CEP o endereço é localizado em apenas 50ms.
           .col-md-4.col-sm-4.col-xs-12
             .n_features_item
@@ -165,7 +166,7 @@ html(lang='pt-br')
               h3 Códigos dos Municípios - IBGE
               p
                 | Nossa base é sincronizada com a última versão da base disponibilizada pelo
-                a(taget="_blank" href="https://www.ibge.gov.br/explica/codigos-dos-municipios.php") IBGE
+                a(taget="noreferrer" href="https://www.ibge.gov.br/explica/codigos-dos-municipios.php") IBGE
                 | , Incluindo corretamente os códigos dos distritos e sub-distritos.
           .col-md-4.col-sm-6.col-xs-12
             .saas_features_item
@@ -181,7 +182,7 @@ html(lang='pt-br')
               h3 Sempre Online
               p
                 | Desde 2016, o SLA Anual do FindCEP tem sido maior que
-                a(target="_blank" href="https://uptime.is/99.99") 99.99%.
+                a(target="noreferrer" href="https://uptime.is/99.99") 99.99%.
                 | Não dependa mais de api's grátis que não garantem a disponibilidade do serviço. Se o CEP parar seu negocio também para.
           .col-md-4.col-sm-6.col-xs-12
             .saas_features_item
@@ -190,7 +191,7 @@ html(lang='pt-br')
               h3 Classificação de Localidades
               p
                 | Só o FindCEP inclui a classificacao conforme a
-                a(target="_blank" href="https://www.correios.com.br/enviar-e-receber/ferramentas/cep/estrutura-do-cep") estrutura do cep
+                a(target="noreferrer" href="https://www.correios.com.br/enviar-e-receber/ferramentas/cep/estrutura-do-cep") estrutura do cep
                 | contendo localidades não codificadas (cep único) e localidades codificadas por logradouros como caixa postal comunitária, grande úsuario, ceps especiais entre outros.
     section#dashboard.saas_about_area
       a.scroll_btn(href='#')
