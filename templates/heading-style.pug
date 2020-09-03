@@ -1,0 +1,751 @@
+doctype html
+html(lang='en')
+  head
+    // Required meta tags
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    link(rel='shortcut icon', href='img/favicon.png', type='image/x-icon')
+    title Saasland
+    // Bootstrap CSS
+    link(rel='stylesheet', href='css/bootstrap.min.css')
+    // icon font css
+    link(rel='stylesheet', href='vendors/themify-icon/themify-icons.css')
+    link(rel='stylesheet', href='vendors/font-awesome/css/all.css')
+    link(rel='stylesheet', href='vendors/flaticon/flaticon.css')
+    link(rel='stylesheet', href='vendors/animation/animate.css')
+    link(rel='stylesheet', href='vendors/owl-carousel/assets/owl.carousel.min.css')
+    link(rel='stylesheet', href='vendors/animation/animate.css')
+    link(rel='stylesheet', href='vendors/magnify-pop/magnific-popup.css')
+    link(rel='stylesheet', href='vendors/elagent/style.css')
+    link(rel='stylesheet', href='vendors/scroll/jquery.mCustomScrollbar.min.css')
+    link(rel='stylesheet', href='css/style.css')
+    link(rel='stylesheet', href='css/responsive.css')
+  body
+    #preloader
+      #ctn-preloader.ctn-preloader
+        .animation-preloader
+          .spinner
+          .txt-loading
+            span.letters-loading(data-text-preloader='F')
+              | F
+            span.letters-loading(data-text-preloader='I')
+              | I
+            span.letters-loading(data-text-preloader='N')
+              | N
+            span.letters-loading(data-text-preloader='D')
+              | D
+            span.letters-loading(data-text-preloader='C')
+              | C
+            span.letters-loading(data-text-preloader='E')
+              | E
+            span.letters-loading(data-text-preloader='P')
+              | P
+          p.text-center Loading
+        .loader
+          .row
+            .col-3.loader-section.section-left
+              .bg
+            .col-3.loader-section.section-left
+              .bg
+            .col-3.loader-section.section-right
+              .bg
+            .col-3.loader-section.section-right
+              .bg
+    .body_wrapper
+      header.header_area
+        nav.navbar.navbar-expand-lg.menu_one.menu_four
+          .container
+            a.navbar-brand(href='#')
+              img(src='img/logo.png', srcset='img/logo2x.png 2x', alt='logo')
+            button.navbar-toggler.collapsed(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+              span.menu_toggle
+                span.hamburger
+                  span
+                  span
+                  span
+                span.hamburger-cross
+                  span
+                  span
+            #navbarSupportedContent.collapse.navbar-collapse
+              ul.navbar-nav.menu.pl_120
+                li.nav-item.dropdown.submenu.mega_menu.mega_menu_two
+                  a.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                    | Home
+                  .mega_menu_inner
+                    ul.dropdown-menu
+                      li.nav-item
+                        ul.dropdown-menu.scroll
+                          li.nav-item
+                            a.item(href='home-chat.html')
+                              span.img
+                                span.rebon_tap New
+                                img(src='img/mega-menu-img/home-chat.jpg', alt='Prototyping Tool')
+                              span.text
+                                | Home Chat
+                          li.nav-item
+                            a.item(href='home-tracking.html')
+                              span.img
+                                span.rebon_tap New
+                                img(src='img/mega-menu-img/home-track.jpg', alt='Prototyping Tool')
+                              span.text
+                                | Home Tracking
+                          li.nav-item
+                            a.item(href='home-event.html')
+                              span.img
+                                span.rebon_tap New
+                                img(src='img/mega-menu-img/home-event.jpg', alt='Prototyping Tool')
+                              span.text
+                                | Home Event
+                          li.nav-item
+                            a.item(href='home-security.html')
+                              span.img
+                                span.rebon_tap New
+                                img(src='img/mega-menu-img/home-security.jpg', alt='Prototyping Tool')
+                              span.text
+                                | Home Security
+                          li.nav-item
+                            a.item(href='home-split.html')
+                              span.img
+                                img(src='img/mega-menu-img/home7.jpg', alt='Prototyping Tool')
+                              span.text
+                                | Home Split
+                          li.nav-item
+                            a.item(href='home-support.html')
+                              span.img
+                                img(src='img/mega-menu-img/support.jpg', alt='Prototyping Tool')
+                              span.text
+                                | Support
+                          li.nav-item
+                            a.item(href='home-color.html')
+                              span.img
+                                img(src='img/mega-menu-img/home-animation.jpg', alt='Prototyping Tool')
+                              span.text
+                                | Scroll Animation
+                          li.nav-item
+                            a.item(href='home-erp.html')
+                              span.img
+                                img(src='img/mega-menu-img/analytices.jpg', alt='Prototyping Tool')
+                              span.text
+                                | Analytices
+                          li.nav-item
+                            a.item(href='home-hosting.html')
+                              span.img
+                                img(src='img/mega-menu-img/hosting.jpg', alt='Prototyping Tool')
+                              span.text
+                                | Hosting
+                          li.nav-item
+                            a.item(href='home-pos.html')
+                              span.img
+                                img(src='img/mega-menu-img/pos.jpg', alt='Prototyping Tool')
+                              span.text
+                                | POS
+                          li.nav-item
+                            a.item(href='home-erp.html')
+                              span.img
+                                img(src='img/mega-menu-img/erp.jpg', alt='Prototyping Tool')
+                              span.text
+                                | ERP
+                          li.nav-item
+                            a.item(href='home-prototype-two.html')
+                              span.img
+                                img(src='img/mega-menu-img/Prototyping_Tool.jpg', alt='Prototyping Tool')
+                              span.text
+                                | Prototyping Tool
+                          li.nav-item
+                            a.item(href='home-payment-processing.html')
+                              span.img
+                                img(src='img/mega-menu-img/home16.jpg')
+                              span.text
+                                | Payment Processing
+                          li.nav-item
+                            a.item(href='home-mail.html')
+                              span.img
+                                img(src='img/mega-menu-img/home9.jpg')
+                              span.text
+                                | Email Client
+                          li.nav-item
+                            a.item(href='home-startup.html')
+                              span.img
+                                img(src='img/mega-menu-img/home15.jpg')
+                              span.text
+                                | Startup
+                          li.nav-item
+                            a.item(href='home-saas.html')
+                              span.img
+                                img(src='img/mega-menu-img/home17.jpg', alt='Classic Saas')
+                              span.text
+                                | Classic Saas
+                          li.nav-item
+                            a.item(href='home-software-dark.html')
+                              span.img
+                                img(src='img/mega-menu-img/home13.jpg', alt='Software (Dark)')
+                              span.text
+                                | Software (Dark)
+                          li.nav-item
+                            a.item(href='home-app-showcase.html')
+                              span.img
+                                img(src='img/mega-menu-img/home14.jpg', alt='App Showcase')
+                              span.text
+                                | App Showcase
+                          li.nav-item
+                            a.item(href='home-digital-marketing.html')
+                              span.img
+                                img(src='img/mega-menu-img/home11.jpg', alt='Digital Marketing')
+                              span.text
+                                | Digital Marketing
+                          li.nav-item
+                            a.item(href='home-cloud.html')
+                              span.img
+                                img(src='img/mega-menu-img/home12.jpg', alt='Cloud Based Saas')
+                              span.text
+                                | Cloud Based Saas
+                          li.nav-item
+                            a.item(href='home-hr-management.html')
+                              span.img
+                                img(src='img/mega-menu-img/home4.jpg', alt='HR Management')
+                              span.text
+                                | HR Management
+                          li.nav-item
+                            a.item(href='home-marketing-two.html')
+                              span.img
+                                img(src='img/mega-menu-img/home3.jpg', alt='CRM Software')
+                              span.text
+                                | CRM Software
+                          li.nav-item
+                            a.item(href='home-payment-style2.html')
+                              span.img
+                                img(src='img/mega-menu-img/home1.jpg', alt='Accounts & Billing')
+                              span.text
+                                | Accounts & Billing
+                          li.nav-item
+                            a.item(href='home-digital-marketing-two.html')
+                              span.img
+                                img(src='img/mega-menu-img/home5.jpg', alt='Digital Agency')
+                              span.text
+                                | Digital Agency
+                          li.nav-item
+                            a.item(href='home-project-management.html')
+                              span.img
+                                img(src='img/mega-menu-img/home8.jpg', alt='Project Management')
+                              span.text
+                                | Project Management
+                          li.nav-item
+                            a.item(href='home-saas-two.html')
+                              span.img
+                                img(src='img/mega-menu-img/saas2-slider.png', alt='Saas 02 (Slider)')
+                              span.text
+                                | Saas 02 (Slider)
+                          li.nav-item
+                            a.item(href='home-company.html')
+                              span.img
+                                img(src='img/mega-menu-img/home2.jpg', alt='home2')
+                              span.text
+                                | Company
+                li.dropdown.submenu.nav-item
+                  a.dropdown-toggle.nav-link(title='Pages', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false', href='#') Pages
+                  ul.dropdown-menu(role='menu')
+                    li.dropdown.submenu.nav-item
+                      a.dropdown-toggle.nav-link(title='Service', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false', href='#')
+                        | Service
+                        span.arrow_carrot-right
+                      ul.dropdown-menu
+                        li.nav-item
+                          a.nav-link(title='Service 01', href='service-1.html') Service 01
+                        li.nav-item
+                          a.nav-link(title='Service 02', href='service-2.html') Service 02
+                        li.nav-item
+                          a.nav-link(title='Service 03', href='service-3.html') Service 03
+                        li.nav-item
+                          a.nav-link(title='Service Details', href='service-details.html') Service Details
+                    li.dropdown.submenu.nav-item
+                      a.dropdown-toggle.nav-link(title='Career', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false', href='#')
+                        | Career
+                        span.arrow_carrot-right
+                      ul.dropdown-menu
+                        li.nav-item
+                          a.nav-link(title='Job Listing', href='job-listing.html') Job Listing
+                        li.nav-item
+                          a.nav-link(title='Job Details', href='job-details.html') Job Details
+                        li.nav-item
+                          a.nav-link(title='Apply Job', href='job-apply.html') Apply Job
+                    li.nav-item
+                      a.nav-link(title='About', href='about.html') About
+                    li.nav-item
+                      a.nav-link(title='Process', href='process.html') Process
+                    li.nav-item
+                      a.nav-link(title='Pricing', href='price.html') Pricing
+                    li.dropdown.submenu.nav-item
+                      a.dropdown-toggle.nav-link(title='Case Study', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false', href='#')
+                        | Case Study
+                        span.arrow_carrot-right
+                      ul.dropdown-menu
+                        li.nav-item
+                          a.nav-link(title='Case Study', href='case-study.html') Case Study
+                        li.nav-item
+                          a.nav-link(title='Case study Details', href='case-study-details.html') Case Study Details
+                    li.nav-item
+                      a.nav-link(title='Team', href='team.html') Team
+                    li.dropdown.submenu.nav-item
+                      a.dropdown-toggle.nav-link(title='Sign Up', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false', href='#')
+                        | Sign Up
+                        span.arrow_carrot-right
+                      ul.dropdown-menu
+                        li.nav-item
+                          a.nav-link(title='Sign Up 01', href='sign-up-1.html') Sign Up 01
+                        li.nav-item
+                          a.nav-link(title='Sign Up 02', href='sign-up-2.html') Sign Up 02
+                    li.dropdown.submenu.nav-item
+                      a.dropdown-toggle.nav-link(title='Login', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false', href='#')
+                        | Login
+                        span.arrow_carrot-right
+                      ul.dropdown-menu
+                        li.nav-item
+                          a.nav-link(title='Login 01', href='login.html') Login 01
+                        li.nav-item
+                          a.nav-link(title='Login 02', href='login-two.html') Login 02
+                    li.nav-item
+                      a.nav-link(title='FAQ', href='faq.html') FAQ
+                    li.dropdown.submenu.nav-item
+                      a.dropdown-toggle.nav-link(title='Contact', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false', href='#')
+                        | Contact
+                        span.arrow_carrot-right
+                      ul.dropdown-menu(role='menu')
+                        li.nav-item
+                          a.nav-link(title='Contact 01', href='contact-1.html') Contact 01
+                        li.nav-item
+                          a.nav-link(title='Contact  02', href='contact-2.html') Contact 02
+                    li.nav-item
+                      a.nav-link(title='Thank You', href='thanks.html') Thank You
+                    li.nav-item
+                      a.nav-link(title='Coming Soon', href='coming-soon.html') Coming Soon
+                    li.dropdown.submenu.nav-item
+                      a.dropdown-toggle.nav-link(title='404', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false', href='#')
+                        | 404
+                        span.arrow_carrot-right
+                      ul.dropdown-menu
+                        li.nav-item
+                          a.nav-link(title='404 01', href='404.html') 404 01
+                        li.nav-item
+                          a.nav-link(title='404 02', href='404-two.html') 404 02
+                li.nav-item.dropdown.submenu.mega_menu
+                  a.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                    | Portfolio
+                  .mega_menu_inner
+                    ul.dropdown-menu
+                      li.nav-item
+                        a.nav-link(href='index.html') Portfolio Grid
+                        ul.dropdown-menu
+                          li.nav-item
+                            a.nav-link(href='portfolio-grid-2col.html') Style 1 (2 columns)
+                          li.nav-item
+                            a.nav-link(href='portfolio-grid-3columns.html') Style 1 (3 columns)
+                          li.nav-item
+                            a.nav-link(href='portfolio-grid-4columns.html') Style 1 (4 columns)
+                          li.nav-item
+                            a.nav-link(href='portfolio-grid-2col-2.html') Style 2 (2 columns)
+                          li.nav-item
+                            a.nav-link(href='portfolio-grid-2col-3.html') Style 2 (3 columns)
+                          li.nav-item
+                            a.nav-link(href='portfolio-grid-2col-4.html') Style 2 (4 columns)
+                      li.nav-item
+                        a.nav-link(href='index.html') Portfolio Fluid
+                        ul.dropdown-menu
+                          li.nav-item
+                            a.nav-link(href='portfolio-fullwidth-3columns.html') Style 1 (3 columns)
+                          li.nav-item
+                            a.nav-link(href='portfolio-fullwidth-4columns.html') Style 1 (4 columns)
+                          li.nav-item
+                            a.nav-link(href='portfolio-grid-fullwidth1.html') Style 2 (3 columns)
+                          li.nav-item
+                            a.nav-link(href='portfolio-grid-fullwidth2.html') Style 2 (4 columns)
+                      li.nav-item
+                        a.nav-link(href='index.html') Portfolio Masonry
+                        ul.dropdown-menu
+                          li.nav-item
+                            a.nav-link(href='portfolio-mas-2col.html') Style 1 (2 columns)
+                          li.nav-item
+                            a.nav-link(href='portfolio-mas-3col.html') Style 1 (3 columns)
+                          li.nav-item
+                            a.nav-link(href='portfolio-mas-4col.html') Style 1 (4 columns)
+                          li.nav-item
+                            a.nav-link(href='portfolio-mas-3col-2.html') Style 2 (3 columns)
+                          li.nav-item
+                            a.nav-link(href='portfolio-mas-4col-2.html') Style 2 (4 columns)
+                      li.nav-item
+                        a.nav-link(href='index.html') Project details
+                        ul.dropdown-menu
+                          li.nav-item
+                            a.nav-link(href='portfolio-details-1.html') Style 1
+                          li.nav-item
+                            a.nav-link(href='portfolio-details-2.html') Style 2
+                          li.nav-item
+                            a.nav-link(href='portfolio-details-3.html') Style 3
+                li.nav-item.dropdown.submenu
+                  a.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                    | Shop
+                  ul.dropdown-menu
+                    li.nav-item
+                      a.nav-link(href='shop-grid.html') Shop Grid
+                    li.nav-item
+                      a.nav-link(href='shop-list.html') Shop list
+                    li.nav-item
+                      a.nav-link(href='product-details-1.html') Product detail
+                    li.nav-item
+                      a.nav-link(href='shoping-cart.html') Shopping cart
+                    li.nav-item
+                      a.nav-link(href='checkout.html') Checkout
+                    li.nav-item
+                      a.nav-link(href='wishlist.html') Wishlist
+                li.nav-item.dropdown.submenu
+                  a.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                    | Blog
+                  ul.dropdown-menu
+                    li.nav-item
+                      a.nav-link(href='blog-grid.html') Blog Grid
+                    li.nav-item
+                      a.nav-link(href='blog-grid-two.html') Blog Grid Two
+                    li.nav-item
+                      a.nav-link(href='blog-list.html') Blog List
+                    li.nav-item
+                      a.nav-link(href='blog-right-sidebar.html') Blog Right Sidebar
+                    li.nav-item
+                      a.nav-link(href='blog-masonry.html') Blog Masonry
+                    li.nav-item
+                      a.nav-link(href='blog-masonry-two.html') Blog Masonry Two
+                    li.nav-item
+                      a.nav-link(href='blog-masonry-sidebar.html') Blog Masonry Sidebar
+                    li.nav-item
+                      a.nav-link(href='blog-masonry-sidebar-two.html') Blog Masonry Sidebar Two
+                    li.nav-item
+                      a.nav-link(href='blog-single.html') Blog Single
+                    li.nav-item
+                      a.nav-link(href='blog-single-two.html') Blog Single Two
+                li.nav-item.dropdown.submenu.mega_menu
+                  a.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                    | Elements
+                  .mega_menu_inner
+                    ul.dropdown-menu
+                      li.nav-item
+                        a.nav-link Elements 01
+                        ul.dropdown-menu
+                          li.nav-item
+                            a.nav-link(href='Accordion.html') Accordions
+                          li.nav-item
+                            a.nav-link(href='button.html') Buttons
+                          li.nav-item
+                            a.nav-link(href='team.html') Team
+                          li.nav-item
+                            a.nav-link(href='integration.html') Integration
+                          li.nav-item
+                            a.nav-link(href='client.html') Clients
+                          li.nav-item
+                            a.nav-link(href='subscribe.html') Subscribe
+                          li.nav-item
+                            a.nav-link(href='call-to-action.html') Call to Action
+                          li.nav-item
+                            a.nav-link(href='tab.html') Tab
+                      li.nav-item
+                        a.nav-link Elements 02
+                        ul.dropdown-menu
+                          li.nav-item
+                            a.nav-link(href='testimonial.html') Testimonials
+                          li.nav-item
+                            a.nav-link(href='video.html') Video
+                          li.nav-item
+                            a.nav-link(href='carosuel.html') Carosuel
+                          li.nav-item
+                            a.nav-link(href='google-map.html') Google Map
+                          li.nav-item
+                            a.nav-link(href='contact-form.html') Contact Form
+                          li.nav-item
+                            a.nav-link(href='process.html') Process
+                          li.nav-item
+                            a.nav-link(href='getapp.html') Get App
+                      li.nav-item
+                        a.nav-link Elements 03
+                        ul.dropdown-menu
+                          li.nav-item
+                            a.nav-link(href='heading.html') Heading
+                          li.nav-item
+                            a.nav-link(href='blockquote.html') Blockquote
+                          li.nav-item
+                            a.nav-link(href='price.html') Pricing Table
+                          li.nav-item
+                            a.nav-link(href='fun-fact.html') Fun Fact
+                          li.nav-item
+                            a.nav-link(href='coming-soon.html') Countdown Timer
+                          li.nav-item
+                            a.nav-link(href='pagination.html') Pagination
+                          li.nav-item
+                            a.nav-link(href='heading-style.html') Heading Elements
+                          li.nav-item
+                            a.nav-link(href='alart.html') Alart
+                      li.nav-item
+                        a.nav-link
+                          | Headers
+                        ul.dropdown-menu
+                          li.nav-item
+                            a.nav-link(href='header-dark.html') Header Dark
+                          li.nav-item
+                            a.nav-link(href='header-style2.html') Header Style 2
+                          li.nav-item
+                            a.nav-link(href='header-style3.html') Header Style 3
+                          li.nav-item
+                            a.nav-link(href='header-style4.html') Header Style 4
+                          li.nav-item
+                            a.nav-link(href='header-style5.html') Header Style 5
+                          li.nav-item
+                            a.nav-link(href='header-style6.html') Header Style 6
+                          li.nav-item
+                            a.nav-link(href='header-style7.html') Header Style 7
+                          li.nav-item
+                            a.nav-link(href='header-style8.html') Header Style 8
+            a.btn_get.btn_hover.hidden-sm.hidden-xs(href='#get-app') Sign In
+      section.breadcrumb_area.typography_breacrumb
+        img.breadcrumb_shap(src='img/breadcrumb/banner_bg.png', alt='')
+        .container
+          .breadcrumb_content.text-center
+            h1.f_p.f_700.f_size_50.w_color.l_height50.mb_20
+              | Hello! here is
+              span Typography
+            p.f_400.w_color.f_size_16.l_height26
+              | Why I say old chap that is spiffing off his nut arse pear shaped plastered Jeffrey bodge
+              br
+              | barney some dodgy.!!
+      section.sec_pad
+        .container
+          .row
+            .col-lg-4
+              .heading_style
+                h5.h_title Bold Heading
+                h1 Heading one
+                h2 Heading two
+                h3 Heading three
+                h4 Heading four
+                h5 Heading five
+                h6 Heading six
+            .col-lg-4
+              .heading_style.medium
+                h5.h_title Medium Heading
+                h1 Heading one
+                h2 Heading two
+                h3 Heading three
+                h4 Heading four
+                h5 Heading five
+                h6 Heading six
+            .col-lg-4
+              .heading_style.regular
+                h5.h_title Regular Heading
+                h1 Heading one
+                h2 Heading two
+                h3 Heading three
+                h4 Heading four
+                h5 Heading five
+                h6 Heading six
+          .row
+            .col-lg-12.mt_130
+              h4.mb_40 Heading with Underline
+              p
+                | Squiffy quaint lavatory gutted mate bamboozled mush off his nut fantastic barney, I old Elizabeth at public school fanny around loo Harry, me old mucker vagabond easy peasy morish bodge A bit of how's your father so I said. Up the duff sloshed spiffing good time Why the BBC say my good sir bevvy, hotpot gosh young delinquent pardon you dropped a clanger brolly wind up, arse is bugger all mate brilliant give us a bell a load of old tosh.
+          .row
+            .col-lg-12.mt_70.pr_120
+              h4.h_title Highlights
+              p
+                | Hanky panky mush is such a fibber say no biggie zonked brolly cheeky, young delinquent on your bike mate cheesed off cup of tea excuse my French naf
+                span.bg-dark.text-white Harry the bee's knees sloshed,
+                |  spiffing good time cuppa brilliant bubble and squeak chinwag off his nut my lady. Bubble and squeak excuse my French happy days bleeding
+                span.bg-purpple.text-white Queen's English cack cuppa,
+                |  A bit of how's your father spiffing cheeky faff about brolly, the BBC off his nut my good sir spiffing good time cup of char. A blinding shot the full monty bog the BBC tickety-boo bamboozled
+                span.bg-blue.text-white Charles faff about, arse over
+                |  tit Harry a I vagabond cheeky bugger, brown bread pardon me codswallop blow off chap bonnet. Loo super lurgy ummm I'm telling it's all gone to pot easy peasy.
+          .row
+            .col-lg-12.pr_120.mt_70
+              h4.h_title Text Tooltips
+              p.tooltip_p
+                | What a plonker cheers bog vagabond do one blower he legged it
+                a.text-green(href='#', data-toggle='tooltip', title='Your text here')  Why Oxford old dropped a clanger,
+                |  bugger knees up lurgy that bodge cup of char gormless
+                a.text-red(href='#', data-toggle='tooltip', title='Your text here') The bee's knees the little rotter pardon you,
+                |  bite your arm off tinkety tonk old fruit barney hunky-dory smashing mush skive off squiffy porkies.
+          .row.mt_70
+            .col-lg-6.pr_70
+              h4.h_title Big Text Dropcap
+              p.drop_text
+                span K
+                | aking cakes buggered my lady up the duffummm I'm telling skive off Richard Oxford it's all gone to pot lavatory codswallop I don't get shirty with me, lost the plot up the kyver plastered mufty the full monty bleeding tosser cheeky what a load of rubbish excuse my French. A cheeky fanny around.!
+            .col-lg-6.pr_70
+              h4.h_title Rectangle Dropcap
+              p.drop_text
+                span
+                  img(src='img/b.png', alt='')
+                | aking cakes buggered my lady up the duffummm I'm telling skive off Richard Oxford it's all gone to pot lavatory codswallop I don't get shirty with me, lost the plot up the kyver plastered mufty the full monty bleeding tosser cheeky what a load of rubbish excuse my French. A cheeky fanny around.!
+          .row.mt_70
+            .col-lg-5
+              h4.h_title Unordered Lists (Nested)
+              ul.nested
+                li
+                  | Option panel
+                  ul
+                    li Incredible Support
+                    ul
+                      li Life time Update
+                      li Unlimited Colors
+                      li Translation Ready
+                    li List item two
+                    li List item three
+                li Option panel
+                li Easy to Customize
+                li User Friendly
+                li Incredible Support
+                li Customize
+            .col-lg-7
+              h4.h_title Ordered List (Nested)
+              ol.nested
+                li
+                  | Option panel
+                  ol
+                    li Incredible Support
+                    ol
+                      li Life time Update
+                      li Unlimited Colors
+                      li Translation Ready
+                    li List item two
+                    li List item three
+                li Option panel
+                li Easy to Customize
+                li User Friendly
+                li Incredible Support
+                li Customize
+            .row.mt_70
+              .col-lg-12.heading_style.medium
+                h4 Blockquote
+                blockquote.blockquote.mt_40
+                  p.mb-0
+                    | The little rotter on your bike mate Why brolly chimney pot buggered so I said plastered chancer don't get shirty with me hanky panky, cheeky bugger Oxford dropped a clanger David up the kyver horse play bog-standard victoria sponge amongst bite your arm off bevvy, barney say wind up.!
+                h6.h_title.mt_60 Single line blockquote:
+                blockquote.blockquote_two
+                  img(src='img/qoute.png', alt='')
+                  |                                 Stay Hungry. Stay foolish.
+                h6.h_title.mt_60 Multi line blockquote with a cite reference:
+                blockquote.media.blockquote_three
+                  img(src='img/qoute.png', alt='')
+                  .media-body
+                    | The HTML
+                    code.highlighter-rouge <blockquote>
+                    |  Element (or HTML Block Quotation Element) indicates that the enclosed text is an extended quotation. Usually, this is rendered visually by indentation (see Notes for how to change it). A URL for the source of the quotation may be given using the
+                    code.highlighter-rouge <cite>
+                    |  attribute, while a text representation of the source can be given using the element.
+      section.typography_promo_area.text-center
+        .bg_overlay(style='background: url(./img/05_typography_style_01.png) no-repeat scroll center top;')
+        .container
+          h2
+            | SaasLand will definitely make
+            br
+            | Your life easier
+          a.btn_get.btn_hover(href='#') Buy SaasLand Now
+      footer.footer_area.footer_area_four.f_bg
+        .footer_top
+          .container
+            .row
+              .col-lg-3.col-md-6
+                .f_widget.company_widget
+                  a.f-logo(href='index.html')
+                    img(src='img/logo.png', srcset='img/logo2x.png 2x', alt='')
+                  .widget-wrap
+                    p.f_400.f_p.f_size_15.mb-0.l_height34
+                      span Email:
+                      a.f_400(href='mailto:saasland@gmail.com') saasland@gmail.com
+                    p.f_400.f_p.f_size_15.mb-0.l_height34
+                      span Phone:
+                      a.f_400(href='tel:948256347968') +948 256 347 968
+                  form.f_subscribe.mailchimp(action='#', method='post')
+                    input.form-control.memail(type='text', name='EMAIL', placeholder='Email')
+                    button.btn.btn-submit(type='submit')
+                      i.ti-arrow-right
+                    p.mchimp-errmessage(style='display: none;')
+                    p.mchimp-sucmessage(style='display: none;')
+              .col-lg-3.col-md-6
+                .f_widget.about-widget.pl_40
+                  h3.f-title.f_600.t_color.f_size_18.mb_40 About Us
+                  ul.list-unstyled.f_list
+                    li
+                      a(href='#') Company
+                    li
+                      a(href='#') Leadership
+                    li
+                      a(href='#') Diversity
+                    li
+                      a(href='#') Jobs
+                    li
+                      a(href='#') Press
+                    li
+                      a(href='#') Wavelength
+              .col-lg-3.col-md-6
+                .f_widget.about-widget
+                  h3.f-title.f_600.t_color.f_size_18.mb_40 Workflow Solutions
+                  ul.list-unstyled.f_list
+                    li
+                      a(href='#') Project Management
+                    li
+                      a(href='#') Agile
+                    li
+                      a(href='#') Task Management
+                    li
+                      a(href='#') Reporting
+                    li
+                      a(href='#') Work Tracking
+                    li
+                      a(href='#') See All Uses
+              .col-lg-3.col-md-6
+                .f_widget.about-widget
+                  h3.f-title.f_600.t_color.f_size_18.mb_40 Team Solutions
+                  ul.list-unstyled.f_list
+                    li
+                      a(href='#') Engineering
+                    li
+                      a(href='#') Designers
+                    li
+                      a(href='#') Sales
+                    li
+                      a(href='#') Developers
+                    li
+                      a(href='#') Marketing
+                    li
+                      a(href='#') See All Teams
+        .footer_bottom
+          .container
+            .row.align-items-center
+              .col-lg-4.col-md-5.col-sm-6
+                p.mb-0.f_400
+                  | Copyright © 2018 Desing by
+                  a(href='#') DroitThemes
+              .col-lg-4.col-md-3.col-sm-6
+                .f_social_icon_two.text-center
+                  a(href='#')
+                    i.ti-facebook
+                  a(href='#')
+                    i.ti-twitter-alt
+                  a(href='#')
+                    i.ti-vimeo-alt
+                  a(href='#')
+                    i.ti-pinterest
+              .col-lg-4.col-md-4.col-sm-12
+                ul.list-unstyled.f_menu.text-right
+                  li
+                    a(href='#') Terms of Use
+                  li
+                    a(href='#') Privacy Policy
+    // Optional JavaScript
+    // jQuery first, then Popper.js, then Bootstrap JS
+    script(src='js/jquery-3.2.1.min.js')
+    script(src='js/propper.js')
+    script(src='js/bootstrap.min.js')
+    script(src='vendors/wow/wow.min.js')
+    script(src='vendors/sckroller/jquery.parallax-scroll.js')
+    script(src='vendors/owl-carousel/owl.carousel.min.js')
+    script(src='vendors/imagesloaded/imagesloaded.pkgd.min.js')
+    script(src='vendors/isotope/isotope-min.js')
+    script(src='vendors/magnify-pop/jquery.magnific-popup.min.js')
+    script(src='vendors/scroll/jquery.mCustomScrollbar.concat.min.js')
+    script(src='js/plugins.js')
+    script(src='js/main.js')
