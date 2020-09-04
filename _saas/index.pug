@@ -1,0 +1,1066 @@
+doctype html
+html(lang='en')
+  head
+    // Required meta tags
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    link(rel='shortcut icon', href='img/favicon.png', type='image/x-icon')
+    title FindCEP
+    // Bootstrap CSS
+    link(rel='stylesheet', href='css/bootstrap.min.css')
+    link(rel='stylesheet', href='vendors/bootstrap-selector/css/bootstrap-select.min.css')
+    // icon font css
+    link(rel='stylesheet', href='vendors/themify-icon/themify-icons.css')
+    link(rel='stylesheet', href='vendors/flaticon/flaticon.css')
+    link(rel='stylesheet', href='vendors/animation/animate.css')
+    link(rel='stylesheet', href='vendors/owl-carousel/assets/owl.carousel.min.css')
+    link(rel='stylesheet', href='vendors/magnify-pop/magnific-popup.css')
+    link(rel='stylesheet', href='vendors/nice-select/nice-select.css')
+    link(rel='stylesheet', href='vendors/elagent/style.css')
+    link(rel='stylesheet', href='vendors/scroll/jquery.mCustomScrollbar.min.css')
+    link(rel='stylesheet', href='css/style.css')
+    link(rel='stylesheet', href='css/responsive.css')
+  body
+    #preloader
+      #ctn-preloader.ctn-preloader
+        .animation-preloader
+          .spinner
+          .txt-loading
+            span.letters-loading(data-text-preloader='S')
+              | S
+            span.letters-loading(data-text-preloader='A')
+              | A
+            span.letters-loading(data-text-preloader='A')
+              | A
+            span.letters-loading(data-text-preloader='S')
+              | S
+            span.letters-loading(data-text-preloader='L')
+              | L
+            span.letters-loading(data-text-preloader='A')
+              | A
+            span.letters-loading(data-text-preloader='N')
+              | N
+            span.letters-loading(data-text-preloader='D')
+              | D
+          p.text-center Loading
+        .loader
+          .row
+            .col-3.loader-section.section-left
+              .bg
+            .col-3.loader-section.section-left
+              .bg
+            .col-3.loader-section.section-right
+              .bg
+            .col-3.loader-section.section-right
+              .bg
+    .body_wrapper
+      header.header_area
+        nav.navbar.navbar-expand-lg.menu_one.menu_four.hosting_menu
+          .container
+            a.navbar-brand.sticky_logo(href='#')
+              h2 FindCEP
+              //- img(src='', srcset='img/logo2x-2.png 2x', alt='logo')
+              //- img(src='', srcset='img/logo2x.png 2x', alt='')
+            #navbarSupportedContent.collapse.navbar-collapse
+              ul.navbar-nav.menu.w_menu.ml-auto
+                //- Porque o Findcep?
+                li.nav-item.dropdown.submenu.mega_menu.mega_menu_two.active
+                  a.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                    | Porque o Findcep?
+                  .mega_menu_inner
+                    ul.dropdown-menu
+                      li.nav-item
+                        ul.dropdown-menu.scroll
+                          li.nav-item
+                            a.item(href='home-chat.html')
+                              span.img
+                                span.rebon_tap New
+                                img(src='img/mega-menu-img/home-chat.jpg', alt='Prototyping Tool')
+                              span.text
+                                | Home Chat
+                          li.nav-item
+                            a.item(href='home-tracking.html')
+                              span.img
+                                span.rebon_tap New
+                                img(src='img/mega-menu-img/home-chat.jpg', alt='Prototyping Tool')
+                              span.text
+                                | Home Tracking
+                          li.nav-item
+                            a.item(href='home-event.html')
+                              span.img
+                                span.rebon_tap New
+                                img(src='img/mega-menu-img/home-chat.jpg', alt='Prototyping Tool')
+                              span.text
+                                | Home Event
+                          li.nav-item
+                            a.item(href='home-security.html')
+                              span.img
+                                span.rebon_tap New
+                                img(src='img/mega-menu-img/home-chat.jpg', alt='Prototyping Tool')
+                              span.text
+                                | Home Security
+                //- Planos e Preços
+                li.dropdown.submenu.nav-item
+                  a.dropdown-toggle.nav-link(title='Pages', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false', href='#') Preços e Planos
+                //- Desenvolvedores
+                li.nav-item.dropdown.submenu.mega_menu
+                  a.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                    | Desenvolvedores
+                  .mega_menu_inner
+                    ul.dropdown-menu
+                      li.nav-item
+                        a.nav-link(href='index.html') Estrutura do CEP
+                        ul.dropdown-menu
+                          li.nav-item
+                            a.nav-link(href='portfolio-grid-2col.html') Style 1 (2 columns)
+                          li.nav-item
+                            a.nav-link(href='portfolio-grid-3columns.html') Style 1 (3 columns)
+                          li.nav-item
+                            a.nav-link(href='portfolio-grid-4columns.html') Style 1 (4 columns)
+                          li.nav-item
+                            a.nav-link(href='portfolio-grid-2col-2.html') Style 2 (2 columns)
+                          li.nav-item
+                            a.nav-link(href='portfolio-grid-2col-3.html') Style 2 (3 columns)
+                          li.nav-item
+                            a.nav-link(href='portfolio-grid-2col-4.html') Style 2 (4 columns)
+                      li.nav-item
+                        a.nav-link(href='index.html') Estrutura da API
+                        ul.dropdown-menu
+                          li.nav-item
+                            a.nav-link(href='portfolio-fullwidth-3columns.html') Style 1 (3 columns)
+                          li.nav-item
+                            a.nav-link(href='portfolio-fullwidth-4columns.html') Style 1 (4 columns)
+                          li.nav-item
+                            a.nav-link(href='portfolio-grid-fullwidth1.html') Style 2 (3 columns)
+                          li.nav-item
+                            a.nav-link(href='portfolio-grid-fullwidth2.html') Style 2 (4 columns)
+                      li.nav-item
+                        a.nav-link(href='index.html') Como Integrar
+                        ul.dropdown-menu
+                          li.nav-item
+                            a.nav-link(href='portfolio-mas-2col.html') Style 1 (2 columns)
+                          li.nav-item
+                            a.nav-link(href='portfolio-mas-3col.html') Style 1 (3 columns)
+                          li.nav-item
+                            a.nav-link(href='portfolio-mas-4col.html') Style 1 (4 columns)
+                          li.nav-item
+                            a.nav-link(href='portfolio-mas-3col-2.html') Style 2 (3 columns)
+                          li.nav-item
+                            a.nav-link(href='portfolio-mas-4col-2.html') Style 2 (4 columns)
+                      li.nav-item
+                        a.nav-link(href='index.html') O que devo levar em consideraçao?
+                        ul.dropdown-menu
+                          li.nav-item
+                            a.nav-link(href='portfolio-details-1.html') Style 1
+                          li.nav-item
+                            a.nav-link(href='portfolio-details-2.html') Style 2
+                          li.nav-item
+                            a.nav-link(href='portfolio-details-3.html') Style 3
+                //- SignIn
+                li(class="nav-item dropdown submenu" hidden=true)
+                  a.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                    | Sign-In
+                  ul.dropdown-menu
+                    li.nav-item
+                      a.nav-link(href='shop-grid.html') Shop Grid
+                    li.nav-item
+                      a.nav-link(href='shop-grid-left-sidebar.html') Shop Grid Sidebar
+                    li.nav-item
+                      a.nav-link(href='shop-list.html') Shop list
+                    li.nav-item
+                      a.nav-link(href='product-details-1.html') Product detail
+                    li.nav-item
+                      a.nav-link(href='shoping-cart.html') Shopping cart
+                    li.nav-item
+                      a.nav-link(href='checkout.html') Checkout
+                    li.nav-item
+                      a.nav-link(href='wishlist.html') Wishlist
+                //- FAQ
+                li.nav-item.dropdown.submenu
+                  a.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                    | FAQ
+                  ul.dropdown-menu
+                    li.nav-item
+                      a.nav-link(href='blog-grid.html') Blog Grid
+                    li.nav-item
+                      a.nav-link(href='blog-grid-two.html') Blog Grid Two
+                    li.nav-item
+                      a.nav-link(href='blog-list.html') Blog List
+                    li.nav-item
+                      a.nav-link(href='blog-right-sidebar.html') Blog Right Sidebar
+                    li.nav-item
+                      a.nav-link(href='blog-masonry.html') Blog Masonry
+                    li.nav-item
+                      a.nav-link(href='blog-masonry-two.html') Blog Masonry Two
+                    li.nav-item
+                      a.nav-link(href='blog-masonry-sidebar.html') Blog Masonry Sidebar
+                    li.nav-item
+                      a.nav-link(href='blog-masonry-sidebar-two.html') Blog Masonry Sidebar Two
+                    li.nav-item
+                      a.nav-link(href='blog-single.html') Blog Single
+                    li.nav-item
+                      a.nav-link(href='blog-single-two.html') Blog Single Two
+                li.nav-item
+                  a.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                    | Contato
+              a.btn_get.btn_hover.hidden-sm.hidden-xs(href='#') Teste Agora
+      section.hosting_banner_area
+        //- ul.list-unstyled.b_line
+        //-   li.wow.fadeInUp(data-wow-delay='0.4s')
+        //-     img(src='img/hosting/line_01.png', alt='')
+        //-   li.wow.fadeInUp(data-wow-delay='0.7s')
+        //-     img(src='img/hosting/line_02.png', alt='')
+        //-   li.wow.fadeInUp(data-wow-delay='0.9s')
+        //-     img(src='img/hosting/line_03.png', alt='')
+        //-   li.wow.fadeInUp(data-wow-delay='1.2s')
+        //-     img(src='img/hosting/line_04.png', alt='')
+        //-   li.wow.fadeInUp(data-wow-delay='0.4s')
+        //-     img(src='img/hosting/line_05.png', alt='')
+        //-   li.wow.fadeInUp(data-wow-delay='1s')
+        //-     img(src='img/hosting/line_06.png', alt='')
+        //-   li.wow.fadeInUp(data-wow-delay='1s')
+        //-     img(src='img/hosting/line_07.png', alt='')
+        //-   li.wow.fadeInUp(data-wow-delay='1.3s')
+        //-     img(src='img/hosting/line_08.png', alt='')
+        .container
+          .hosting_content.align-items-center(style='text-align:center')
+            h1.wow.fadeInUp(data-wow-delay='0.1s') API CEP
+            h2.wow.fadeInUp(data-wow-delay='0.3s') É a solução completa de localização de  código postal e endereços do BRASIL
+            p.wow.fadeInUp(data-wow-delay='0.5s')
+              | Sem setup e a partir de R$ 29,90/mês
+            a.hosting_btn.btn_hover.wow.fadeInUp(href='', data-wow-delay='0.7s') Get Started
+      section.domain_search_area.sec_pad
+        .map_bg
+        .container
+          .domain_box_info
+            h3.wow.fadeInUp(data-wow-delay='0.3s') Procurando por algum CEP?
+            form(action='#', method='post')
+              .domain_form_inner
+                input.form-control(type='text', placeholder='digite um cep')
+                .domain_select
+                  select.form-control.selectpickers
+                    option
+                    option
+                    option
+                    option
+                    option
+                button.hosting_btn(type='submit') FindCEP
+            ul.list-unstyled.domain_price
+              li
+                | 01001-001
+                //- span Logradouro
+              li
+                | 23575-460
+                //- span Especial
+              li
+                | 95670-000
+                //- span Cep Unico
+              li
+                | 05632-020
+                //- span Grande Usuario
+              li
+                | 14711-462
+                //- span Caixa Postal
+      section.hosting_service_area.sec_pad
+        .container
+          .hosting_title.text-center
+            h2.wow.fadeInUp(data-wow-delay='0.3s')
+              | O que o FindCEP oferece para seu negócio?
+              br
+
+            p.wow.fadeInUp(data-wow-delay='0.5s')
+              | Oferecemos busca e tratamento de CEPs (Código Endereçamento Postal) e Endereços para o seu negócio online.
+          .row
+            .col-lg-4.col-sm-6
+              .hosting_service_item
+                .icon
+                  img(src='img/hosting/icon3.png', alt='base de cep')
+                a(href='#')
+                  h4.h_head Base de CEP atualizada
+                p
+                  | Oferecemos busca e tratamento de CEPs (Código Endereçamento Postal) e Endereços para o seu negócio online.
+            .col-lg-4.col-sm-6
+              .hosting_service_item
+                .icon
+                  img(src='img/hosting/icon5.png', alt='')
+                a(href='#')
+                  h4.h_head Taxa de Atualização
+                p
+                  | A cada mês, aproximadamete 10 mil CEP's sofrem inclusões, atualizações e remoções.
+            .col-lg-4.col-sm-6
+              .hosting_service_item
+                .icon
+                  img(src='img/hosting/icon3.png', alt='')
+                a(href='#')
+                  h4.h_head Códigos dos Municípios
+                p
+                  | Nossa base é sincronizada à última versão disponibilizada pelo IBGE, incluindo corretamente os códigos dos distritos e sub-distritos.
+            .col-lg-4.col-sm-6
+              .hosting_service_item
+                .icon
+                  img(src='img/hosting/icon4.png', alt='')
+                a(href='#')
+                  h4.h_head Sempre Online
+                p
+                  | O FindCEP entrega milhares de CEP's simultaneamente com 99.99% de disponibilidade.
+            .col-lg-4.col-sm-6
+              .hosting_service_item
+                .icon
+                  img(src='img/hosting/icon2.png', alt='')
+                a(href='#')
+                  h4.h_head Experiência do Cliente
+                p
+                  | Diminua o tempo de cadastro de seu cliente, com a API CEP o endereço é localizado em apenas 50 ms.
+            .col-lg-4.col-sm-6
+              .hosting_service_item
+                .icon
+                  img(src='img/hosting/icon6.png', alt='')
+                a(href='#')
+                  h4.h_head Integre Facilmente
+                p
+                  | A nossa API CEP é simples de usar, com fácil integracão, sem custo de setup e compatível com qualquer aplicação.
+      section.hosting_features_area
+        .container
+          .row
+            .col-lg-6
+              .h_features_img
+                img(src='img/hosting/business1.png', alt='')
+            .col-lg-6
+              .h_features_content
+                .hosting_title
+                  h2 Por que devo usar o FindCEP?
+                  //- p
+                  //-  | texto aqui ?
+                .media.h_features_item
+                  img(src='img/hosting/icon7.png', alt='')
+                  .media-body
+                    h4.h_head Disponibilidade
+                    p  Não dependa mais de API's gratuitas que não garantem a disponibilidade do serviço que o seu negócio merece.
+                .media.h_features_item
+                  img(src='img/hosting/icon8.png', alt='')
+                  .media-body
+                    h4.h_head Classificação
+                    p Só a API CEP FindCEP classifica a estrutura do CEP contendo localidades não codificadas (cep único) e codificadas por logradouros como caixa postal comunitária, grande úsuario, Ceps especiais e outros.
+                .media.h_features_item
+                  img(src='img/hosting/icon7.png', alt='')
+                  .media-body
+                    h4.h_head Agilidade
+                    p  Proporcione ao seu cliente agilidade e facilidade na criação de cadastros e contas no seu site, mitigue carrinhos  abandonados e aumente a conversão.
+      section.hosting_features_area
+        .container
+          .row.flex-row-reverse
+            .col-lg-6
+              .h_features_img
+                img(src='img/hosting/business2.png', alt='')
+            .col-lg-6
+              .h_features_content
+                .hosting_title
+                  h2
+                    | Tecnologia FindCEP
+                  p
+                    | As api's do FindCEP foi desenvolvida para atender clientes de e-commerce com alto trafego na black-friday.
+                .media.h_features_item
+                  img(src='img/hosting/icon9.png', alt='')
+                  .media-body
+                    h4.h_head Arquitetura
+                    p O FindCEP está totalmente hospedado na AWS, utilizando as melhores práticas de infraestrutura e desenvolvimento do mercado.
+                .media.h_features_item
+                  img(src='img/hosting/icon10.png', alt='')
+                  .media-body
+                    h4.h_head Compatiblidade
+                    p A nossa API pode ser implementada em qualquer plataforma ou linguagem do mercado, tudo isso em menos de 1 hora.
+                    a
+                .media.h_features_item
+                  img(src='img/hosting/icon10.png', alt='')
+                  .media-body
+                    h4.h_head Confiança
+                    p
+                      | Desde o lancamento, há 04 anos o nosso SLA está em  99.99% de uptime.
+                      br
+                      br
+                    a.hosting_btn.btn_hover(href='https://api.whatsapp.com/send?phone=5511980597677&text=&source=&data=&app_absent=') Fale com o especialista!
+      //- section.h_action_area(hidden=true)
+        .container
+          .row.align-items-center
+            .col-md-6
+              .h_action_img
+                img.img-fluid(src='img/hosting/action_img.png', alt='')
+            .col-md-6
+              .h_action_content
+                h2 Managed wordpress Hosting on all plans
+                p
+                  | Spiffing pukka show off show off pick your nose and blow off easy peasy buggered hotpot Harry, pardon me blatant.!
+                a.hosting_btn.btn_hover(href='') Product Docs
+      section.h_pricing_area.sec_pad
+        .container
+          .hosting_title.text-center
+            h2
+              | Conheça nossos planos e preços
+              br
+              | comece a usar agora
+            p
+              | para qualquer tamanho de negócio <- melhorar
+          .h_price_inner(hidden=false)
+            ul#myTab.nav.nav-tabs.hosting_tab(role='tablist')
+              li.nav-item
+                a#home-tab.nav-link.active(data-toggle='tab', href='#home', role='tab', aria-controls='home', aria-selected='true') Planos Mensais
+              li.nav-item
+                a#profile-tab.nav-link(data-toggle='tab', href='#profile', role='tab', aria-controls='profile', aria-selected='false') Planos Anuais
+              li.nav-item
+                a#contact-tab.nav-link(data-toggle='tab', href='#contact', role='tab', aria-controls='contact', aria-selected='false') Plano sob Medida
+            #myTabContent.tab-content.h_price_tab
+
+              #home.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='home-tab')
+                p
+                  | Todos os nossos planos com SLA de 99.99%
+                .h_price_body
+                  .price_head
+                    .p_head
+                      h5 Planos
+                    .p_head
+                      h5 Consultas
+                    .p_head
+                      h5 Sites
+                    .p_head
+                      h5 CDN
+                    .p_head
+                      h5 Suporte
+                    .p_head
+                      h5 Preço
+                    .p_head.c_width
+                  .h_price_body
+                    .h_p_list
+                      .h_price_item.memory(data-title='Memory')
+                        h5 Gratuito
+                      .h_price_item
+                        h5 1.000
+                      .h_price_item
+                        h5 1
+                      .h_price_item
+                        h5 no
+                      .h_price_item
+                        h5 no
+                      .h_price_item
+                        h5
+                          span $0
+                          | $0.0025/req
+                      .h_price_item.c_width
+                        a.h_price_btn(href='#') Começe Já
+                    .h_p_list
+                      .h_price_item.memory(data-title='Memory')
+                        h5 Starter
+                      .h_price_item
+                        h5 1.000
+                      .h_price_item
+                        h5 2
+                      .h_price_item
+                        h5 yes
+                      .h_price_item
+                        h5 09:00-17:00
+                      .h_price_item
+                        h5
+                          span $9.99
+                          | $0.0045/req
+                      .h_price_item.c_width
+                        a.h_price_btn(href='#') Assine
+                    .h_p_list
+                      .h_price_item.memory(data-title='Memory')
+                        h5 Corporate
+                      .h_price_item
+                        h5 1.000
+                      .h_price_item
+                        h5 3
+                      .h_price_item
+                        h5 Sim
+                      .h_price_item
+                        h5 24x7
+                      .h_price_item
+                        h5
+                          span $99
+                          | $0.0035/req
+                      .h_price_item.c_width
+                        a.h_price_btn(href='#') Assine
+                    .h_p_list
+                      .h_price_item.memory(data-title='Memory')
+                        h5 Business
+                      .h_price_item
+                        h5 100.000
+                      .h_price_item
+                        h5 1
+                      .h_price_item
+                        h5 Sim
+                      .h_price_item
+                        h5 24x7
+                      .h_price_item
+                        h5
+                          span $279
+                          | $0.0022/req
+                      .h_price_item.c_width
+                        a.h_price_btn(href='#') Assine
+              //- TABLE ANUAL
+              #profile.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab')
+                p
+                  | Todos os nossos planos com SLA de 99.99%
+                .h_price_body
+                  .price_head
+                    .p_head
+                      h5 Planos
+                    .p_head
+                      h5 Consultas
+                    .p_head
+                      h5 Sites
+                    .p_head
+                      h5 CDN
+                    .p_head
+                      h5 Suporte
+                    .p_head
+                      h5 Preço
+                    .p_head.c_width
+                  .h_price_body
+                    .h_p_list
+                      .h_price_item.memory(data-title='Memory')
+                        h5 Gratuito
+                      .h_price_item
+                        h5 1.000
+                      .h_price_item
+                        h5 1
+                      .h_price_item
+                        h5 Não
+                      .h_price_item
+                        h5 Não
+                      .h_price_item
+                        h5
+                          span $0
+                          | $0.0025/req
+                      .h_price_item.c_width
+                        a.h_price_btn(href='#') Começe Já
+                    .h_p_list
+                      .h_price_item.memory(data-title='Memory')
+                        h5 Starter
+                      .h_price_item
+                        h5 1.000
+                      .h_price_item
+                        h5 2
+                      .h_price_item
+                        h5 Sim
+                      .h_price_item
+                        h5 09:00-17:00
+                      .h_price_item
+                        h5
+                          span $9.99
+                          | $0.0045/req
+                      .h_price_item.c_width
+                        a.h_price_btn(href='#') Assine
+                    .h_p_list
+                      .h_price_item.memory(data-title='Memory')
+                        h5 Corporate
+                      .h_price_item
+                        h5 1.000
+                      .h_price_item
+                        h5 3
+                      .h_price_item
+                        h5 Sim
+                      .h_price_item
+                        h5 24x7
+                      .h_price_item
+                        h5
+                          span $99
+                          | $0.0035/req
+                      .h_price_item.c_width
+                        a.h_price_btn(href='#') Assine
+                    .h_p_list
+                      .h_price_item.memory(data-title='Memory')
+                        h5 Business
+                      .h_price_item
+                        h5 100.000
+                      .h_price_item
+                        h5 5
+                      .h_price_item
+                        h5 Sim
+                      .h_price_item
+                        h5 24x7
+                      .h_price_item
+                        h5
+                          span $279
+                          | $0.0022/req
+                      .h_price_item.c_width
+                        a.h_price_btn(href='#') Assine
+              //- FIM TABLE
+              #contact.tab-pane.fade(role='tabpanel', aria-labelledby='contact-tab')
+                p
+                  | Todos os nossos planos com SLA de 99.99%
+                .h_price_body
+                  .price_head
+                    .p_head
+                      h5 Planos
+                    .p_head
+                      h5 Consultas
+                    .p_head
+                      h5 Sites
+                    .p_head
+                      h5 CDN
+                    .p_head
+                      h5 Suporte
+                    .p_head
+                      h5 Preço
+                    .p_head.c_width
+                  .h_price_body
+                    .h_p_list
+                      .h_price_item.memory(data-title='Memory')
+                        h5 Gratuito
+                      .h_price_item
+                        h5 1.000
+                      .h_price_item
+                        h5 1
+                      .h_price_item
+                        h5 Não
+                      .h_price_item
+                        h5 Não
+                      .h_price_item
+                        h5
+                          span $0
+                          | $0.0025/req
+                      .h_price_item.c_width
+                        a.h_price_btn(href='#') Começe Já
+                    .h_p_list
+                      .h_price_item.memory(data-title='Memory')
+                        h5 Starter
+                      .h_price_item
+                        h5 1.000
+                      .h_price_item
+                        h5 2
+                      .h_price_item
+                        h5 Sim
+                      .h_price_item
+                        h5 09:00-17:00
+                      .h_price_item
+                        h5
+                          span $9.99
+                          | $0.0045/req
+                      .h_price_item.c_width
+                        a.h_price_btn(href='#') Assine
+                    .h_p_list
+                      .h_price_item.memory(data-title='Memory')
+                        h5 Corporate
+                      .h_price_item
+                        h5 1.000
+                      .h_price_item
+                        h5 3
+                      .h_price_item
+                        h5 Sim
+                      .h_price_item
+                        h5 24x7
+                      .h_price_item
+                        h5
+                          span $99
+                          | $0.0035/req
+                      .h_price_item.c_width
+                        a.h_price_btn(href='#') Assine
+                    .h_p_list
+                      .h_price_item.memory(data-title='Memory')
+                        h5 Business
+                      .h_price_item
+                        h5 100.000
+                      .h_price_item
+                        h5 5
+                      .h_price_item
+                        h5 Sim
+                      .h_price_item
+                        h5 24x7
+                      .h_price_item
+                        h5
+                          span $279
+                          | $0.0022/req
+                      .h_price_item.c_width
+                        a.h_price_btn(href='#') Assine
+              //- FIM TABLE
+          .price_info_two
+            .price_head
+              .p_head.time
+                h4 Time tracking
+              .p_head
+                h5 Free
+                p $0.0 / mo
+              .p_head
+                h5 Enterprise
+                p $30.0 / mo
+              .p_head
+                h5 Unlimited
+                p $40.0 / mo
+            .price_body
+              .pr_list
+                .price_item
+                  h5.pr_title(data-toggle='tooltip', data-placement='top', title='', data-original-title='Save time by using keyboard shortcuts all across SaasLand') Adding time manually
+                .price_item(data-title='Free')
+                  h5.check
+                    i.icon_check_alt2
+                .price_item(data-title='Enterprise')
+                  h5.check
+                    i.icon_check_alt2
+                .price_item(data-title='Unlimited')
+                  h5.check
+                    i.icon_check_alt2
+              .pr_list
+                .price_item
+                  h5.pr_title(data-toggle='tooltip', data-placement='top', title='', data-original-title='Save time by using keyboard shortcuts all across SaasLand') Timeline
+                .price_item(data-title='Free')
+                  h5.check
+                    i.icon_check_alt2
+                .price_item(data-title='Enterprise')
+                  h5.cros
+                    i.icon_close
+                .price_item(data-title='Unlimited')
+                  h5.check
+                    i.icon_check_alt2
+              .pr_list
+                .price_item
+                  h5.pr_title(data-toggle='tooltip', data-placement='top', title='', data-original-title='Save time by using keyboard shortcuts all across SaasLand') Tracking time
+                .price_item(data-title='Free')
+                  h5.check
+                    i.icon_check_alt2
+                .price_item(data-title='Enterprise')
+                  h5.check
+                    i.icon_check_alt2
+                .price_item(data-title='Unlimited')
+                  h5.cros
+                    i.icon_close
+              .pr_list
+                .price_item
+                  h5.pr_title(data-toggle='tooltip', data-placement='top', title='', data-original-title='Save time by using keyboard shortcuts all across SaasLand') Adding time manually
+                .price_item(data-title='Free')
+                  h5.check
+                    i.icon_check_alt2
+                .price_item(data-title='Enterprise')
+                  h5.check
+                    i.icon_check_alt2
+                .price_item(data-title='Unlimited')
+                  h5.cros
+                    i.icon_close
+              .pr_list
+                .price_item
+                  h5.pr_title(data-toggle='tooltip', data-placement='top', title='', data-original-title='Save time by using keyboard shortcuts all across SaasLand') Adding time manually
+                .price_item(data-title='Free')
+                  h5.check
+                    i.icon_check_alt2
+                .price_item(data-title='Enterprise')
+                  h5.check
+                    i.icon_check_alt2
+                .price_item(data-title='Unlimited')
+                  h5.check
+                    i.icon_check_alt2
+              .pr_list
+                .price_item
+                  h5.pr_title(data-toggle='tooltip', data-placement='top', title='', data-original-title='Save time by using keyboard shortcuts all across SaasLand') Timeline
+                .price_item(data-title='Free')
+                  h5.check
+                    i.icon_check_alt2
+                .price_item(data-title='Enterprise')
+                  h5.cros
+                    i.icon_close
+                .price_item(data-title='Unlimited')
+                  h5.check
+                    i.icon_check_alt2
+              .pr_list
+                .price_item
+                  h5.pr_title(data-toggle='tooltip', data-placement='top', title='', data-original-title='Save time by using keyboard shortcuts all across SaasLand') Tracking time
+                .price_item(data-title='Free')
+                  h5.check
+                    i.icon_check_alt2
+                .price_item(data-title='Enterprise')
+                  h5.check
+                    i.icon_check_alt2
+                .price_item(data-title='Unlimited')
+                  h5.cros
+                    i.icon_close
+              .pr_list
+                .price_item
+                  h5.pr_title(data-toggle='tooltip', data-placement='top', title='', data-original-title='Save time by using keyboard shortcuts all across SaasLand') Adding time manually
+                .price_item(data-title='Free')
+                  h5.check
+                    i.icon_check_alt2
+                .price_item(data-title='Enterprise')
+                  h5.check
+                    i.icon_check_alt2
+                .price_item(data-title='Unlimited')
+                  h5.cros
+                    i.icon_close
+              .pr_list
+                .price_item
+                  h5.pr_title(data-toggle='tooltip', data-placement='top', title='', data-original-title='Save time by using keyboard shortcuts all across SaasLand') Adding time manually
+                .price_item(data-title='Free')
+                  h5.check
+                    i.icon_check_alt2
+                .price_item(data-title='Enterprise')
+                  h5.check
+                    i.icon_check_alt2
+                .price_item(data-title='Unlimited')
+                  h5.check
+                    i.icon_check_alt2
+              .pr_list
+                .price_item
+                  h5.pr_title(data-toggle='tooltip', data-placement='top', title='', data-original-title='Save time by using keyboard shortcuts all across SaasLand') Timeline
+                .price_item(data-title='Free')
+                  h5.check
+                    i.icon_check_alt2
+                .price_item(data-title='Enterprise')
+                  h5.cros
+                    i.icon_close
+                .price_item(data-title='Unlimited')
+                  h5.check
+                    i.icon_check_alt2
+              .pr_list
+                .price_item
+                  h5.pr_title(data-toggle='tooltip', data-placement='top', title='', data-original-title='Save time by using keyboard shortcuts all across SaasLand') Tracking time
+                .price_item(data-title='Free')
+                  h5.check
+                    i.icon_check_alt2
+                .price_item(data-title='Enterprise')
+                  h5.check
+                    i.icon_check_alt2
+                .price_item(data-title='Unlimited')
+                  h5.cros
+                    i.icon_close
+              .pr_list
+                .price_item
+                  h5.pr_title(data-toggle='tooltip', data-placement='top', title='', data-original-title='Save time by using keyboard shortcuts all across SaasLand') Adding time manually
+                .price_item(data-title='Free')
+                  h5.check
+                    i.icon_check_alt2
+                .price_item(data-title='Enterprise')
+                  h5.check
+                    i.icon_check_alt2
+                .price_item(data-title='Unlimited')
+                  h5.cros
+                    i.icon_close
+              .pr_list
+                .price_item
+                  h5.pr_title(data-toggle='tooltip', data-placement='top', title='', data-original-title='Save time by using keyboard shortcuts all across SaasLand') Keyboard shortcuts
+                .price_item(data-title='Free')
+                  h5.check
+                    i.icon_check_alt2
+                .price_item(data-title='Enterprise')
+                  h5.check
+                    i.icon_check_alt2
+                .price_item(data-title='Unlimited')
+                  h5.check
+                    i.icon_check_alt2
+              .pr_list
+                .price_item
+                  h5.pr_title(data-toggle='tooltip', data-placement='top', title='', data-original-title='Save time by using keyboard shortcuts all across SaasLand') Tags
+                .price_item(data-title='Free')
+                  h5.check
+                    i.icon_check_alt2
+                .price_item(data-title='Enterprise')
+                  h5.cros
+                    i.icon_close
+                .price_item(data-title='Unlimited')
+                  h5.check
+                    i.icon_check_alt2
+              .pr_list
+                .price_item
+                  h5.pr_title(data-toggle='tooltip', data-placement='top', title='', data-original-title='Save time by using keyboard shortcuts all across SaasLand') Time formats
+                .price_item(data-title='Free')
+                  h5.check
+                    i.icon_check_alt2
+                .price_item(data-title='Enterprise')
+                  h5.check
+                    i.icon_check_alt2
+                .price_item(data-title='Unlimited')
+                  h5.cros
+                    i.icon_close
+              .pr_list
+                .price_item
+                  h5.pr_title(data-toggle='tooltip', data-placement='top', title='', data-original-title='Save time by using keyboard shortcuts all across SaasLand') Pomodoro timer
+                .price_item(data-title='Free')
+                  h5.check
+                    i.icon_check_alt2
+                .price_item(data-title='Enterprise')
+                  h5.check
+                    i.icon_check_alt2
+                .price_item(data-title='Unlimited')
+                  h5.cros
+                    i.icon_close
+              .pr_list
+                .price_item
+                .price_item
+                  a.price_btn.btn_hover(href='#') Choose This
+                .price_item
+                  a.price_btn.btn_hover(href='#') Choose This
+                .price_item
+                  a.price_btn.btn_hover(href='#') Choose This
+
+      section.h_map_area
+        .container
+          .hosting_title.text-center
+            h2
+              | Service your customers around
+              br
+              | the world from 15 regions.
+            p
+              | The full monty burke posh excuse my French Richard cheeky bobby spiffing crikey
+              br
+              |  Why gormless, pear shaped.!
+          .h_map
+            ul.list-unstyled
+              li.wow.fadeIn(data-wow-delay='0.1s')
+                .place_name.wow.fadeInUp(data-wow-delay='0.2s') Singapore
+                .round
+                  .dot
+              li.wow.fadeIn(data-wow-delay='0.3s')
+                .place_name.wow.fadeInUp(data-wow-delay='0.4s') Toronto, Canada
+                .round
+                  .dot
+              li.wow.fadeIn(data-wow-delay='0.5s')
+                .place_name.wow.fadeInUp(data-wow-delay='0.6s') Bursa, Turcja
+                .round
+                  .dot
+              li.wow.fadeIn(data-wow-delay='0.7s')
+                .place_name.wow.fadeInUp(data-wow-delay='0.8s') Bangalore, India
+                .round
+                  .dot
+              li.wow.fadeIn(data-wow-delay='0.9s')
+                .place_name.wow.fadeInUp(data-wow-delay='1s') Dingxi, Chiny
+                .round
+                  .dot
+              li.wow.fadeIn(data-wow-delay='1s')
+                .place_name.wow.fadeInUp(data-wow-delay='1.1s') New York, USA
+                .round
+                  .dot
+              li.wow.fadeIn(data-wow-delay='1.2s')
+                .place_name.wow.fadeInUp(data-wow-delay='1.3s') Frankfurt, Germany
+                .round
+                  .dot
+              li.wow.fadeIn(data-wow-delay='1.4s')
+                .place_name.wow.fadeInUp(data-wow-delay='1.5s') Karaa, Kambodza
+                .round
+                  .dot
+      section.h_blog_area.sec_pad
+        .container
+          .hosting_title.text-center
+            h2 Our Latest News
+            p
+              | The full monty burke posh excuse my French Richard cheeky bobby spiffing crikey
+              br
+              |  Why gormless, pear shaped.!
+          .row
+            .col-sm-6
+              .h_blog_item
+                img(src='img/hosting/h_blog1.jpg', alt='')
+                .h_blog_content
+                  a.post_time(href='#')
+                    i.icon_clock_alt
+                    | March 20, 2019
+                  a(href='#')
+                    h3 How To Deploy a PHP Application with Kubernetes on Ubuntu
+                  .post-info-bottom
+                    a.learn_btn_two(href='#')
+                      | Read More
+                      i.arrow_right
+                    a.post-info-comments(href='#')
+                      i.icon_comment_alt(aria-hidden='true')
+                      span 3 Comments
+            .col-sm-6
+              .h_blog_item
+                img(src='img/hosting/h_blog2.jpg', alt='')
+                .h_blog_content
+                  a.post_time(href='#')
+                    i.icon_clock_alt
+                    | April 22, 2019
+                  a(href='#')
+                    h3 How To Build a Node.js Application with Docker
+                  .post-info-bottom
+                    a.learn_btn_two(href='#')
+                      | Read More
+                      i.arrow_right
+                    a.post-info-comments(href='#')
+                      i.icon_comment_alt(aria-hidden='true')
+                      span 02 Comments
+      section.h_action_promo_area
+        .overlay_bg(style="background: url('./img/hosting/hosting_action_bg.png');")
+        .container
+          .row.align-items-center
+            .col-md-8
+              .h_promo_content
+                h2 Start growing with SaasLand today!
+                p 30-day moneyback guarantee. No questions asked.
+            .col-md-4.text-right
+              a.hosting_btn.btn_hover(href='#') Get a free Estimate
+      footer.footer_area.h_footer_dark
+        .container
+          .row
+            .col-lg-4.col-md-6
+              .f_widget.dark_widget.company_widget
+                a.f-logo(href='index.html')
+                  img(src='img/logo2.png', alt='')
+                p © 2019 SaasLand, LLC. All rights reserved. Proudly made in NY
+                .f_social_icon
+                  a.ti-facebook(href='#')
+                  a.ti-twitter-alt(href='#')
+                  a.ti-vimeo-alt(href='#')
+                  a.ti-pinterest(href='#')
+            .col-lg-3.col-md-6
+              .f_widget.dark_widget.about-widget.pl_70
+                h3.f-title.f_500.t_color.f_size_18.mb_40 Download
+                ul.list-unstyled.f_list
+                  li
+                    a(href='#') Company
+                  li
+                    a(href='#') Android App
+                  li
+                    a(href='#') ios App
+                  li
+                    a(href='#') Desktop
+                  li
+                    a(href='#') Blog
+                  li
+                    a(href='#') Partners
+                  li
+                    a(href='#') Careers
+            .col-lg-3.col-md-6
+              .f_widget.dark_widget.about-widget.pl_20
+                h3.f-title.f_500.t_color.f_size_18.mb_40 Help
+                ul.list-unstyled.f_list
+                  li
+                    a(href='#') FAQ
+                  li
+                    a(href='#') Privacy
+                  li
+                    a(href='#') Term & conditions
+                  li
+                    a(href='#') Reporting
+                  li
+                    a(href='#') Block Storage
+                  li
+                    a(href='#') Tools & Integrations
+                  li
+                    a(href='#') API
+                  li
+                    a(href='#') Pricing
+            .col-lg-2.col-md-6
+              .f_widget.dark_widget.about-widget.pl_20
+                h3.f-title.f_500.t_color.f_size_18.mb_40 Team Solutions
+                ul.list-unstyled.f_list
+                  li
+                    a(href='#') Support
+                  li
+                    a(href='#') Sales
+                  li
+                    a(href='#') Report Abuse
+                  li
+                    a(href='#') System Status
+    // Optional JavaScript
+    // jQuery first, then Popper.js, then Bootstrap JS
+    script(src='js/jquery-3.2.1.min.js')
+    script(src='js/propper.js')
+    script(src='js/bootstrap.min.js')
+    script(src='vendors/wow/wow.min.js')
+    script(src='vendors/sckroller/jquery.parallax-scroll.js')
+    script(src='vendors/owl-carousel/owl.carousel.min.js')
+    script(src='vendors/imagesloaded/imagesloaded.pkgd.min.js')
+    script(src='vendors/isotope/isotope-min.js')
+    script(src='vendors/magnify-pop/jquery.magnific-popup.min.js')
+    script(src='vendors/bootstrap-selector/js/bootstrap-select.min.js')
+    script(src='vendors/nice-select/jquery.nice-select.min.js')
+    script(src='vendors/scroll/jquery.mCustomScrollbar.concat.min.js')
+    script(src='js/plugins.js')
+    script(src='js/main.js')

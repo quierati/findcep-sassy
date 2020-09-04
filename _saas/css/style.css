@@ -14986,6 +14986,13 @@ input[type=text] {
   position: relative;
 }
 
+.hosting_content h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
 .hosting_content h2 {
   font-size: 50px;
   line-height: 70px;
@@ -15986,7 +15993,7 @@ a .h_head:hover {
 }
 
 .h_price_body .price_head {
-  display: table;
+  display: inline-table;
   width: 100%;
   background: #faf7f8;
   height: 50px;
@@ -15994,7 +16001,7 @@ a .h_head:hover {
   border-top: 1px solid #f7f0f0;
 }
 .h_price_body .price_head .p_head {
-  width: calc(100% / 6);
+  width: calc(100% / 7);
   text-align: center;
   vertical-align: middle;
   display: table-cell;
@@ -16007,7 +16014,7 @@ a .h_head:hover {
   text-transform: uppercase;
 }
 .h_price_body .h_p_list {
-  display: table;
+  display: inline-flex;
   width: 100%;
   padding-right: 50px;
   padding-top: 16px;

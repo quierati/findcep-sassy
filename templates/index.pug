@@ -19,7 +19,7 @@ html(lang='pt-br')
     //link(rel='shortcut icon', href='img/favicon.png', type='image/x-icon')
 
     // Bootstrap CSS
-    link(rel='stylesheet', href='_saas/css/bootstrap.min.css')
+    //- link(rel='stylesheet', href='_saas/css/bootstrap.min.css')
     link(rel='stylesheet', href='_saas/vendors/bootstrap-selector/css/bootstrap-select.min.css')
     // icon font css
     link(rel='stylesheet', href='_saas/vendors/themify-icon/themify-icons.css')
@@ -36,6 +36,7 @@ html(lang='pt-br')
     link(rel='stylesheet', href='_saas/css/responsive.css')
 
     //- SASSY TEMPLATE CSS
+
     link(rel='stylesheet', href='css/bootstrap.min.css')
     link(rel='stylesheet', href='css/font-awesome.min.css')
     link(rel='stylesheet', href='elegant-icon/style.css')
@@ -48,8 +49,6 @@ html(lang='pt-br')
     link(rel='stylesheet', href='css/theme-style.css')
     link(rel='stylesheet', href='css/responsive.css')
 
-
-
     link(rel='canonical', href='https://findcep.labunix.dev/index.html')
     // **WAIT*** TRADUCAO
     //link(rel='alternate', href='https://findcep.labunix.dev/en', hreflang='en')
@@ -59,6 +58,7 @@ html(lang='pt-br')
       {"@context": "http:\\/\/schema.org","@type": "Organization","url": "http:\/\/www.findcep.com","logo": "http://www.findcep.com/img/icone-findcep.png", "sameAs": ["https://www.facebook.com/findcep/","https://twitter.com/findcep"],"contactPoint": [{"@type": "ContactPoint","telephone": "+55-11-98059-7677","contactType": "sales","areaServed": "BR","availableLanguage": ["Portuguese","English"]}]}
     script(type='application/ld+json').
       {"@context":"http:\\/\/schema.org","@type":"WebSite","url":"http:\/\/www.findcep.com\/","name":"Find CEP"}
+
   body#home(data-spy='scroll', data-target='.navbar', data-offset='94')
     nav.navbar.navbar-fixed-top.new_header
       .container.custome_container
@@ -70,8 +70,8 @@ html(lang='pt-br')
                 span.icon-bar
                 span.icon-bar
               a.navbar-brand.ex(href='https://www.findcep.com/')
-                img.main-logo(style='', src='images/sassy_white.png', alt='Home')
-                img.logo-blue(src='images/sassy_black.png', alt='Home')
+                img.main-logo(style='', src='', alt='Home')
+                img.logo-blue(src='', alt='Home')
               // Get-Now-Button
               a.btn-getnow.new_btn(href='#') Try for free
             #myNavbar.collapse.navbar-collapse.multi_page_menu_item
@@ -81,24 +81,19 @@ html(lang='pt-br')
                 li.menu-item
                   a(title='Pricing', href='#pricing') Planos e Preços
                 li.menu-item
-                  a(title='Services', href='#services') Services
+                  a(title='FAQ', href='#features') FAQ
                 li.menu-item
-                  a(title='Dashboard', href='#dashboard') Dashboard
-                li.menu-item
-                  a(title='Features', href='#features') Vantagens
-                li.menu-item
-                  a(title='Developer', href='//www.findcep.com/docs/index.html') Documentaçao
+                  a(title='Developer', href='//www.findcep.com/docs/index.html') Desenvolvedores
                 li.menu-item
                   a(title='Contact', href='#contact') Contato
     section#newsletter.saas_newsletter_area
               .container
                 .new_sectitle.br_none.pb_0
-                  p.s_banner_title A
                   h1.s_banner_title API CEP
-                  h2.s_banner_title
-                    | sempre atualizada para seu negócio.&nbsp;
+                  h2.s_banner_title   de localização de código postal e endereços do BRASIL.
+                    | É a solução completa
                     br
-                    | Completa solução de localização de código postal  e endereços do BRASIL.
+                    |
                 form.n_subscription.saas_subscribe.findcep(method='get', novalidate='true', _lpchecked='1')
                   .form-group
                     input.form-control.mecep(name='CEP', type='number', placeholder='01001-000')
@@ -107,7 +102,7 @@ html(lang='pt-br')
                     i.fa.fa-paper-plane(aria-hidden='true')
                   p.fcep-errmessage(style='display: none;')
                   p.fcep-sucmessage(style='display: none;')
-    section
+    section#services.n_features_area.pt_0
       .container
         .row
           .saas_section_title.mb_70
@@ -124,7 +119,7 @@ html(lang='pt-br')
           .col-md-4.col-sm-6.col-xs-12
             .saas_features_item
               .round_icon
-                img(src='images/new/icon/d-f2.png', alt='')
+                img(src='images/new/icon/d-f2.png', alt='atualizada')
               h3 Base de CEP atualizada
               p
                 | Nossa base de CEPs é atualizada mensalmente e integrada automaticamente com os correios.
@@ -138,7 +133,7 @@ html(lang='pt-br')
           .col-md-4.col-sm-6.col-xs-12
             .saas_features_item
               .round_icon
-                img(src='images/new/icon/d-f3.png', alt='')
+                img(src='images/new/icon/d-f3.png', alt='Inclusoes')
               h3 Códigos dos Municípios - IBGE
               p
                 | Nossa base é sincronizada com a última versão da base disponibilizada pelo&nbsp;
@@ -147,7 +142,7 @@ html(lang='pt-br')
           .col-md-4.col-sm-6.col-xs-12
             .saas_features_item
               .round_icon
-                img(src='images/new/icon/d-f5.png', alt='Facilidade')
+                img(src='images/new/icon/d-f5.png', alt='Integrar')
               h3 Integração Rápida
               p
                 | A nossa API CEP é simples de usar, com fácil integracão, sem custo de setup e compatível com seu negócio.
@@ -201,92 +196,6 @@ html(lang='pt-br')
                 p.n_title_p
                   | Proporcione ao seu cliente, agilidade e facilidade, na criação de cadastros e contas no seu site, mitigue carrinhos abandonados e aumente a conversão.
                 a.saas_btn_two.n_them_btn(href='') Saiba Mais
-    section.saas_gallery_area
-      .saas_section_title.mb_70
-        h2 Nossos Clientes
-        p
-          | Até o momento mais de 50 milhões consultas
-          br
-          | foram realizadas com sucesso no FindCEP.
-      .saas_screen_gallery.owl-carousel
-        .item
-          img(src='images/new/saas/screen1.jpg', alt='')
-        .item
-          img(src='images/new/saas/screen3.jpg', alt='')
-        .item
-          img(src='images/new/saas/screen2.jpg', alt='')
-        .item
-          img(src='images/new/saas/screen1.jpg', alt='')
-        .item
-          img(src='images/new/saas/screen3.jpg', alt='')
-        .item
-          img(src='images/new/saas/screen2.jpg', alt='')
-        .item
-          img(src='images/new/saas/screen1.jpg', alt='')
-        .item
-          img(src='images/new/saas/screen2.jpg', alt='')
-    section#pricing.saas_priceing_area
-      .container
-        .saas_section_title.mb_70
-          h2 Preços e Planos
-          p
-            | Solução que satisfazem desde pequenos negócios a grandes empresas.
-            br
-            | Temos planos especiais para qualquer consumo, solicite uma avaliação.
-        .row.saas_priceing_info
-          .col-md-4.col-sm-6.col-xs-12
-            .saas_price_item
-              img(src='images/new/icon/rocket-icon.png', alt='')
-              h3 Starter
-              .br
-              ul.list_style
-                li 1000 consultas grátis
-                li 1 Site
-                li
-                  i.icon_close
-                li
-                  i.icon_close
-                li
-                  i.icon_close
-              .price
-                | R$0
-                span por mes
-                span + consultas extras: R$ 0.0059
-              a.saas_btn_two(href='#') Comece Já
-          .col-md-4.col-sm-6.col-xs-12
-            .saas_price_item
-              img(src='images/new/icon/award-icon.png', alt='')
-              h3 Corporate
-              .br
-              ul.list_style
-                li 100.000 consultas
-                li 3 Sites
-                li CDN
-                li Suporte 24x7
-                li
-                  i.icon_close
-              .price
-                | R$249
-                span por mes
-                span + consultas extras: R$ 0.0025
-              a.saas_btn_two(href='#') Teste Gratuitamente
-          .col-md-4.col-sm-6.col-xs-12
-            .saas_price_item
-              img(src='images/new/icon/handshake.png', alt='')
-              h3 Enterprise
-              .br
-              ul.list_style
-                li 500.000 consultas
-                li Sites: ilimitado
-                li CDN
-                li Suporte 24x7
-                li SLA 99.9%
-              .price
-                | R$900
-                span por mes
-                span + consultas extras por R$ 0.0015
-
-              a.saas_btn_two(href='#') Assine
     section#contact.saas_contact_area
       .container
         .saas_contact_info
@@ -446,11 +355,9 @@ html(lang='pt-br')
     script(src='_saas/js/main.js')
 
 
-
     // SASSY JS TEMPLATE
     script(src='js/jquery.min.js')
     script(src='js/bootstrap.min.js')
-
     //disable
     //script(src='http://maps.googleapis.com/maps/api/js?key=AIzaSyBumN1FxU0vF8HVI_qy9yFlwcZ4Wop_RtY')
     //script(src='js/jquery.waypoints.min.js')
@@ -463,8 +370,5 @@ html(lang='pt-br')
     script(src='js/gmap.js')
     script(src='js/parallax.js')
     script(src='js/theme.js')
-
-
-
     // FINDCEP JS
     script(src='js/plugin-findcep.js')
